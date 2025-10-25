@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "fantasy-forest:block/mutated_end_planks"
+  }
+}

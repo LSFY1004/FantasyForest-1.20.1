@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "fantasy-forest:block/permearoma_door_bottom",
+    "top": "fantasy-forest:block/permearoma_door_top"
+  }
+}

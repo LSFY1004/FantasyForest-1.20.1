@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "fantasy-forest:block/permearoma_planks",
+    "side": "fantasy-forest:block/permearoma_planks",
+    "top": "fantasy-forest:block/permearoma_planks"
+  }
+}

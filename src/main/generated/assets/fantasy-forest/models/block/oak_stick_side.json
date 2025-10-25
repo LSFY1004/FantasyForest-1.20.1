@@ -1,0 +1,6 @@
+{
+  "parent": "fantasy-forest:block/templates/stick_side",
+  "textures": {
+    "texture": "minecraft:block/oak_planks"
+  }
+}

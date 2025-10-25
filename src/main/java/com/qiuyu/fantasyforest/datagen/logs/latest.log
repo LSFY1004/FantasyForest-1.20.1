@@ -1,0 +1,17 @@
+[17:54:41] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.20.1 with Fabric Loader 0.16.14
+[17:54:41] [main/WARN] (FabricLoader/Resolution) Mod resolution failed
+[17:54:41] [main/INFO] (FabricLoader/Resolution) Immediate reason: [HARD_DEP_NO_CANDIDATE terraform-wood-api-v1 7.0.3 {depends fabric-rendering-v1 @ [*]}, ROOT_FORCELOAD_SINGLE terraform-wood-api-v1 7.0.3]
+[17:54:41] [main/INFO] (FabricLoader/Resolution) Reason: [HARD_DEP terraform-wood-api-v1 7.0.3 {depends fabric-rendering-v1 @ [*]}]
+[17:54:41] [main/INFO] (FabricLoader/Resolution) Fix: add [add:fabric-rendering-v1 1 ([(-∞,∞)])], remove [], replace []
+[17:54:41] [main/ERROR] (FabricLoader) Incompatible mods found!
+net.fabricmc.loader.impl.FormattedException: Some of your mods are incompatible with the game or each other!
+确定了一种可能的解决方法，这样做可能会解决你的问题：
+	 - 安装 fabric-rendering-v1，任意版本。
+更多信息：
+	 - 模组 'Terraform Wood API (v1)' (terraform-wood-api-v1) 7.0.3 需要 fabric-rendering-v1 的 任意版本，但没有安装它！
+	at net.fabricmc.loader.impl.FormattedException.ofLocalized(FormattedException.java:51) ~[fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.FabricLoaderImpl.load(FabricLoaderImpl.java:196) ~[fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.init(Knot.java:146) ~[fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:68) ~[fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) ~[?:?]

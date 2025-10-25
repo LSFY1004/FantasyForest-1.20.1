@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "fantasy-forest:block/mutated_end_log",
+    "side": "fantasy-forest:block/mutated_end_log"
+  }
+}

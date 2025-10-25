@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "fantasy-forest:void_resin_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "fantasy-forest:void_resin"
+  }
+}

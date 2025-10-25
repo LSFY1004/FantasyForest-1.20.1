@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "fantasy-forest:block/permearoma_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "fantasy-forest:block/permearoma_wood"
+    },
+    "axis=z": {
+      "model": "fantasy-forest:block/permearoma_wood",
+      "x": 90
+    }
+  }
+}

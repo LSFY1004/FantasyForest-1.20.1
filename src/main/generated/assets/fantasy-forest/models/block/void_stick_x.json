@@ -1,0 +1,6 @@
+{
+  "parent": "fantasy-forest:block/templates/stick_x",
+  "textures": {
+    "texture": "fantasy-forest:block/void_planks"
+  }
+}

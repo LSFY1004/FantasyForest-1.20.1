@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "fantasy-forest:end_planks"
+    },
+    "1": {
+      "tag": "fantasy-forest:sticks"
+    }
+  },
+  "pattern": [
+    "#1#",
+    "#1#"
+  ],
+  "result": {
+    "count": 3,
+    "item": "fantasy-forest:end_wooden_fence"
+  },
+  "show_notification": true
+}

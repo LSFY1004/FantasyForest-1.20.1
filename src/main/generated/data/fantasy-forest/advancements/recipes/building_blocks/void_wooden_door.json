@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fantasy-forest:void_wooden_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_void_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fantasy-forest:void_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_void_planks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fantasy-forest:void_wooden_door"
+    ]
+  },
+  "sends_telemetry_event": false
+}

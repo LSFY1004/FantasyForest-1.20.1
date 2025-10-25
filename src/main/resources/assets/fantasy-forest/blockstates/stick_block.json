@@ -1,0 +1,40 @@
+{
+  "multipart": [
+    {
+      "when": {"axis": "x"},
+      "apply": {"model": "fantasy-forest:block/stick_x"}
+    },
+    {
+      "when": {"axis": "y"},
+      "apply": {"model": "fantasy-forest:block/stick_y"}
+    },
+    {
+      "when": {"axis": "z"},
+      "apply": {"model": "fantasy-forest:block/stick_z"}
+    },
+    {
+      "when": {"north": true},
+      "apply": {"model": "fantasy-forest:block/stick_side"}
+    },
+    {
+      "when": {"east": true},
+      "apply": {"model": "fantasy-forest:block/stick_side", "y": 90}
+    },
+    {
+      "when": {"south": true},
+      "apply": {"model": "fantasy-forest:block/stick_side", "y": 180}
+    },
+    {
+      "when": {"west": true},
+      "apply": {"model": "fantasy-forest:block/stick_side", "y": 270}
+    },
+    {
+      "when": {"up": true},
+      "apply": {"model": "fantasy-forest:block/stick_side_vertical"}
+    },
+    {
+      "when": {"down": true},
+      "apply": {"model": "fantasy-forest:block/stick_side_vertical", "x": 180}
+    }
+  ]
+}

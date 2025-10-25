@@ -1,0 +1,19 @@
+// 1.20.1	2025-10-24T23:05:49.8023659	Fantasy Forest/Tags for minecraft:block
+08e383c7574c7ea2230ab2f4a01868eba072a616 data\minecraft\tags\blocks\mineable\pickaxe.json
+fcf21033c66633797bf9b6156c3c99b5dad784fe data\fantasy-forest\tags\blocks\mutated_end_logs.json
+624066cbc8181459c49bf6635aa0f0c963b78b37 data\minecraft\tags\blocks\needs_diamond_tool.json
+0ccbebe78f2e12a988f2714dddbdd21a5b13eeae data\minecraft\tags\blocks\logs_that_burn.json
+cbccd6486efece553d8dd9a46583b934bbf47502 data\minecraft\tags\blocks\saplings.json
+6c4b840c2077a23b84ef6c5cdadcab072622a06b data\fantasy-forest\tags\blocks\end_logs.json
+85e7b2de3e5f6952a26afacb65c0c71152286094 data\fantasy-forest\tags\blocks\void_logs.json
+b48fb8cfffc7bb799a4650c9bddfbcc4a6d7d65a data\minecraft\tags\blocks\climbable.json
+2fcc028ca8768dd54523c514e1c8b01aa5873d42 data\minecraft\tags\blocks\mineable\hoe.json
+c623be0d000c3442d7287bb316d60cf0598afc1d data\minecraft\tags\blocks\mineable\axe.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_stone_tool.json
+2fcc028ca8768dd54523c514e1c8b01aa5873d42 data\minecraft\tags\blocks\leaves.json
+672397a08990e494b65a7436b4f47614df96afbd data\minecraft\tags\blocks\planks.json
+3c46b0b8f5a9e49c4958f3826638c9da57715183 data\minecraft\tags\blocks\fence_gates.json
+c00935a0a52bd9faf9d9e0556d5858b9711e89a9 data\fantasy-forest\tags\blocks\sticks.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_iron_tool.json
+9dd41aae708b28930b91adffda0d2f37e6ed4ac9 data\minecraft\tags\blocks\wooden_fences.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\shovel.json

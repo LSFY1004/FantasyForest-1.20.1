@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "fantasy-forest:block/permearoma_log_top",
+    "side": "fantasy-forest:block/permearoma_log"
+  }
+}

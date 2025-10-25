@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_orientable_trapdoor_open",
+  "textures": {
+    "texture": "fantasy-forest:block/mutated_end_wooden_trapdoor"
+  }
+}

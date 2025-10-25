@@ -1,0 +1,22 @@
+{
+  "type": "fantasy-forest:arboreal_crafting_table",
+  "key": {
+    "#": {
+      "item": "fantasy-forest:mutated_end_planks"
+    },
+    "1": {
+      "tag": "fantasy-forest:sticks"
+    }
+  },
+  "pattern": [
+    "###",
+    " 1 ",
+    " 1 "
+  ],
+  "result": {
+    "item": "fantasy-forest:mutated_end_wooden_pickaxe"
+  },
+  "sapling": {
+    "tag": "fantasy-forest:mutated_end_arboreal"
+  }
+}

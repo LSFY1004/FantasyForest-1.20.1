@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "fantasy-forest:mutated_end_planks"
+    },
+    "1": {
+      "tag": "fantasy-forest:sticks"
+    }
+  },
+  "pattern": [
+    "1#1",
+    "1#1"
+  ],
+  "result": {
+    "item": "fantasy-forest:mutated_end_wooden_fence_gate"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,19 @@
+{
+  "type": "fantasy-forest:arboreal_crafting_table",
+  "key": {
+    "1": {
+      "item": "fantasy-forest:void_planks"
+    }
+  },
+  "pattern": [
+    "1",
+    "1"
+  ],
+  "result": {
+    "count": 4,
+    "item": "fantasy-forest:void_stick"
+  },
+  "sapling": {
+    "tag": "fantasy-forest:void_arboreal"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "fantasy-forest:void_planks"
+    },
+    "1": {
+      "tag": "fantasy-forest:sticks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    " 1 "
+  ],
+  "result": {
+    "item": "fantasy-forest:void_wooden_sign"
+  },
+  "show_notification": true
+}

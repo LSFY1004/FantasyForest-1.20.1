@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "fantasy-forest:block/void_wooden_pressure_plate"
+    },
+    "powered=true": {
+      "model": "fantasy-forest:block/void_wooden_pressure_plate_down"
+    }
+  }
+}

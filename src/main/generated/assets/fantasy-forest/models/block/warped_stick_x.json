@@ -1,0 +1,6 @@
+{
+  "parent": "fantasy-forest:block/templates/stick_x",
+  "textures": {
+    "texture": "minecraft:block/warped_planks"
+  }
+}

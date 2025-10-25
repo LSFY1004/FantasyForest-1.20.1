@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "fantasy-forest",
+	"version": "${version}",
+	"name": "Fantasy Forest",
+	"description": "以树为核心的全新魔法模组",
+	"authors": [
+		"湫雨"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/fantasy-forest/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.qiuyu.fantasyforest.FantasyForest"
+		],
+		"client": [
+			"com.qiuyu.fantasyforest.FantasyForestClient"
+		],
+		"fabric-datagen": [
+			"com.qiuyu.fantasyforest.FantasyForestDataGenerator"
+		]
+	},
+	"mixins": [
+		"fantasy-forest.mixins.json",
+		{
+			"config": "fantasy-forest.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

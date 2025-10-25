@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "tag": "minecraft:wooden_fences"
+    },
+    "o": {
+      "item": "minecraft:crafting_table"
+    },
+    "s": {
+      "tag": "minecraft:saplings"
+    },
+    "x": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    " s ",
+    "xox",
+    "111"
+  ],
+  "result": {
+    "item": "fantasy-forest:arboreal_crafting_table"
+  },
+  "show_notification": true
+}

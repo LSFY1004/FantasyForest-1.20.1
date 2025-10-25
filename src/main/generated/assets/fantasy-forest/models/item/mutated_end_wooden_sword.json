@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "fantasy-forest:item/mutated_end_wooden_sword"
+  }
+}

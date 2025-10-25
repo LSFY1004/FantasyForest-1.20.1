@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "fantasy-forest:block/end_wooden_slab"
+    },
+    "type=double": {
+      "model": "fantasy-forest:block/end_planks"
+    },
+    "type=top": {
+      "model": "fantasy-forest:block/end_wooden_slab_top"
+    }
+  }
+}

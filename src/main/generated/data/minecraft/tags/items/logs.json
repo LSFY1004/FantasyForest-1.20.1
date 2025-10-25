@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "fantasy-forest:permearoma_log",
+    "fantasy-forest:permearoma_wood",
+    "fantasy-forest:stripped_permearoma_log",
+    "fantasy-forest:stripped_permearoma_wood",
+    "fantasy-forest:end_log",
+    "fantasy-forest:end_wood",
+    "fantasy-forest:stripped_end_log",
+    "fantasy-forest:stripped_end_wood",
+    "fantasy-forest:mutated_end_log",
+    "fantasy-forest:mutated_end_wood",
+    "fantasy-forest:stripped_mutated_end_log",
+    "fantasy-forest:stripped_mutated_end_wood",
+    "fantasy-forest:void_log",
+    "fantasy-forest:void_wood",
+    "fantasy-forest:stripped_void_log",
+    "fantasy-forest:stripped_void_wood"
+  ]
+}

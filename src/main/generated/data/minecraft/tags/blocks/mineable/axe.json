@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "fantasy-forest:arboreal_crafting_table",
+    "fantasy-forest:permearoma_log",
+    "fantasy-forest:permearoma_planks",
+    "fantasy-forest:permearoma_wood",
+    "fantasy-forest:end_log",
+    "fantasy-forest:end_wood",
+    "fantasy-forest:end_planks",
+    "fantasy-forest:mutated_end_log",
+    "fantasy-forest:mutated_end_wood",
+    "fantasy-forest:mutated_end_planks",
+    "fantasy-forest:void_log",
+    "fantasy-forest:void_wood",
+    "fantasy-forest:void_planks",
+    "fantasy-forest:void_roots"
+  ]
+}

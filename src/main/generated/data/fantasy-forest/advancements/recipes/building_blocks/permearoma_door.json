@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_permearoma_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fantasy-forest:permearoma_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fantasy-forest:permearoma_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_permearoma_planks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fantasy-forest:permearoma_door"
+    ]
+  },
+  "sends_telemetry_event": false
+}

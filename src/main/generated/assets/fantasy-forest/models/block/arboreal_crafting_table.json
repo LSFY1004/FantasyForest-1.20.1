@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "fantasy-forest:block/arboreal_crafting_table"
+  }
+}

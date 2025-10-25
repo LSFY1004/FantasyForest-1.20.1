@@ -1,0 +1,22 @@
+{
+  "type": "fantasy-forest:arboreal_crafting_table",
+  "key": {
+    "#": {
+      "item": "fantasy-forest:permearoma_planks"
+    },
+    "1": {
+      "tag": "fantasy-forest:sticks"
+    }
+  },
+  "pattern": [
+    "#",
+    "#",
+    "1"
+  ],
+  "result": {
+    "item": "fantasy-forest:permearoma_sword"
+  },
+  "sapling": {
+    "tag": "fantasy-forest:permearoma_arboreal"
+  }
+}

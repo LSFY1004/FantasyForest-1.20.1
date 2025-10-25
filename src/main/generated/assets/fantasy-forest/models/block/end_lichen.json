@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "fantasy-forest:block/end_lichen_bottom",
+    "side": "fantasy-forest:block/end_lichen_side",
+    "top": "fantasy-forest:block/end_lichen_top"
+  }
+}

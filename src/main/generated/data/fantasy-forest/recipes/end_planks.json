@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    [
+      {
+        "item": "fantasy-forest:end_log"
+      },
+      {
+        "item": "fantasy-forest:end_wood"
+      },
+      {
+        "item": "fantasy-forest:stripped_end_log"
+      },
+      {
+        "item": "fantasy-forest:stripped_end_wood"
+      }
+    ]
+  ],
+  "result": {
+    "count": 4,
+    "item": "fantasy-forest:end_planks"
+  }
+}

@@ -1,0 +1,166 @@
+package com.qiuyu.fantasyforest.datagen;
+
+import com.qiuyu.fantasyforest.block.ModBlocks;
+import com.qiuyu.fantasyforest.effect.ModEffects;
+import com.qiuyu.fantasyforest.item.MODItems;
+import com.qiuyu.fantasyforest.item.ModItemGroups;
+import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
+
+public class ModEnUsLangProvider extends FabricLanguageProvider {
+    public ModEnUsLangProvider(FabricDataOutput dataOutput) {
+        super(dataOutput);
+    }
+
+    @Override
+    public void generateTranslations(TranslationBuilder translationBuilder) {
+        translationBuilder.add(ModItemGroups.Fantasy_Forest,"Fantasy Forest");
+        translationBuilder.add("tooltip.arboreal","§aArboreal Resonance§r");
+        translationBuilder.add("tooltip.arboreal.shift","§aArboreal Resonance§7§o - The wood whispers to its kin; the tool responds with gentle speed and enduring strength.");
+        translationBuilder.add("tooltip.fantasyforest.more","§7Press §rShift§7 for more info.§r");
+        translationBuilder.add("tooltip.fantasyforest.permearoma","§3Fragrance§r");
+        translationBuilder.add("tooltip.fantasyforest.permearoma.shift","§3Fragrance§7§o - Lulled by the drifting fragrance, they let their will to pursue drift from them.");
+        translationBuilder.add("tooltip.fantasyforest.end_wood","§5Spatial Constraints§r");
+        translationBuilder.add("tooltip.fantasyforest.end_wood.shift","§5Spatial Constraints§7§o - Such is the power of the End that it weaves a prison of space from which the struck has no hope of departing.");
+        translationBuilder.add("tooltip.fantasyforest.mutated_end_wood","§2Spatial Warp§r");
+        translationBuilder.add("tooltip.fantasyforest.mutated_end_wood.shift","§2Spatial Warp§7§o - The instantly warping space leaves anyone within disoriented.");
+        translationBuilder.add("tooltip.fantasyforest.void_wood","§8The Void§r");
+        translationBuilder.add("tooltip.fantasyforest.void_wood.shift","§8The Void§7§o - None who enter the Void can endure its depths for long.");
+
+        translationBuilder.add(ModBlocks.ARBOREAL_CRAFTING_TABLE,"Arboreal Crafting Table");
+
+        translationBuilder.add(ModBlocks.OAK_STICK,"Oak Stick");
+        translationBuilder.add(ModBlocks.DARK_OAK_STICK,"Dark Oak Stick");
+        translationBuilder.add(ModBlocks.BAMBOO_STICK,"Bamboo Stick");
+        translationBuilder.add(ModBlocks.CHERRY_STICK,"Cherry Stick");
+        translationBuilder.add(ModBlocks.CRIMSON_STICK,"Crimson Stick");
+        translationBuilder.add(ModBlocks.ACACIA_STICK,"Acacia Stick");
+        translationBuilder.add(ModBlocks.WARPED_STICK,"Warped Stick");
+        translationBuilder.add(ModBlocks.SPRUCE_STICK,"Spruce Stick");
+        translationBuilder.add(ModBlocks.BIRCH_STICK,"Birch Stick");
+        translationBuilder.add(ModBlocks.JUNGLE_STICK,"Jungle Stick");
+        translationBuilder.add(ModBlocks.MANGROVE_STICK,"Mangrove Stick");
+
+        translationBuilder.add(ModBlocks.END_LICHEN,"End Lichen");
+        translationBuilder.add(ModBlocks.DEAD_END_LICHEN,"Dead End Lichen");
+
+        translationBuilder.add(MODItems.PERMEAROMA_LEAF_PIECES,"Permearoma Leaf Pieces");
+        translationBuilder.add(ModBlocks.PERMEAROMA_LEAVES,"Permearoma Leaves");
+        translationBuilder.add(ModBlocks.PERMEAROMA_LOG,"Permearoma Log");
+        translationBuilder.add(ModBlocks.PERMEAROMA_WOOD,"Permearoma Wood");
+        translationBuilder.add(ModBlocks.STRIPPED_PERMEAROMA_LOG,"Stripped Permearoma Log");
+        translationBuilder.add(ModBlocks.STRIPPED_PERMEAROMA_WOOD,"Stripped Permearoma Wood");
+        translationBuilder.add(ModBlocks.PERMEAROMA_PLANKS,"Permearoma Planks");
+        translationBuilder.add(ModBlocks.PERMEAROMA_STAIRS,"Permearoma Stairs");
+        translationBuilder.add(ModBlocks.PERMEAROMA_SLAB,"Permearoma Slab");
+        translationBuilder.add(ModBlocks.PERMEAROMA_BUTTON,"Permearoma Button");
+        translationBuilder.add(ModBlocks.PERMEAROMA_DOOR,"Permearoma Door");
+        translationBuilder.add(ModBlocks.PERMEAROMA_FENCE,"Permearoma Fence");
+        translationBuilder.add(ModBlocks.PERMEAROMA_TRAPDOOR,"Permearoma Trapdoor");
+        translationBuilder.add(ModBlocks.PERMEAROMA_FENCE_GATE,"Permearoma Fence Gate");
+        translationBuilder.add(ModBlocks.PERMEAROMA_PRESSURE_PLATE,"Permearoma Pressure Plate");
+        translationBuilder.add(MODItems.PERMEAROMA_SIGN,"Permearoma Sign");
+        translationBuilder.add(MODItems.PERMEAROMA_HANGING_SIGN,"Permearoma Hanging Sign");
+        translationBuilder.add(MODItems.PERMEAROMA_BOAT,"Permearoma Boat");
+        translationBuilder.add(MODItems.PERMEAROMA_CHEST_BOAT,"Permearoma Boat With Chest");
+        translationBuilder.add(ModBlocks.PERMEAROMA_SAPLING,"Permearoma Sapling");
+        translationBuilder.add(ModBlocks.PERMEAROMA_STICK,"Permearoma Stick");
+        translationBuilder.add(MODItems.PERMEAROMA_SWORD,"Permearoma Sword");
+        translationBuilder.add(MODItems.PERMEAROMA_PICKAXE,"Permearoma Pickaxe");
+        translationBuilder.add(MODItems.PERMEAROMA_AXE,"Permearoma Axe");
+        translationBuilder.add(MODItems.PERMEAROMA_HOE,"Permearoma Hoe");
+        translationBuilder.add(MODItems.PERMEAROMA_SHOVEL,"Permearoma Shovel");
+
+        translationBuilder.add(MODItems.END_RESIN,"End Resin");
+        translationBuilder.add(ModBlocks.END_RESIN_BLOCK,"End Resin Block");
+        translationBuilder.add(ModBlocks.END_LEAVES,"End Leaves");
+        translationBuilder.add(ModBlocks.END_LOG,"End Log");
+        translationBuilder.add(ModBlocks.END_WOOD,"End Wood");
+        translationBuilder.add(ModBlocks.STRIPPED_END_LOG,"Stripped End Log");
+        translationBuilder.add(ModBlocks.STRIPPED_END_WOOD,"Stripped End Wood");
+        translationBuilder.add(ModBlocks.END_PLANKS,"End Planks");
+        translationBuilder.add(ModBlocks.END_WOODEN_STAIRS,"End Wooden Stairs");
+        translationBuilder.add(ModBlocks.END_WOODEN_SLAB,"End Wooden Slab");
+        translationBuilder.add(ModBlocks.END_WOODEN_BUTTON,"End Wooden Button");
+        translationBuilder.add(ModBlocks.END_WOODEN_DOOR,"End Wooden Door");
+        translationBuilder.add(ModBlocks.END_WOODEN_FENCE,"End Wooden Fence");
+        translationBuilder.add(ModBlocks.END_WOODEN_TRAPDOOR,"End Wooden Trapdoor");
+        translationBuilder.add(ModBlocks.END_WOODEN_FENCE_GATE,"End Wooden Fence Gate");
+        translationBuilder.add(ModBlocks.END_WOODEN_PRESSURE_PLATE,"End Wooden Pressure Plate");
+        translationBuilder.add(MODItems.END_WOODEN_SIGN,"End Wooden Sign");
+        translationBuilder.add(MODItems.END_WOODEN_HANGING_SIGN,"End Wooden Hanging Sign");
+        translationBuilder.add(MODItems.END_WOODEN_BOAT,"End Wooden Boat");
+        translationBuilder.add(MODItems.END_WOODEN_CHEST_BOAT,"End Wooden Boat With Chest");
+        translationBuilder.add(ModBlocks.END_TREE_SAPLING,"End Tree Sapling");
+        translationBuilder.add(ModBlocks.END_STICK,"End Stick");
+        translationBuilder.add(MODItems.END_WOODEN_SWORD,"End Wooden Sword");
+        translationBuilder.add(MODItems.END_WOODEN_PICKAXE,"End Wooden Pickaxe");
+        translationBuilder.add(MODItems.END_WOODEN_AXE,"End Wooden Axe");
+        translationBuilder.add(MODItems.END_WOODEN_HOE,"End Wooden Hoe");
+        translationBuilder.add(MODItems.END_WOODEN_SHOVEL,"End Wooden Shovel");
+
+        translationBuilder.add(MODItems.MUTATED_END_RESIN,"Mutated End Resin");
+        translationBuilder.add(ModBlocks.MUTATED_END_RESIN_BLOCK,"Mutated End Resin Block");
+        translationBuilder.add(ModBlocks.MUTATED_END_LOG,"Mutated End Log");
+        translationBuilder.add(ModBlocks.MUTATED_END_WOOD,"Mutated End Wood");
+        translationBuilder.add(ModBlocks.STRIPPED_MUTATED_END_LOG,"Stripped Mutated End Log");
+        translationBuilder.add(ModBlocks.STRIPPED_MUTATED_END_WOOD,"Stripped Mutated End Wood");
+        translationBuilder.add(ModBlocks.MUTATED_END_PLANKS,"Mutated End Planks");
+        translationBuilder.add(ModBlocks.MUTATED_END_WOODEN_STAIRS,"Mutated End Wooden Stairs");
+        translationBuilder.add(ModBlocks.MUTATED_END_WOODEN_SLAB,"Mutated End Wooden Slab");
+        translationBuilder.add(ModBlocks.MUTATED_END_WOODEN_BUTTON,"Mutated End Wooden Button");
+        translationBuilder.add(ModBlocks.MUTATED_END_WOODEN_DOOR,"Mutated End Wooden Door");
+        translationBuilder.add(ModBlocks.MUTATED_END_WOODEN_FENCE,"Mutated End Wooden Fence");
+        translationBuilder.add(ModBlocks.MUTATED_END_WOODEN_TRAPDOOR,"Mutated End Wooden Trapdoor");
+        translationBuilder.add(ModBlocks.MUTATED_END_WOODEN_FENCE_GATE,"Mutated End Wooden Fence Gate");
+        translationBuilder.add(ModBlocks.MUTATED_END_WOODEN_PRESSURE_PLATE,"Mutated End Wooden Pressure Plate");
+        translationBuilder.add(MODItems.MUTATED_END_WOODEN_SIGN,"Mutated End Wooden Sign");
+        translationBuilder.add(MODItems.MUTATED_END_WOODEN_HANGING_SIGN,"Mutated End Wooden Hanging Sign");
+        translationBuilder.add(MODItems.MUTATED_END_WOODEN_BOAT,"Mutated End Wooden Boat");
+        translationBuilder.add(MODItems.MUTATED_END_WOODEN_CHEST_BOAT,"Mutated End Wooden Boat With Chest");
+        translationBuilder.add(ModBlocks.MUTATED_END_STICK,"Mutated End Stick");
+        translationBuilder.add(MODItems.MUTATED_END_WOODEN_SWORD,"Mutated End Wooden Sword");
+        translationBuilder.add(MODItems.MUTATED_END_WOODEN_PICKAXE,"Mutated End Wooden Pickaxe");
+        translationBuilder.add(MODItems.MUTATED_END_WOODEN_AXE,"Mutated End Wooden Axe");
+        translationBuilder.add(MODItems.MUTATED_END_WOODEN_HOE,"Mutated End Wooden Hoe");
+        translationBuilder.add(MODItems.MUTATED_END_WOODEN_SHOVEL,"Mutated End Wooden Shovel");
+
+        translationBuilder.add(MODItems.VOID_RESIN,"Void Resin");
+        translationBuilder.add(ModBlocks.VOID_RESIN_BLOCK,"Void Resin Block");
+        translationBuilder.add(ModBlocks.VOID_LEAVES,"Void Leaves");
+        translationBuilder.add(ModBlocks.VOID_ROOTS,"Void Roots");
+        translationBuilder.add(ModBlocks.VOID_VINE_HEAD,"Void Vine Head");
+        translationBuilder.add(ModBlocks.VOID_VINE_BODY,"Void Vine Body");
+        translationBuilder.add(ModBlocks.FRUITING_VOID_VINE_HEAD,"Fruiting Void Vine Head");
+        translationBuilder.add(ModBlocks.PHOSPHOR,"Phosphor");
+        translationBuilder.add(ModBlocks.VOID_LOG,"Void Log");
+        translationBuilder.add(ModBlocks.VOID_WOOD,"Void Wood");
+        translationBuilder.add(ModBlocks.STRIPPED_VOID_LOG,"Stripped Void Log");
+        translationBuilder.add(ModBlocks.STRIPPED_VOID_WOOD,"Stripped Void Wood");
+        translationBuilder.add(ModBlocks.VOID_PLANKS,"Void Planks");
+        translationBuilder.add(ModBlocks.VOID_WOODEN_STAIRS,"Void Wooden Stairs");
+        translationBuilder.add(ModBlocks.VOID_WOODEN_SLAB,"Void Wooden Slab");
+        translationBuilder.add(ModBlocks.VOID_WOODEN_BUTTON,"Void Wooden Button");
+        translationBuilder.add(ModBlocks.VOID_WOODEN_DOOR,"Void Wooden Door");
+        translationBuilder.add(ModBlocks.VOID_WOODEN_FENCE,"Void Wooden Fence");
+        translationBuilder.add(ModBlocks.VOID_WOODEN_TRAPDOOR,"Void Wooden Trapdoor");
+        translationBuilder.add(ModBlocks.VOID_WOODEN_FENCE_GATE,"Void Wooden Fence Gate");
+        translationBuilder.add(ModBlocks.VOID_WOODEN_PRESSURE_PLATE,"Void Wooden Pressure Plate");
+        translationBuilder.add(MODItems.VOID_WOODEN_SIGN,"Void Wooden Sign");
+        translationBuilder.add(MODItems.VOID_WOODEN_HANGING_SIGN,"Void Wooden Hanging Sign");
+        translationBuilder.add(MODItems.VOID_WOODEN_BOAT,"Void Wooden Boat");
+        translationBuilder.add(MODItems.VOID_WOODEN_CHEST_BOAT,"Void Wooden Boat With Chest");
+        translationBuilder.add(ModBlocks.VOID_TREE_SAPLING,"Void Tree Sapling");
+        translationBuilder.add(MODItems.VOID_FRUIT,"Void Fruit");
+        translationBuilder.add(ModBlocks.VOID_STICK,"Void Stick");
+        translationBuilder.add(MODItems.VOID_WOODEN_SWORD,"Void Wooden Sword");
+        translationBuilder.add(MODItems.VOID_WOODEN_PICKAXE,"Void Wooden Pickaxe");
+        translationBuilder.add(MODItems.VOID_WOODEN_AXE,"Void Wooden Axe");
+        translationBuilder.add(MODItems.VOID_WOODEN_HOE,"Void Wooden Hoe");
+        translationBuilder.add(MODItems.VOID_WOODEN_SHOVEL,"Void Wooden Shovel");
+
+        translationBuilder.add(ModEffects.VOID_EFFECT,"Void");
+        translationBuilder.add("death.attack.void","%1$s was consumed by the void.");
+        translationBuilder.add("death.attack.void.player","%1$s was disintegrated by the void while fleeing from %2$s.");
+    }
+}
