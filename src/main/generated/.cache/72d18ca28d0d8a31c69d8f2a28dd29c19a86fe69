@@ -1,8 +1,10 @@
-// 1.20.1	2025-10-24T23:05:49.8062718	Fantasy Forest/World Gen
+// 1.20.1	2025-11-16T22:28:34.3268249	Fantasy Forest/World Gen
 3bb9a45a4d46ae8c3e6f1f17e408fd572c2372a7 data\fantasy-forest\worldgen\configured_feature\mutated_end_tree.json
 bcdb4cbe23b29ccb0a107096e2287ef3d4c619c1 data\fantasy-forest\worldgen\configured_feature\large_void_tree.json
 49ddb9dcba2871d91177824024d8df73c5e69a90 data\fantasy-forest\worldgen\configured_feature\permearoma.json
-761c2a7bf243b976f7f8d51f8603f3a3cd82f5f8 data\fantasy-forest\worldgen\configured_feature\mutated_large_end_tree.json
+134c11417868b129213166d9240d5f665426c63c data\fantasy-forest\worldgen\biome\land_of_revelation.json
 9292f2f2d1d74c4e9a13fe2ee6bd566400a6129f data\fantasy-forest\worldgen\configured_feature\large_end_tree.json
+761c2a7bf243b976f7f8d51f8603f3a3cd82f5f8 data\fantasy-forest\worldgen\configured_feature\mutated_large_end_tree.json
 ca8d8f069a2804b9f8b1ea926fa9da32f7239c76 data\fantasy-forest\worldgen\configured_feature\void_tree.json
+78d5710a435830947dc2b90e63e6d8247f8bf3de data\fantasy-forest\worldgen\biome\end_tree_island.json
 d46d2535b14214bbebd5970ea91c6dda02bf0caf data\fantasy-forest\worldgen\configured_feature\end_tree.json

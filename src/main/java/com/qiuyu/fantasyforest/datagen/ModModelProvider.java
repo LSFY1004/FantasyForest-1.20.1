@@ -86,6 +86,8 @@ public class ModModelProvider extends FabricModelProvider {
         }
 
         // 其他物品注册保持不变
+        itemModelGenerator.register(MODItems.SEED_OF_REVELATION,Models.GENERATED);
+
         itemModelGenerator.register(MODItems.PERMEAROMA_LEAF_PIECES,Models.GENERATED);
         itemModelGenerator.register(MODItems.PERMEAROMA_BOAT,Models.GENERATED);
         itemModelGenerator.register(MODItems.PERMEAROMA_CHEST_BOAT,Models.GENERATED);

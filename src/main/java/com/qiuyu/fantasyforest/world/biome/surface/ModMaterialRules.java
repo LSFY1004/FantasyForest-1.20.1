@@ -17,7 +17,7 @@
 ////        MaterialRules.MaterialCondition isAtOrAboveWaterLevel = MaterialRules.water(-1,0);
 //
 //        return MaterialRules.sequence(
-//                MaterialRules.sequence(MaterialRules.condition(MaterialRules.biome(ModBiomes.END_PLAINS),
+//                MaterialRules.sequence(MaterialRules.condition(MaterialRules.biome(ModBiomes.END_TREE_ISLAND),
 //                        MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR,END_STONE)),
 //                        MaterialRules.condition(MaterialRules.STONE_DEPTH_CEILING,END_STONE))
 //                ,MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR,END_LICHEN)

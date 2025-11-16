@@ -4,6 +4,7 @@ import com.qiuyu.fantasyforest.block.ModBlocks;
 import com.qiuyu.fantasyforest.effect.ModEffects;
 import com.qiuyu.fantasyforest.item.MODItems;
 import com.qiuyu.fantasyforest.item.ModItemGroups;
+import com.qiuyu.fantasyforest.world.biome.ModBiomes;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 
@@ -26,6 +27,11 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add("tooltip.fantasyforest.mutated_end_wood.shift","§2空间扭曲§7§o—受击者会被传送到下方数格，随后传送回原地并背对你。");
         translationBuilder.add("tooltip.fantasyforest.void_wood","§8虚空§r");
         translationBuilder.add("tooltip.fantasyforest.void_wood.shift","§8虚空§7§o—短暂间隔后，受击者将持续受到虚空伤害。");
+
+        translationBuilder.add("biome."+ModBiomes.LAND_OF_REVELATION.getValue(),"源识地");
+        translationBuilder.add("biome."+ModBiomes.END_TREE_ISLAND.getValue(),"末影树岛");
+
+        translationBuilder.add(MODItems.SEED_OF_REVELATION,"启示之种");
 
         translationBuilder.add(ModBlocks.ARBOREAL_CRAFTING_TABLE,"元素木工台");
 

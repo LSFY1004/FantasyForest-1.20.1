@@ -1,4 +1,6 @@
 {
+  "biome.fantasy-forest:end_tree_island": "末影树岛",
+  "biome.fantasy-forest:land_of_revelation": "源识地",
   "block.fantasy-forest.acacia_stick": "金合欢木棍",
   "block.fantasy-forest.arboreal_crafting_table": "元素木工台",
   "block.fantasy-forest.bamboo_stick": "竹棍",
@@ -118,6 +120,7 @@
   "item.fantasy-forest.permearoma_pickaxe": "沁芳木镐",
   "item.fantasy-forest.permearoma_shovel": "沁芳木锹",
   "item.fantasy-forest.permearoma_sword": "沁芳木剑",
+  "item.fantasy-forest.seed_of_revelation": "启示之种",
   "item.fantasy-forest.void_fruit": "虚空果",
   "item.fantasy-forest.void_resin": "虚空树脂",
   "item.fantasy-forest.void_wooden_axe": "虚空木斧",

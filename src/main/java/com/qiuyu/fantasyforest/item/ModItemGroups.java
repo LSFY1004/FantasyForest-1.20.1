@@ -27,6 +27,8 @@ public class ModItemGroups {
                         .icon(() -> new ItemStack(MODItems.END_RESIN))
                         .entries((displayContext, entries) -> {
 
+                            entries.add(MODItems.SEED_OF_REVELATION);
+
                             entries.add(ModBlocks.ARBOREAL_CRAFTING_TABLE);
 
                             entries.add(ModBlocks.OAK_STICK);

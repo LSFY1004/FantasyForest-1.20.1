@@ -8,6 +8,7 @@ import com.qiuyu.fantasyforest.entity.ModEntities;
 import com.qiuyu.fantasyforest.entity.vehicle.ModBoats;
 import com.qiuyu.fantasyforest.item.MODItems;
 import com.qiuyu.fantasyforest.item.ModItemGroups;
+import com.qiuyu.fantasyforest.item.spetial.ProgressiveTaskScheduler;
 import com.qiuyu.fantasyforest.recipe.ModRecipes;
 import com.qiuyu.fantasyforest.screen.ModScreenHandlers;
 import com.qiuyu.fantasyforest.world.gen.foliage.ModFoliagePlacerType;
@@ -33,8 +34,6 @@ public class FantasyForest implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		// 将群系添加到末地生成系统
-//		TheEndBiomes.addHighlandsBiome(END_PLAINS, 0.2); // 权重3.0（高于原版1.0）
 		ModBlocks.registerModBlocks();
 		MODItems.registerItems();
 		ModItemGroups.registerGroups();
@@ -49,8 +48,7 @@ public class FantasyForest implements ModInitializer {
         ModEventListeners.registerEvents();
 		ModEntities.registerEntities();
 		ModBoats.registerBoats();
-
-//		ModConfiguredFeatures.boostrap(Registries.CONFIGURED_FEATURE.getKey());
+        ProgressiveTaskScheduler.register();
 
         StrippableBlockRegistry.register(ModBlocks.PERMEAROMA_LOG,ModBlocks.STRIPPED_PERMEAROMA_LOG);
         StrippableBlockRegistry.register(ModBlocks.PERMEAROMA_WOOD,ModBlocks.STRIPPED_PERMEAROMA_WOOD);

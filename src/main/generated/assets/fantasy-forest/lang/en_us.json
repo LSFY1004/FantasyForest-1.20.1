@@ -1,4 +1,6 @@
 {
+  "biome.fantasy-forest:end_tree_island": "End Tree Island",
+  "biome.fantasy-forest:land_of_revelation": "Land of Revelation",
   "block.fantasy-forest.acacia_stick": "Acacia Stick",
   "block.fantasy-forest.arboreal_crafting_table": "Arboreal Crafting Table",
   "block.fantasy-forest.bamboo_stick": "Bamboo Stick",
@@ -118,6 +120,7 @@
   "item.fantasy-forest.permearoma_pickaxe": "Permearoma Pickaxe",
   "item.fantasy-forest.permearoma_shovel": "Permearoma Shovel",
   "item.fantasy-forest.permearoma_sword": "Permearoma Sword",
+  "item.fantasy-forest.seed_of_revelation": "Seed of Revelation",
   "item.fantasy-forest.void_fruit": "Void Fruit",
   "item.fantasy-forest.void_resin": "Void Resin",
   "item.fantasy-forest.void_wooden_axe": "Void Wooden Axe",

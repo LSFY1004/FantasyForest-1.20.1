@@ -1,4 +1,4 @@
-// 1.20.1	2025-10-24T23:05:49.8023659	Fantasy Forest/Block Loot Tables
+// 1.20.1	2025-11-16T22:28:34.3232621	Fantasy Forest/Block Loot Tables
 66c62ae0e17da50042d2a5da9f67b02b23444f60 data\fantasy-forest\loot_tables\blocks\void_roots.json
 15de4b8044cd3bfe061eadb5f25e7f4f42294dc3 data\fantasy-forest\loot_tables\blocks\end_wooden_button.json
 3c5d26cd7b3476389e2f828def0d251c18e0c21c data\fantasy-forest\loot_tables\blocks\arboreal_crafting_table.json
@@ -14,9 +14,9 @@ b7a5d90950c8bfd6ac26611ee7b07a00b3977b74 data\fantasy-forest\loot_tables\blocks\
 05234d98ff387614415b246fe69db104aaa01ea5 data\fantasy-forest\loot_tables\blocks\permearoma_door.json
 be1edc1501fec1622b67c5132f80520c10fd63b3 data\fantasy-forest\loot_tables\blocks\mutated_end_wooden_door.json
 3d9a790b9535992dafaeccfd2a8a85c926dcf617 data\fantasy-forest\loot_tables\blocks\permearoma_stairs.json
-9dcf6d08efca31ea2604bc400323bd1203803a66 data\fantasy-forest\loot_tables\blocks\void_wooden_trapdoor.json
-9d9ddc7e95e8a6457b3c3fdf00eac0461fafda21 data\fantasy-forest\loot_tables\blocks\void_wooden_hanging_sign.json
 7386940c54f7d1d7b6f6883f158e7d900dcb5ebb data\fantasy-forest\loot_tables\blocks\mutated_end_wooden_pressure_plate.json
+9d9ddc7e95e8a6457b3c3fdf00eac0461fafda21 data\fantasy-forest\loot_tables\blocks\void_wooden_hanging_sign.json
+9dcf6d08efca31ea2604bc400323bd1203803a66 data\fantasy-forest\loot_tables\blocks\void_wooden_trapdoor.json
 6fe586aab676135aea1b91551e464df679b9731d data\fantasy-forest\loot_tables\blocks\permearoma_pressure_plate.json
 334929fc2f6049a1776e1d8566be29362c8159f5 data\fantasy-forest\loot_tables\blocks\end_planks.json
 e3a83200f9c29efa26694d501c0c8a268b433ae7 data\fantasy-forest\loot_tables\blocks\stripped_void_log.json
@@ -37,8 +37,8 @@ e7970cfc38515e792147dd7e6c04bf8c20278a76 data\fantasy-forest\loot_tables\blocks\
 51eb220eb2180fb41a13ecda93e29360cea5a192 data\fantasy-forest\loot_tables\blocks\end_wooden_fence.json
 1314979b30a7f355467f8b1b0f90f7f1a4029605 data\fantasy-forest\loot_tables\blocks\mutated_end_wooden_hanging_sign.json
 34fbd0f571defec879e7b55b50525fe19927901c data\fantasy-forest\loot_tables\blocks\void_vine_head.json
-b8f9258090b7c686d6ea84cfd875dc52417175a6 data\fantasy-forest\loot_tables\blocks\void_wooden_slab.json
 f78cf8b09a366e84fb58a31af1ccd24e431685ca data\fantasy-forest\loot_tables\blocks\end_wooden_stairs.json
+b8f9258090b7c686d6ea84cfd875dc52417175a6 data\fantasy-forest\loot_tables\blocks\void_wooden_slab.json
 5b730ba9c3ef1428be7a1a9d0703c8f79d8568b7 data\fantasy-forest\loot_tables\blocks\void_wooden_door.json
 5a67b3b1d8cf544054d4fd38b7129634a1f17150 data\fantasy-forest\loot_tables\blocks\void_wood.json
 7c112fa2bccf8ae20e858329ae0a58a5f3856343 data\fantasy-forest\loot_tables\blocks\end_wooden_fence_gate.json

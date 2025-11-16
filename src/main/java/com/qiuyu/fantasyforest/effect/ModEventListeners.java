@@ -1,17 +1,29 @@
 package com.qiuyu.fantasyforest.effect;
 
+import com.qiuyu.fantasyforest.block.SuppressorManager;
 import com.qiuyu.fantasyforest.item.ModToolMaterials;
 import com.qiuyu.fantasyforest.item.customtool.*;
 import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerWorldEvents;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.item.ItemStack;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.world.World;
 
 import static com.qiuyu.fantasyforest.effect.VoidEffectHandler.cleanupData;
 
 public class ModEventListeners {
 
     public static void registerEvents() {
+        ServerWorldEvents.LOAD.register((MinecraftServer server, ServerWorld world) -> {
+            // 给世界一点时间加载区块，然后恢复抑制器状态
+            server.execute(() -> {
+                if (world.getRegistryKey() == World.OVERWORLD) {
+                    SuppressorManager.restoreSuppressorStates(world);
+                }
+            });
+        });
         // 使用实体伤害事件，覆盖所有伤害情况（包括怪物攻击玩家）
         ServerLivingEntityEvents.ALLOW_DAMAGE.register((entity, source, amount) -> {
             // 只在服务端执行
@@ -52,19 +64,19 @@ public class ModEventListeners {
 
         // 检查所有类型的工具
         if (stack.getItem() instanceof ModSwordItem item) {
-            return item.getMaterial() == ModToolMaterials.VOID_WOOD;
+            return item.getMaterial() == ModToolMaterials.VOID_WOODEN;
         }
         if (stack.getItem() instanceof ModAxeItem item) {
-            return item.getMaterial() == ModToolMaterials.VOID_WOOD;
+            return item.getMaterial() == ModToolMaterials.VOID_WOODEN;
         }
         if (stack.getItem() instanceof ModPickaxeItem item) {
-            return item.getMaterial() == ModToolMaterials.VOID_WOOD;
+            return item.getMaterial() == ModToolMaterials.VOID_WOODEN;
         }
         if (stack.getItem() instanceof ModHoeItem item) {
-            return item.getMaterial() == ModToolMaterials.VOID_WOOD;
+            return item.getMaterial() == ModToolMaterials.VOID_WOODEN;
         }
         if (stack.getItem() instanceof ModShovelItem item) {
-            return item.getMaterial() == ModToolMaterials.VOID_WOOD;
+            return item.getMaterial() == ModToolMaterials.VOID_WOODEN;
         }
 
         return false;

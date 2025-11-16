@@ -1,11 +1,15 @@
 package com.qiuyu.fantasyforest.datagen;
 
+import com.qiuyu.fantasyforest.FantasyForest;
 import com.qiuyu.fantasyforest.block.ModBlocks;
 import com.qiuyu.fantasyforest.tag.ModBlockTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.TagKey;
+import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -117,7 +121,8 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.VOID_VINE_BODY)
                 .add(ModBlocks.VOID_VINE_HEAD);
 
-
+//        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK,new Identifier(FantasyForest.MOD_ID,id)))
+//                .add();
 
         getOrCreateTagBuilder(ModBlockTags.STICKS)
                 .add(ModBlocks.OAK_STICK)

@@ -1,10 +1,14 @@
 package com.qiuyu.fantasyforest.item.customtool;
 
 import com.qiuyu.fantasyforest.KeyHelper;
+import com.qiuyu.fantasyforest.effect.ModEffects;
 import com.qiuyu.fantasyforest.effect.VoidEffectHandler;
 import com.qiuyu.fantasyforest.item.ModToolMaterials;
+import com.qiuyu.fantasyforest.tag.ModBlockTags;
+import net.minecraft.block.BlockState;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.text.Text;
@@ -27,13 +31,13 @@ public class ModSwordItem extends SwordItem {
             case PERMEAROMA -> {
                 return "tooltip.fantasyforest.permearoma" + s;
             }
-            case END_WOOD -> {
+            case END_WOODEN -> {
                 return "tooltip.fantasyforest.end_wood" + s;
             }
-            case MUTATED_END_WOOD -> {
+            case MUTATED_END_WOODEN -> {
                 return "tooltip.fantasyforest.mutated_end_wood" + s;
             }
-            case VOID_WOOD -> {
+            case VOID_WOODEN -> {
                 return "tooltip.fantasyforest.void_wood" + s;
             }
             default -> {
@@ -42,13 +46,28 @@ public class ModSwordItem extends SwordItem {
         }
     }
 
+//    @Override
+//    public float getMiningSpeedMultiplier(ItemStack stack, BlockState state) {
+//        if(isSameWood(stack,state))
+//        return super.getMiningSpeedMultiplier(stack, state);
+//    }
+//
+//    public boolean isSameWood(ItemStack stack, BlockState state) {
+//        return state.isIn(ModBlockTags)
+//    }
+
     public static void hitEffect(ModToolMaterials material, LivingEntity target){
         switch (material){
-            case VOID_WOOD -> {
+            case VOID_WOODEN -> {
                 VoidEffectHandler.applyVoidEffect(target);
-                break;
             }
-
+            case END_WOODEN -> target.addStatusEffect(new StatusEffectInstance(
+                    ModEffects.SPATIAL_CONSTRAINT,
+                    80,
+                    0,
+                    false, // 不显示粒子
+                    true   // 显示图标
+            ));
         }
     }
 

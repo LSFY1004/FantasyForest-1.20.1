@@ -4,6 +4,7 @@ import com.qiuyu.fantasyforest.datagen.*;
 import com.qiuyu.fantasyforest.world.ModConfiguredFeatures;
 import com.qiuyu.fantasyforest.world.ModPlacedFeatures;
 //import com.qiuyu.fantasyforest.world.biome.ModBiomes;
+import com.qiuyu.fantasyforest.world.biome.ModBiomes;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
@@ -28,6 +29,6 @@ public class FantasyForestDataGenerator implements DataGeneratorEntrypoint {
     public void buildRegistry(RegistryBuilder registryBuilder){
         registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::boostrap);
         registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::boostrap);
-//        registryBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::boostrap);
+        registryBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::boostrap);
     }
 }

@@ -63,10 +63,10 @@ public class ModBlocks {
     public static final Block DEAD_END_LICHEN = register("dead_end_lichen",new DeadEndLichenBlock(AbstractBlock.Settings.copy(Blocks.END_STONE)));
 
     public static final Block END_RESIN_BLOCK = register("end_resin_block", new Block(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_PURPLE).strength(0.5F).sounds(BlockSoundGroup.HONEY)));
-    public static final Block END_LOG = register("end_log", new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_PURPLE).strength(5.0F,10.0F).instrument(Instrument.BASS).requiresTool().sounds(BlockSoundGroup.WOOD)));
-    public static final Block END_WOOD = register("end_wood",new PillarBlock(AbstractBlock.Settings.copy(END_LOG)));
-    public static final Block STRIPPED_END_LOG = register("stripped_end_log", new PillarBlock(AbstractBlock.Settings.copy(END_LOG)));
-    public static final Block STRIPPED_END_WOOD = register("stripped_end_wood",new PillarBlock(AbstractBlock.Settings.copy(END_LOG)));
+    public static final Block END_LOG = register("end_log", new EndLogBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_PURPLE).strength(5.0F,10.0F).instrument(Instrument.BASS).requiresTool().sounds(BlockSoundGroup.WOOD)));
+    public static final Block END_WOOD = register("end_wood",new EndLogBlock(AbstractBlock.Settings.copy(END_LOG)));
+    public static final Block STRIPPED_END_LOG = register("stripped_end_log", new EndLogBlock(AbstractBlock.Settings.copy(END_LOG)));
+    public static final Block STRIPPED_END_WOOD = register("stripped_end_wood",new EndLogBlock(AbstractBlock.Settings.copy(END_LOG)));
     public static final Block END_PLANKS = register("end_planks", new Block(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_PURPLE).strength(2.0F,10.0F).instrument(Instrument.BASS).sounds(BlockSoundGroup.WOOD)));
     public static final Block END_LEAVES = register("end_leaves", new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block END_WOODEN_STAIRS = register("end_wooden_stairs",
@@ -100,11 +100,11 @@ public class ModBlocks {
     public static final Block END_TREE_SAPLING = register("end_tree_sapling",
             new EndTreeSaplingBlock(new EndTreeSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
 
-    public static final Block MUTATED_END_LOG = register("mutated_end_log", new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_GREEN).strength(5.0F,10.0F).instrument(Instrument.BASS).requiresTool().sounds(BlockSoundGroup.WOOD)));
-    public static final Block MUTATED_END_WOOD = register("mutated_end_wood",new PillarBlock(AbstractBlock.Settings.copy(MUTATED_END_LOG)));
+    public static final Block MUTATED_END_LOG = register("mutated_end_log", new EndLogBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_GREEN).strength(5.0F,10.0F).instrument(Instrument.BASS).requiresTool().sounds(BlockSoundGroup.WOOD)));
+    public static final Block MUTATED_END_WOOD = register("mutated_end_wood",new EndLogBlock(AbstractBlock.Settings.copy(MUTATED_END_LOG)));
     public static final Block MUTATED_END_RESIN_BLOCK = register("mutated_end_resin_block", new Block(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_GREEN).strength(0.5F).sounds(BlockSoundGroup.HONEY)));
-    public static final Block STRIPPED_MUTATED_END_LOG = register("stripped_mutated_end_log", new PillarBlock(AbstractBlock.Settings.copy(MUTATED_END_LOG)));
-    public static final Block STRIPPED_MUTATED_END_WOOD = register("stripped_mutated_end_wood",new PillarBlock(AbstractBlock.Settings.copy(MUTATED_END_LOG)));
+    public static final Block STRIPPED_MUTATED_END_LOG = register("stripped_mutated_end_log", new EndLogBlock(AbstractBlock.Settings.copy(MUTATED_END_LOG)));
+    public static final Block STRIPPED_MUTATED_END_WOOD = register("stripped_mutated_end_wood",new EndLogBlock(AbstractBlock.Settings.copy(MUTATED_END_LOG)));
     public static final Block MUTATED_END_PLANKS = register("mutated_end_planks", new Block(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_GREEN).strength(2.0F,10.0F).instrument(Instrument.BASS).sounds(BlockSoundGroup.WOOD)));
     public static final Block MUTATED_END_WOODEN_STAIRS = register("mutated_end_wooden_stairs",
             new StairsBlock(MUTATED_END_PLANKS.getDefaultState(),AbstractBlock.Settings.copy(MUTATED_END_PLANKS)));

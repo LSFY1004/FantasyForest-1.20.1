@@ -4,6 +4,7 @@ import com.qiuyu.fantasyforest.FantasyForest;
 import com.qiuyu.fantasyforest.block.ModBlocks;
 import com.qiuyu.fantasyforest.entity.vehicle.ModBoats;
 import com.qiuyu.fantasyforest.item.customtool.*;
+import com.qiuyu.fantasyforest.item.spetial.SeedOfRevelationItem;
 import com.terraformersmc.terraform.boat.api.item.TerraformBoatItemHelper;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -16,6 +17,8 @@ import net.minecraft.util.Identifier;
 import static com.qiuyu.fantasyforest.block.ModBlocks.*;
 
 public class MODItems {
+
+    public static final Item SEED_OF_REVELATION = registerItem("seed_of_revelation", new SeedOfRevelationItem(new Item.Settings()));
 
     public static final Item PERMEAROMA_LEAF_PIECES = registerItem("permearoma_leaf_pieces", new Item(new Item.Settings()));
     public static final Item PERMEAROMA_SIGN = registerItem("permearoma_sign",
@@ -47,15 +50,15 @@ public class MODItems {
             ModBoats.END_WOODEN_BOAT,ModBoats.END_WOODEN_BOAT_KEY,false);
     public static final Item END_WOODEN_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(
             ModBoats.END_WOODEN_CHEST_BOAT,ModBoats.END_WOODEN_BOAT_KEY,true);
-    public static final Item END_WOODEN_SWORD = registerItems("end_wooden_sword",new ModSwordItem(ModToolMaterials.END_WOOD,
+    public static final Item END_WOODEN_SWORD = registerItems("end_wooden_sword",new ModSwordItem(ModToolMaterials.END_WOODEN,
             3,-2.0f,new Item.Settings()));
-    public static final Item END_WOODEN_SHOVEL = registerItems("end_wooden_shovel",new ModShovelItem(ModToolMaterials.END_WOOD,
+    public static final Item END_WOODEN_SHOVEL = registerItems("end_wooden_shovel",new ModShovelItem(ModToolMaterials.END_WOODEN,
             1.5F, -3.0F, new Item.Settings()));
-    public static final Item END_WOODEN_PICKAXE = registerItems("end_wooden_pickaxe",new ModPickaxeItem(ModToolMaterials.END_WOOD,
+    public static final Item END_WOODEN_PICKAXE = registerItems("end_wooden_pickaxe",new ModPickaxeItem(ModToolMaterials.END_WOODEN,
             1, -2.8F, new Item.Settings()));
-    public static final Item END_WOODEN_AXE = registerItems("end_wooden_axe",new ModAxeItem(ModToolMaterials.END_WOOD,
+    public static final Item END_WOODEN_AXE = registerItems("end_wooden_axe",new ModAxeItem(ModToolMaterials.END_WOODEN,
             6.0F, -3.2F, new Item.Settings()));
-    public static final Item END_WOODEN_HOE = registerItems("end_wooden_hoe",new ModHoeItem(ModToolMaterials.END_WOOD,
+    public static final Item END_WOODEN_HOE = registerItems("end_wooden_hoe",new ModHoeItem(ModToolMaterials.END_WOODEN,
             0, -3.0F, new Item.Settings()));
 
 
@@ -69,15 +72,15 @@ public class MODItems {
     public static final Item MUTATED_END_WOODEN_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(
             ModBoats.MUTATED_END_WOODEN_CHEST_BOAT,ModBoats.MUTATED_END_WOODEN_BOAT_KEY,true);
     public static final Item MUTATED_END_RESIN = registerItem("mutated_end_resin", new Item(new Item.Settings()));
-    public static final Item MUTATED_END_WOODEN_SWORD = registerItems("mutated_end_wooden_sword",new ModSwordItem(ModToolMaterials.MUTATED_END_WOOD,
+    public static final Item MUTATED_END_WOODEN_SWORD = registerItems("mutated_end_wooden_sword",new ModSwordItem(ModToolMaterials.MUTATED_END_WOODEN,
             3,-2.0f,new Item.Settings()));
-    public static final Item MUTATED_END_WOODEN_SHOVEL = registerItems("mutated_end_wooden_shovel",new ModShovelItem(ModToolMaterials.MUTATED_END_WOOD,
+    public static final Item MUTATED_END_WOODEN_SHOVEL = registerItems("mutated_end_wooden_shovel",new ModShovelItem(ModToolMaterials.MUTATED_END_WOODEN,
             1.5F, -3.0F, new Item.Settings()));
-    public static final Item MUTATED_END_WOODEN_PICKAXE = registerItems("mutated_end_wooden_pickaxe",new ModPickaxeItem(ModToolMaterials.MUTATED_END_WOOD,
+    public static final Item MUTATED_END_WOODEN_PICKAXE = registerItems("mutated_end_wooden_pickaxe",new ModPickaxeItem(ModToolMaterials.MUTATED_END_WOODEN,
             1, -2.8F, new Item.Settings()));
-    public static final Item MUTATED_END_WOODEN_AXE = registerItems("mutated_end_wooden_axe",new ModAxeItem(ModToolMaterials.MUTATED_END_WOOD,
+    public static final Item MUTATED_END_WOODEN_AXE = registerItems("mutated_end_wooden_axe",new ModAxeItem(ModToolMaterials.MUTATED_END_WOODEN,
             6.0F, -3.2F, new Item.Settings()));
-    public static final Item MUTATED_END_WOODEN_HOE = registerItems("mutated_end_wooden_hoe",new ModHoeItem(ModToolMaterials.MUTATED_END_WOOD,
+    public static final Item MUTATED_END_WOODEN_HOE = registerItems("mutated_end_wooden_hoe",new ModHoeItem(ModToolMaterials.MUTATED_END_WOODEN,
             0, -3.0F, new Item.Settings()));
 
 
@@ -92,15 +95,15 @@ public class MODItems {
             ModBoats.VOID_WOODEN_BOAT,ModBoats.VOID_WOODEN_BOAT_KEY,false);
     public static final Item VOID_WOODEN_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(
             ModBoats.VOID_WOODEN_CHEST_BOAT,ModBoats.VOID_WOODEN_BOAT_KEY,true);
-    public static final Item VOID_WOODEN_SWORD = registerItems("void_wooden_sword",new ModSwordItem(ModToolMaterials.VOID_WOOD,
+    public static final Item VOID_WOODEN_SWORD = registerItems("void_wooden_sword",new ModSwordItem(ModToolMaterials.VOID_WOODEN,
             3,-2.0f,new Item.Settings()));
-    public static final Item VOID_WOODEN_SHOVEL = registerItems("void_wooden_shovel",new ModShovelItem(ModToolMaterials.VOID_WOOD,
+    public static final Item VOID_WOODEN_SHOVEL = registerItems("void_wooden_shovel",new ModShovelItem(ModToolMaterials.VOID_WOODEN,
             1.5F, -3.0F, new Item.Settings()));
-    public static final Item VOID_WOODEN_PICKAXE = registerItems("void_wooden_pickaxe",new ModPickaxeItem(ModToolMaterials.VOID_WOOD,
+    public static final Item VOID_WOODEN_PICKAXE = registerItems("void_wooden_pickaxe",new ModPickaxeItem(ModToolMaterials.VOID_WOODEN,
             1, -2.8F, new Item.Settings()));
-    public static final Item VOID_WOODEN_AXE = registerItems("void_wooden_axe",new ModAxeItem(ModToolMaterials.VOID_WOOD,
+    public static final Item VOID_WOODEN_AXE = registerItems("void_wooden_axe",new ModAxeItem(ModToolMaterials.VOID_WOODEN,
             6.0F, -3.2F, new Item.Settings()));
-    public static final Item VOID_WOODEN_HOE = registerItems("void_wooden_hoe",new ModHoeItem(ModToolMaterials.VOID_WOOD,
+    public static final Item VOID_WOODEN_HOE = registerItems("void_wooden_hoe",new ModHoeItem(ModToolMaterials.VOID_WOODEN,
             0, -3.0F, new Item.Settings()));
 
 
@@ -115,6 +118,7 @@ public class MODItems {
 
     private static void addItemToItemGroup(FabricItemGroupEntries entries){
 
+        entries.add(SEED_OF_REVELATION);
         entries.add(OAK_STICK);
         entries.add(SPRUCE_STICK);
         entries.add(BIRCH_STICK);

@@ -1,4 +1,4 @@
-// 1.20.1	2025-10-24T23:05:49.8036303	Fantasy Forest/Model Definitions
+// 1.20.1	2025-11-16T22:28:34.3243796	Fantasy Forest/Model Definitions
 b3908eb035667fd940012f86e47efe934a97f3de assets\fantasy-forest\models\block\dark_oak_stick_x.json
 4e94599ea5cf94598cfb07e92ae1f1670f969662 assets\fantasy-forest\models\block\mutated_end_wooden_slab_top.json
 2460c8734ba8197aa3e83ccd5da4149d206d7ceb assets\fantasy-forest\models\block\spruce_stick_x.json
@@ -44,8 +44,8 @@ d18cdb1c44eb04faefb9bd6f07bd7104fbfbd18f assets\fantasy-forest\models\item\end_p
 309d0a875d58201506ac3c8f6c9320fc21960ecb assets\fantasy-forest\blockstates\void_wood.json
 dadf266340ae11c2529f814ef2e73507555b0874 assets\fantasy-forest\models\block\permearoma_stairs_outer.json
 2ef9b7aa6c9180cc3283871669cabb820c7c8f70 assets\fantasy-forest\blockstates\mutated_end_wooden_trapdoor.json
-eba4fba261899b2b0e0329dafc8a99611a7f34e4 assets\fantasy-forest\models\block\stripped_mutated_end_log.json
 ce65bde92b15d88937e051ffa70adc0be21e820f assets\fantasy-forest\models\item\birch_stick.json
+eba4fba261899b2b0e0329dafc8a99611a7f34e4 assets\fantasy-forest\models\block\stripped_mutated_end_log.json
 f196c65cbbd4e96ff0c3781ad4b77090522abc63 assets\fantasy-forest\models\block\birch_stick_side.json
 2bbce97768339a5c01e1fe05d561e48094c03c52 assets\fantasy-forest\blockstates\daro_oak_stick.json
 9f36bca6d9e18bb2e41d1d575a8f0eeee11b9c49 assets\fantasy-forest\models\item\void_wooden_hanging_sign.json
@@ -55,6 +55,7 @@ d0afcc3d37d062f0b242a91c833b401406603e66 assets\fantasy-forest\models\item\perme
 7f512c4ac5d91ff52dd64225de97815c7911057b assets\fantasy-forest\models\item\permearoma_chest_boat.json
 125e167661aad10a13a7de6384f7783985c337b4 assets\fantasy-forest\blockstates\permearoma_fence_gate.json
 241970794633afa070363cb9878df309a955a933 assets\fantasy-forest\blockstates\phosphor.json
+5e2645d385590d5bfe2b4b813e3e988d06654667 assets\fantasy-forest\models\item\seed_of_revelation.json
 09c2e44e791777da1ae416e2b3b929de879ea1e3 assets\fantasy-forest\models\block\permearoma_door_bottom_left.json
 59e9db3b761f29909669d11d8a0b8c69dc7d5dd7 assets\fantasy-forest\models\item\void_stick.json
 043383181c8c10260fbd5070bc16fbfb808edc87 assets\fantasy-forest\blockstates\mutated_end_wooden_button.json
@@ -92,9 +93,9 @@ ab13654448266012b650dafd391866ee42d1fd10 assets\fantasy-forest\blockstates\perme
 b91bf9146770ecf2c4ccbd003edfec5b4f81eeff assets\fantasy-forest\models\block\mutated_end_wooden_button.json
 92bfd46875e0dd37e087018aa04de924b05b8cbf assets\fantasy-forest\models\block\void_wooden_fence_side.json
 06b5d537787500500224c04b4edfa1ad56425d5c assets\fantasy-forest\models\item\cherry_stick.json
-0bc75ee9a85d87ca7383529c0a784a766e566e68 assets\fantasy-forest\models\item\warped_stick.json
-eb457df0fae364eaa033080ff62aeba56b678211 assets\fantasy-forest\blockstates\mutated_end_wooden_slab.json
 07eaef0b7bab6547833fdfb8d3c9ee330074b8e8 assets\fantasy-forest\blockstates\permearoma_pressure_plate.json
+eb457df0fae364eaa033080ff62aeba56b678211 assets\fantasy-forest\blockstates\mutated_end_wooden_slab.json
+0bc75ee9a85d87ca7383529c0a784a766e566e68 assets\fantasy-forest\models\item\warped_stick.json
 75dc15784473e0fd6c4a8313605d0f3ee0759db3 assets\fantasy-forest\models\item\end_wooden_pressure_plate.json
 6e9a6314af5cb18eaf63357c93225e4626e770f4 assets\fantasy-forest\models\block\permearoma_fence_inventory.json
 fcca43befa3f9604dc21a1289c99cc2cf7900029 assets\fantasy-forest\models\item\permearoma_stairs.json
@@ -272,8 +273,8 @@ eca1ee17471aace4d1e5ca4842db7d143d6ff182 assets\fantasy-forest\models\block\void
 f0306bda8b818923bb43a8c14f3513a98d25f503 assets\fantasy-forest\models\block\end_wooden_door_top_left_open.json
 efbd896cf56fa794ab5d91b9aeb9a60c8de45b83 assets\fantasy-forest\models\item\mutated_end_wooden_sign.json
 9e828e9c2aec9c47277589001361a6b498a60691 assets\fantasy-forest\models\block\void_wooden_door_top_left_open.json
-11a4042bfa394aecab5a780cbbe3f914221ce5ad assets\fantasy-forest\blockstates\permearoma_hanging_sign.json
 11a4042bfa394aecab5a780cbbe3f914221ce5ad assets\fantasy-forest\blockstates\permearoma_wall_hanging_sign.json
+11a4042bfa394aecab5a780cbbe3f914221ce5ad assets\fantasy-forest\blockstates\permearoma_hanging_sign.json
 2a4ec638707230479201e92fcc9dbc857b8904ab assets\fantasy-forest\models\block\void_log.json
 d1bb014af46c43682029450d35ff626898b9e40f assets\fantasy-forest\models\item\permearoma_button.json
 2ce87db53c5b8bda73e6e89d7dfbb2ce4a1a1b93 assets\fantasy-forest\models\block\stripped_void_log.json
@@ -337,9 +338,9 @@ ac6e3adee302b3574cb84ffb4d8b3625d4d17cd0 assets\fantasy-forest\models\block\bamb
 3fcc1cd37f4d42ff8f32557766486627c680447a assets\fantasy-forest\models\block\end_wooden_fence_inventory.json
 a11573974b1913004c43306558ab70f4ced47ebf assets\fantasy-forest\models\block\end_wooden_button_inventory.json
 413cbcae14429862aafcd64eb54ca5210944acfc assets\fantasy-forest\blockstates\end_log.json
+ac89ddc436b5103413fed8d15fe4547de2a0e439 assets\fantasy-forest\models\item\mutated_end_log.json
 5285ccd2ebb68ce6e80dd712fde4d9bb81420ea7 assets\fantasy-forest\models\block\end_tree_sapling.json
 49ee65621d23acac813d6900055f6e3f02edc816 assets\fantasy-forest\models\item\mangrove_stick.json
-ac89ddc436b5103413fed8d15fe4547de2a0e439 assets\fantasy-forest\models\item\mutated_end_log.json
 0346d36af53d624ae6f0fccba17649b09e38e3cd assets\fantasy-forest\blockstates\permearoma_trapdoor.json
 b2bd7818b0a725a1978d7aaaa63d2526422b0ac1 assets\fantasy-forest\blockstates\permearoma_button.json
 2fa796f15ce9f9f7ca398cefaed51680b0a8caf2 assets\fantasy-forest\blockstates\oak_stick.json

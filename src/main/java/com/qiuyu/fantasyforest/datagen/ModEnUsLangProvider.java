@@ -4,6 +4,7 @@ import com.qiuyu.fantasyforest.block.ModBlocks;
 import com.qiuyu.fantasyforest.effect.ModEffects;
 import com.qiuyu.fantasyforest.item.MODItems;
 import com.qiuyu.fantasyforest.item.ModItemGroups;
+import com.qiuyu.fantasyforest.world.biome.ModBiomes;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 
@@ -26,6 +27,11 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add("tooltip.fantasyforest.mutated_end_wood.shift","§2Spatial Warp§7§o - The instantly warping space leaves anyone within disoriented.");
         translationBuilder.add("tooltip.fantasyforest.void_wood","§8The Void§r");
         translationBuilder.add("tooltip.fantasyforest.void_wood.shift","§8The Void§7§o - None who enter the Void can endure its depths for long.");
+
+        translationBuilder.add("biome."+ModBiomes.LAND_OF_REVELATION.getValue(),"Land of Revelation");
+        translationBuilder.add("biome."+ModBiomes.END_TREE_ISLAND.getValue(),"End Tree Island");
+
+        translationBuilder.add(MODItems.SEED_OF_REVELATION,"Seed of Revelation");
 
         translationBuilder.add(ModBlocks.ARBOREAL_CRAFTING_TABLE,"Arboreal Crafting Table");
 

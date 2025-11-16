@@ -66,7 +66,7 @@
 //    @Unique
 //    private RegistryEntry<Biome> fantasyforest$getCustomBiome(TheEndBiomeSource source) {
 //        if (fantasyforest$cachedEndPlains == null) {
-//            Identifier targetId = ModBiomes.END_PLAINS.getValue();
+//            Identifier targetId = ModBiomes.END_TREE_ISLAND.getValue();
 //            for (RegistryEntry<Biome> entry : source.getBiomes()) {
 //                if (entry.getKey().isPresent() &&
 //                        entry.getKey().get().getValue().equals(targetId)) {
