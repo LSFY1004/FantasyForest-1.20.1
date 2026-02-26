@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "fantasy-forest:revelation_log",
+    "fantasy-forest:revelation_wood",
+    "fantasy-forest:stripped_revelation_log",
+    "fantasy-forest:stripped_revelation_wood",
+    "fantasy-forest:revelation_planks",
+    "fantasy-forest:revelation_button",
+    "fantasy-forest:revelation_door",
+    "fantasy-forest:revelation_pressure_plate",
+    "fantasy-forest:revelation_slab",
+    "fantasy-forest:revelation_stairs",
+    "fantasy-forest:revelation_trapdoor",
+    "fantasy-forest:revelation_wall_sign",
+    "fantasy-forest:revelation_wall_hanging_sign",
+    "fantasy-forest:revelation_fence",
+    "fantasy-forest:revelation_fence_gate",
+    "fantasy-forest:revelation_hanging_sign",
+    "fantasy-forest:revelation_sign",
+    "fantasy-forest:revelation_stick"
+  ]
+}

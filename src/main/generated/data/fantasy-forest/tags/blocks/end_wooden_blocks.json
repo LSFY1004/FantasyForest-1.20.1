@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "fantasy-forest:end_log",
+    "fantasy-forest:end_wood",
+    "fantasy-forest:stripped_end_log",
+    "fantasy-forest:stripped_end_wood",
+    "fantasy-forest:end_planks",
+    "fantasy-forest:end_wooden_button",
+    "fantasy-forest:end_wooden_door",
+    "fantasy-forest:end_wooden_pressure_plate",
+    "fantasy-forest:end_wooden_slab",
+    "fantasy-forest:end_wooden_stairs",
+    "fantasy-forest:end_wooden_trapdoor",
+    "fantasy-forest:end_wooden_wall_sign",
+    "fantasy-forest:end_wooden_wall_hanging_sign",
+    "fantasy-forest:end_wooden_fence",
+    "fantasy-forest:end_wooden_fence_gate",
+    "fantasy-forest:end_wooden_hanging_sign",
+    "fantasy-forest:end_wooden_sign",
+    "fantasy-forest:end_stick"
+  ]
+}

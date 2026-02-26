@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "fantasy-forest:block/revelation_slab"
+    },
+    "type=double": {
+      "model": "fantasy-forest:block/revelation_planks"
+    },
+    "type=top": {
+      "model": "fantasy-forest:block/revelation_slab_top"
+    }
+  }
+}

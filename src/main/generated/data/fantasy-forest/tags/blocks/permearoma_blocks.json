@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "fantasy-forest:permearoma_log",
+    "fantasy-forest:permearoma_wood",
+    "fantasy-forest:stripped_permearoma_log",
+    "fantasy-forest:stripped_permearoma_wood",
+    "fantasy-forest:permearoma_planks",
+    "fantasy-forest:permearoma_button",
+    "fantasy-forest:permearoma_door",
+    "fantasy-forest:permearoma_pressure_plate",
+    "fantasy-forest:permearoma_slab",
+    "fantasy-forest:permearoma_stairs",
+    "fantasy-forest:permearoma_trapdoor",
+    "fantasy-forest:permearoma_wall_sign",
+    "fantasy-forest:permearoma_wall_hanging_sign",
+    "fantasy-forest:permearoma_fence",
+    "fantasy-forest:permearoma_fence_gate",
+    "fantasy-forest:permearoma_hanging_sign",
+    "fantasy-forest:permearoma_sign",
+    "fantasy-forest:permearoma_stick"
+  ]
+}

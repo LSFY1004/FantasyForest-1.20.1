@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "fantasy-forest:void_log",
+    "fantasy-forest:void_wood",
+    "fantasy-forest:stripped_void_log",
+    "fantasy-forest:stripped_void_wood",
+    "fantasy-forest:void_planks",
+    "fantasy-forest:void_wooden_button",
+    "fantasy-forest:void_wooden_door",
+    "fantasy-forest:void_wooden_pressure_plate",
+    "fantasy-forest:void_wooden_slab",
+    "fantasy-forest:void_wooden_stairs",
+    "fantasy-forest:void_wooden_trapdoor",
+    "fantasy-forest:void_wooden_wall_sign",
+    "fantasy-forest:void_wooden_wall_hanging_sign",
+    "fantasy-forest:void_wooden_fence",
+    "fantasy-forest:void_wooden_fence_gate",
+    "fantasy-forest:void_wooden_hanging_sign",
+    "fantasy-forest:void_wooden_sign",
+    "fantasy-forest:void_stick"
+  ]
+}
