@@ -44,7 +44,8 @@
       "state": {
         "Name": "fantasy-forest:end_log",
         "Properties": {
-          "axis": "y"
+          "axis": "y",
+          "trans": "false"
         }
       }
     }

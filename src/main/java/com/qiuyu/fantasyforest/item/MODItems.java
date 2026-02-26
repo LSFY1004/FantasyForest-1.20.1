@@ -20,6 +20,26 @@ public class MODItems {
 
     public static final Item SEED_OF_REVELATION = registerItem("seed_of_revelation", new SeedOfRevelationItem(new Item.Settings()));
 
+    public static final Item REVELATION_SIGN = registerItem("revelation_sign",
+            new SignItem(new Item.Settings().maxCount(16),ModBlocks.REVELATION_SIGN, ModBlocks.REVELATION_WALL_SIGN));
+    public static final Item REVELATION_HANGING_SIGN = registerItem("revelation_hanging_sign",
+            new HangingSignItem(ModBlocks.REVELATION_HANGING_SIGN, ModBlocks.REVELATION_WALL_HANGING_SIGN,new Item.Settings().maxCount(16)));
+    public static final Item REVELATION_BOAT = TerraformBoatItemHelper.registerBoatItem(
+            ModBoats.REVELATION_BOAT,ModBoats.REVELATION_BOAT_KEY,false);
+    public static final Item REVELATION_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(
+            ModBoats.REVELATION_CHEST_BOAT,ModBoats.REVELATION_BOAT_KEY,true);
+    public static final Item REVELATION_SWORD = registerItems("revelation_sword",new ModSwordItem(ModToolMaterials.REVELATION,
+            3,-2.0f,new Item.Settings()));
+    public static final Item REVELATION_SHOVEL = registerItems("revelation_shovel",new ModShovelItem(ModToolMaterials.REVELATION,
+            1.5F, -3.0F, new Item.Settings()));
+    public static final Item REVELATION_PICKAXE = registerItems("revelation_pickaxe",new ModPickaxeItem(ModToolMaterials.REVELATION,
+            1, -2.8F, new Item.Settings()));
+    public static final Item REVELATION_AXE = registerItems("revelation_axe",new ModAxeItem(ModToolMaterials.REVELATION,
+            6.0F, -3.2F, new Item.Settings()));
+    public static final Item REVELATION_HOE = registerItems("revelation_hoe",new ModHoeItem(ModToolMaterials.REVELATION,
+            0, -3.0F, new Item.Settings()));
+
+
     public static final Item PERMEAROMA_LEAF_PIECES = registerItem("permearoma_leaf_pieces", new Item(new Item.Settings()));
     public static final Item PERMEAROMA_SIGN = registerItem("permearoma_sign",
             new SignItem(new Item.Settings().maxCount(16),ModBlocks.PERMEAROMA_SIGN, ModBlocks.PERMEAROMA_WALL_SIGN));
@@ -129,6 +149,7 @@ public class MODItems {
         entries.add(CHERRY_STICK);
         entries.add(CRIMSON_STICK);
         entries.add(WARPED_STICK);
+        entries.add(REVELATION_STICK);
         entries.add(PERMEAROMA_STICK);
         entries.add(END_STICK);
         entries.add(MUTATED_END_STICK);
@@ -150,6 +171,21 @@ public class MODItems {
         entries.add(CHERRY_STICK);
         entries.add(CRIMSON_STICK);
         entries.add(WARPED_STICK);
+
+        entries.add(REVELATION_LOG);
+        entries.add(REVELATION_WOOD);
+        entries.add(STRIPPED_REVELATION_LOG);
+        entries.add(STRIPPED_REVELATION_WOOD);
+        entries.add(REVELATION_PLANKS);
+        entries.add(REVELATION_STAIRS);
+        entries.add(REVELATION_SLAB);
+        entries.add(REVELATION_FENCE);
+        entries.add(REVELATION_FENCE_GATE);
+        entries.add(REVELATION_DOOR);
+        entries.add(REVELATION_TRAPDOOR);
+        entries.add(REVELATION_PRESSURE_PLATE);
+        entries.add(REVELATION_BUTTON);
+        entries.add(REVELATION_STICK);
 
         entries.add(PERMEAROMA_LOG);
         entries.add(PERMEAROMA_WOOD);
@@ -216,10 +252,12 @@ public class MODItems {
     }
 
     private static void addItemToItemGroupC(FabricItemGroupEntries entries){
+        entries.add(REVELATION_SWORD);
         entries.add(PERMEAROMA_SWORD);
         entries.add(END_WOODEN_SWORD);
         entries.add(MUTATED_END_WOODEN_SWORD);
         entries.add(VOID_WOODEN_SWORD);
+        entries.add(REVELATION_AXE);
         entries.add(PERMEAROMA_AXE);
         entries.add(END_WOODEN_AXE);
         entries.add(MUTATED_END_WOODEN_AXE);
@@ -230,16 +268,19 @@ public class MODItems {
         entries.add(END_LICHEN);
         entries.add(DEAD_END_LICHEN);
 
+        entries.add(REVELATION_LOG);
         entries.add(PERMEAROMA_LOG);
         entries.add(END_LOG);
         entries.add(MUTATED_END_LOG);
         entries.add(VOID_LOG);
         entries.add(VOID_ROOTS);
 
+        entries.add(REVELATION_LEAVES);
         entries.add(PERMEAROMA_LEAVES);
         entries.add(END_LEAVES);
         entries.add(VOID_LEAVES);
 
+        entries.add(REVELATION_SAPLING);
         entries.add(PERMEAROMA_SAPLING);
         entries.add(END_TREE_SAPLING);
         entries.add(VOID_TREE_SAPLING);
@@ -257,6 +298,8 @@ public class MODItems {
 
     private static void addItemToItemGroupG(FabricItemGroupEntries entries){
         entries.add(ARBOREAL_CRAFTING_TABLE);
+        entries.add(REVELATION_SIGN);
+        entries.add(REVELATION_HANGING_SIGN);
         entries.add(PERMEAROMA_SIGN);
         entries.add(PERMEAROMA_HANGING_SIGN);
         entries.add(END_WOODEN_SIGN);
@@ -268,6 +311,10 @@ public class MODItems {
     }
 
     private static void addItemToItemGroupT(FabricItemGroupEntries entries){
+        entries.add(REVELATION_HOE);
+        entries.add(REVELATION_PICKAXE);
+        entries.add(REVELATION_AXE);
+        entries.add(REVELATION_SHOVEL);
         entries.add(PERMEAROMA_HOE);
         entries.add(PERMEAROMA_PICKAXE);
         entries.add(PERMEAROMA_AXE);

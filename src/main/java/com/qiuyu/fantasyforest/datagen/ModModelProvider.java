@@ -13,10 +13,10 @@ import net.minecraft.util.Identifier;
 import java.util.Optional;
 
 public class ModModelProvider extends FabricModelProvider {
-    private static final String[] WOOD_TYPES =
+    public static final String[] WOOD_TYPES =
             {"oak", "spruce", "birch", "jungle", "acacia", "dark_oak", "mangrove", "cherry", "bamboo", "crimson", "warped"};
-    private static final String[] MOD_WOOD_TYPES =
-            {"permearoma","end","mutated_end","void"};
+    public static final String[] MOD_WOOD_TYPES =
+            {"revelation","permearoma","end","mutated_end","void"};
 
     public ModModelProvider(FabricDataOutput output) {
         super(output);
@@ -34,10 +34,15 @@ public class ModModelProvider extends FabricModelProvider {
             generateStickBlockState(blockStateModelGenerator, woodType);
         }
 
-        // 其他方块的注册保持不变
         ModBlocksFamilies.getFamilies()
                 .filter(BlockFamily::shouldGenerateModels)
                 .forEach(family -> blockStateModelGenerator.registerCubeAllModelTexturePool(family.getBaseBlock()).family(family));
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.REVELATION_LEAVES);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.REVELATION_SAPLING,BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerLog(ModBlocks.REVELATION_LOG).log(ModBlocks.REVELATION_LOG).wood(ModBlocks.REVELATION_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_REVELATION_LOG).log(ModBlocks.STRIPPED_REVELATION_LOG).wood(ModBlocks.STRIPPED_REVELATION_WOOD);
+        blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_REVELATION_LOG,ModBlocks.REVELATION_HANGING_SIGN,ModBlocks.REVELATION_WALL_HANGING_SIGN);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PERMEAROMA_LEAVES);
         blockStateModelGenerator.registerTintableCross(ModBlocks.PERMEAROMA_SAPLING,BlockStateModelGenerator.TintType.NOT_TINTED);
@@ -87,6 +92,14 @@ public class ModModelProvider extends FabricModelProvider {
 
         // 其他物品注册保持不变
         itemModelGenerator.register(MODItems.SEED_OF_REVELATION,Models.GENERATED);
+
+        itemModelGenerator.register(MODItems.REVELATION_BOAT,Models.GENERATED);
+        itemModelGenerator.register(MODItems.REVELATION_CHEST_BOAT,Models.GENERATED);
+        itemModelGenerator.register(MODItems.REVELATION_AXE,Models.HANDHELD);
+        itemModelGenerator.register(MODItems.REVELATION_PICKAXE,Models.HANDHELD);
+        itemModelGenerator.register(MODItems.REVELATION_HOE,Models.HANDHELD);
+        itemModelGenerator.register(MODItems.REVELATION_SHOVEL,Models.HANDHELD);
+        itemModelGenerator.register(MODItems.REVELATION_SWORD,Models.HANDHELD);
 
         itemModelGenerator.register(MODItems.PERMEAROMA_LEAF_PIECES,Models.GENERATED);
         itemModelGenerator.register(MODItems.PERMEAROMA_BOAT,Models.GENERATED);

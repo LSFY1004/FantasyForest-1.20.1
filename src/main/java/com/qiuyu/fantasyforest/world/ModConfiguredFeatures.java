@@ -30,8 +30,19 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?,?>> MUTATED_LARGE_END_TREE_KEY = registryKey("mutated_large_end_tree");
     public static final RegistryKey<ConfiguredFeature<?,?>> VOID_TREE_KEY = registryKey("void_tree");
     public static final RegistryKey<ConfiguredFeature<?,?>> LARGE_VOID_TREE_KEY = registryKey("large_void_tree");
+    public static final RegistryKey<ConfiguredFeature<?,?>> REVELATION_TREE_KEY = registryKey("revelation_tree");
 
     public static void boostrap(Registerable<ConfiguredFeature<?,?>> context){
+        register(context, REVELATION_TREE_KEY,Feature.TREE,new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.REVELATION_LOG),
+                new RevelationTrunkPlacer(11,3,0),
+                BlockStateProvider.of(ModBlocks.REVELATION_LEAVES),
+                new CherryFoliagePlacer(ConstantIntProvider.create(2),ConstantIntProvider.create(0),ConstantIntProvider.create(5),0.5F,0.5F,0.5F,0.5F),
+                new TwoLayersFeatureSize(1,0,2)
+        )
+                .dirtProvider(BlockStateProvider.of(Blocks.DIRT))
+                .ignoreVines()
+                .build());
         register(context,PERMEAROMA_KEY,Feature.TREE,new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.PERMEAROMA_LOG),
                 new PermearomaTrunkPlacer(11,3,0),

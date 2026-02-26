@@ -11,7 +11,21 @@ import java.util.stream.Stream;
 public class ModBlocksFamilies {
     private static final Map<Block, BlockFamily> BASE_BLOCKS_TO_FAMILIES = Maps.<Block, BlockFamily>newHashMap();
 
-    public static final BlockFamily PERMEAROMA_WOODEN = register(ModBlocks.PERMEAROMA_PLANKS)
+    public static final BlockFamily REVELATION = register(ModBlocks.REVELATION_PLANKS)
+            .button(ModBlocks.REVELATION_BUTTON)
+            .fence(ModBlocks.REVELATION_FENCE)
+            .fenceGate(ModBlocks.REVELATION_FENCE_GATE)
+            .pressurePlate(ModBlocks.REVELATION_PRESSURE_PLATE)
+            .slab(ModBlocks.REVELATION_SLAB)
+            .stairs(ModBlocks.REVELATION_STAIRS)
+            .door(ModBlocks.REVELATION_DOOR)
+            .trapdoor(ModBlocks.REVELATION_TRAPDOOR)
+            .sign(ModBlocks.REVELATION_SIGN,ModBlocks.REVELATION_WALL_SIGN)
+            .group("wooden")
+            .unlockCriterionName("has_planks")
+            .build();
+
+    public static final BlockFamily PERMEAROMA = register(ModBlocks.PERMEAROMA_PLANKS)
             .button(ModBlocks.PERMEAROMA_BUTTON)
             .fence(ModBlocks.PERMEAROMA_FENCE)
             .fenceGate(ModBlocks.PERMEAROMA_FENCE_GATE)

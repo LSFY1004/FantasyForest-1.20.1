@@ -10,6 +10,11 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 
 public class ModBoats {
+
+    public static final Identifier REVELATION_BOAT = new Identifier(FantasyForest.MOD_ID,"revelation_boat");
+    public static final Identifier REVELATION_CHEST_BOAT = new Identifier(FantasyForest.MOD_ID,"revelation_chest_boat");
+    public static final RegistryKey<TerraformBoatType> REVELATION_BOAT_KEY = TerraformBoatTypeRegistry.createKey(REVELATION_BOAT);
+
     public static final Identifier PERMEAROMA_BOAT = new Identifier(FantasyForest.MOD_ID,"permearoma_boat");
     public static final Identifier PERMEAROMA_CHEST_BOAT = new Identifier(FantasyForest.MOD_ID,"permearoma_chest_boat");
     public static final RegistryKey<TerraformBoatType> PERMEAROMA_BOAT_KEY = TerraformBoatTypeRegistry.createKey(PERMEAROMA_BOAT);
@@ -27,12 +32,19 @@ public class ModBoats {
     public static final RegistryKey<TerraformBoatType> VOID_WOODEN_BOAT_KEY = TerraformBoatTypeRegistry.createKey(VOID_WOODEN_BOAT);
 
     public static void registerBoats(){
-        TerraformBoatType PERMEAROMA_WOODEN_BOAT_TYPE = new TerraformBoatType.Builder()
+        TerraformBoatType REVELATION_BOAT_TYPE = new TerraformBoatType.Builder()
+                .item(MODItems.REVELATION_BOAT)
+                .chestItem(MODItems.REVELATION_CHEST_BOAT)
+                .planks(ModBlocks.REVELATION_PLANKS.asItem())
+                .build();
+        Registry.register(TerraformBoatTypeRegistry.INSTANCE, REVELATION_BOAT_KEY, REVELATION_BOAT_TYPE);
+
+        TerraformBoatType PERMEAROMA_BOAT_TYPE = new TerraformBoatType.Builder()
                 .item(MODItems.PERMEAROMA_BOAT)
                 .chestItem(MODItems.PERMEAROMA_CHEST_BOAT)
                 .planks(ModBlocks.PERMEAROMA_PLANKS.asItem())
                 .build();
-        Registry.register(TerraformBoatTypeRegistry.INSTANCE, PERMEAROMA_BOAT_KEY,PERMEAROMA_WOODEN_BOAT_TYPE);
+        Registry.register(TerraformBoatTypeRegistry.INSTANCE, PERMEAROMA_BOAT_KEY, PERMEAROMA_BOAT_TYPE);
 
         TerraformBoatType END_WOODEN_BOAT_TYPE = new TerraformBoatType.Builder()
                 .item(MODItems.END_WOODEN_BOAT)

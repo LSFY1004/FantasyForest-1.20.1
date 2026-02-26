@@ -30,8 +30,8 @@ import java.util.*;
 
 public class EndLogBlock extends PillarBlock {
     // 使用线程安全的ConcurrentHashMap来避免并发问题
-    private final Map<BlockPos, MiningData> miningDataMap = new WeakHashMap<>();
-    private final Map<BlockPos,BlockPos> transPos = new WeakHashMap<>();
+    private final Map<BlockPos, MiningData> miningDataMap = new HashMap<>();
+    private final Map<BlockPos,BlockPos> transPos = new HashMap<>();
     private static final int INTERRUPT_DELAY = 40; // 2秒 = 40 tick
     private static final int TRANS_DISTANCE = 32;
     public static final BooleanProperty FLASHING = BooleanProperty.of("trans");
@@ -237,6 +237,10 @@ public class EndLogBlock extends PillarBlock {
 
     @Override
     public void onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
+        if (world.isClient) {
+            super.onBreak(world, pos, state, player);
+            return;
+        }
         // 如果正在闪烁，不允许破坏
         if (state.get(FLASHING)) {
             return;
@@ -255,6 +259,10 @@ public class EndLogBlock extends PillarBlock {
 
     @Override
     public void afterBreak(World world, PlayerEntity player, BlockPos pos, BlockState state, @Nullable BlockEntity blockEntity, ItemStack stack) {
+        if (world.isClient) {
+            super.afterBreak(world, player, pos, state, blockEntity, stack);
+            return;
+        }
         // 如果正在闪烁，不允许破坏和掉落
         if (state.get(FLASHING)) {
             return;

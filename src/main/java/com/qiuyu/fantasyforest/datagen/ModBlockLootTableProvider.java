@@ -29,6 +29,24 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.ARBOREAL_CRAFTING_TABLE);
 
+        addDrop(ModBlocks.REVELATION_LOG);
+        addDrop(ModBlocks.REVELATION_WOOD);
+        addDrop(ModBlocks.STRIPPED_REVELATION_LOG);
+        addDrop(ModBlocks.STRIPPED_REVELATION_WOOD);
+        addDrop(ModBlocks.REVELATION_PLANKS);
+        addDrop(ModBlocks.REVELATION_LEAVES,dropsWithShears(ModBlocks.REVELATION_LEAVES));
+        addDrop(ModBlocks.REVELATION_SAPLING);
+        addDrop(ModBlocks.REVELATION_BUTTON);
+        addDrop(ModBlocks.REVELATION_STAIRS);
+        addDrop(ModBlocks.REVELATION_FENCE);
+        addDrop(ModBlocks.REVELATION_TRAPDOOR);
+        addDrop(ModBlocks.REVELATION_FENCE_GATE);
+        addDrop(ModBlocks.REVELATION_PRESSURE_PLATE);
+        addDrop(ModBlocks.REVELATION_SLAB,slabDrops(ModBlocks.REVELATION_SLAB));
+        addDrop(ModBlocks.REVELATION_DOOR,doorDrops(ModBlocks.REVELATION_DOOR));
+        addDrop(ModBlocks.REVELATION_SIGN);
+        addDrop(ModBlocks.REVELATION_HANGING_SIGN);
+
         addDrop(ModBlocks.PERMEAROMA_LOG);
         addDrop(ModBlocks.PERMEAROMA_WOOD);
         addDrop(ModBlocks.STRIPPED_PERMEAROMA_LOG);

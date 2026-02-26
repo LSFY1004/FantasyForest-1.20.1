@@ -49,6 +49,32 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModBlocks.END_LICHEN,"End Lichen");
         translationBuilder.add(ModBlocks.DEAD_END_LICHEN,"Dead End Lichen");
+        translationBuilder.add(ModBlocks.REVELATION_LEAVES,"Revelation Leaves");
+        translationBuilder.add(ModBlocks.REVELATION_LOG,"Revelation Log");
+        translationBuilder.add(ModBlocks.REVELATION_WOOD,"Revelation Wood");
+        translationBuilder.add(ModBlocks.STRIPPED_REVELATION_LOG,"Stripped Revelation Log");
+        translationBuilder.add(ModBlocks.STRIPPED_REVELATION_WOOD,"Stripped Revelation Wood");
+        translationBuilder.add(ModBlocks.REVELATION_PLANKS,"Revelation Planks");
+        translationBuilder.add(ModBlocks.REVELATION_STAIRS,"Revelation Stairs");
+        translationBuilder.add(ModBlocks.REVELATION_SLAB,"Revelation Slab");
+        translationBuilder.add(ModBlocks.REVELATION_BUTTON,"Revelation Button");
+        translationBuilder.add(ModBlocks.REVELATION_DOOR,"Revelation Door");
+        translationBuilder.add(ModBlocks.REVELATION_FENCE,"Revelation Fence");
+        translationBuilder.add(ModBlocks.REVELATION_TRAPDOOR,"Revelation Trapdoor");
+        translationBuilder.add(ModBlocks.REVELATION_FENCE_GATE,"Revelation Fence Gate");
+        translationBuilder.add(ModBlocks.REVELATION_PRESSURE_PLATE,"Revelation Pressure Plate");
+        translationBuilder.add(MODItems.REVELATION_SIGN,"Revelation Sign");
+        translationBuilder.add(MODItems.REVELATION_HANGING_SIGN,"Revelation Hanging Sign");
+        translationBuilder.add(MODItems.REVELATION_BOAT,"Revelation Boat");
+        translationBuilder.add(MODItems.REVELATION_CHEST_BOAT,"Revelation Boat With Chest");
+        translationBuilder.add(ModBlocks.REVELATION_SAPLING,"Revelation Sapling");
+        translationBuilder.add(ModBlocks.REVELATION_STICK,"Revelation Stick");
+        translationBuilder.add(MODItems.REVELATION_SWORD,"Revelation Sword");
+        translationBuilder.add(MODItems.REVELATION_PICKAXE,"Revelation Pickaxe");
+        translationBuilder.add(MODItems.REVELATION_AXE,"Revelation Axe");
+        translationBuilder.add(MODItems.REVELATION_HOE,"Revelation Hoe");
+        translationBuilder.add(MODItems.REVELATION_SHOVEL,"Revelation Shovel");
+
 
         translationBuilder.add(MODItems.PERMEAROMA_LEAF_PIECES,"Permearoma Leaf Pieces");
         translationBuilder.add(ModBlocks.PERMEAROMA_LEAVES,"Permearoma Leaves");

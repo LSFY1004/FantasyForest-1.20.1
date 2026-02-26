@@ -15,7 +15,7 @@ import java.util.*;
 public class SuppressorManager {
     private static final String PERSISTENT_ID = "fantasyforest_suppressors";
     // 保存每个世界的 SuppressorData 实例
-    private static final Map<World, SuppressorData> WORLD_DATA_MAP = new WeakHashMap<>();
+    private static final Map<World, SuppressorData> WORLD_DATA_MAP = new HashMap<>();
 
     // 内部数据类，继承 PersistentState
     public static class SuppressorData extends PersistentState {

@@ -23,6 +23,42 @@ public class ModBlocks {
 
     public static final Block ARBOREAL_CRAFTING_TABLE = register("arboreal_crafting_table",new ArborealCraftingTable(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE)));
 
+    public static final Block REVELATION_LOG = register("revelation_log", new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.LICHEN_GREEN).strength(2.0F).instrument(Instrument.BASS).sounds(BlockSoundGroup.WOOD)));
+    public static final Block REVELATION_WOOD = register("revelation_wood",new PillarBlock(AbstractBlock.Settings.copy(REVELATION_LOG)));
+    public static final Block STRIPPED_REVELATION_LOG = register("stripped_revelation_log", new PillarBlock(AbstractBlock.Settings.copy(REVELATION_LOG)));
+    public static final Block STRIPPED_REVELATION_WOOD = register("stripped_revelation_wood",new PillarBlock(AbstractBlock.Settings.copy(REVELATION_LOG)));
+    public static final Block REVELATION_PLANKS = register("revelation_planks", new Block(AbstractBlock.Settings.create().mapColor(MapColor.PALE_GREEN).strength(2.0F).instrument(Instrument.BASS).sounds(BlockSoundGroup.WOOD)));
+    public static final Block REVELATION_LEAVES = register("revelation_leaves", new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+    public static final Block REVELATION_STAIRS = register("revelation_stairs",
+            new StairsBlock(REVELATION_PLANKS.getDefaultState(),AbstractBlock.Settings.copy(REVELATION_PLANKS)));
+    public static final Block REVELATION_SLAB = register("revelation_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(REVELATION_PLANKS)));
+    public static final Block REVELATION_BUTTON = register("revelation_button",
+            new ButtonBlock(AbstractBlock.Settings.copy(REVELATION_PLANKS),BlockSetType.OAK,40,true));
+    public static final Block REVELATION_PRESSURE_PLATE = register("revelation_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,AbstractBlock.Settings.copy(REVELATION_PLANKS),BlockSetType.OAK));
+    public static final Block REVELATION_FENCE = register("revelation_fence",
+            new FenceBlock(AbstractBlock.Settings.copy(REVELATION_PLANKS)));
+    public static final Block REVELATION_FENCE_GATE = register("revelation_fence_gate",
+            new FenceGateBlock(AbstractBlock.Settings.copy(REVELATION_PLANKS),WoodType.OAK));
+    public static final Block REVELATION_DOOR = register("revelation_door",
+            new DoorBlock(AbstractBlock.Settings.copy(REVELATION_PLANKS).nonOpaque(),BlockSetType.OAK));
+    public static final Block REVELATION_TRAPDOOR = register("revelation_trapdoor",
+            new TrapdoorBlock(AbstractBlock.Settings.copy(REVELATION_PLANKS).nonOpaque(),BlockSetType.OAK));
+    public static final Identifier REVELATION_SIGN_TEXTURE = new Identifier(FantasyForest.MOD_ID,"entity/signs/revelation");
+    public static final Identifier REVELATION_HANGING_SIGN_TEXTURE = new Identifier(FantasyForest.MOD_ID,"entity/signs/hanging/revelation");
+    public static final Identifier REVELATION_HANGING_SIGN_GUI = new Identifier(FantasyForest.MOD_ID,"textures/gui/hanging-signs/revelation");
+    public static final Block REVELATION_SIGN = Registry.register(Registries.BLOCK,new Identifier(FantasyForest.MOD_ID,"revelation_sign"),
+            new TerraformSignBlock(REVELATION_SIGN_TEXTURE,AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).solid().instrument(Instrument.BASS).noCollision().strength(2.0F,10.0F).burnable()));
+    public static final Block REVELATION_WALL_SIGN = Registry.register(Registries.BLOCK,new Identifier(FantasyForest.MOD_ID,"revelation_wall_sign"),
+            new TerraformWallSignBlock(REVELATION_SIGN_TEXTURE,AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).solid().instrument(Instrument.BASS).noCollision().strength(2.0F,10.0F).burnable()));
+    public static final Block REVELATION_HANGING_SIGN = Registry.register(Registries.BLOCK,new Identifier(FantasyForest.MOD_ID,"revelation_hanging_sign"),
+            new TerraformHangingSignBlock(REVELATION_HANGING_SIGN_TEXTURE, REVELATION_HANGING_SIGN_GUI,AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).solid().instrument(Instrument.BASS).noCollision().strength(2.0F,10.0F).burnable()));
+    public static final Block REVELATION_WALL_HANGING_SIGN = Registry.register(Registries.BLOCK,new Identifier(FantasyForest.MOD_ID,"revelation_wall_hanging_sign"),
+            new TerraformWallHangingSignBlock(REVELATION_HANGING_SIGN_TEXTURE, REVELATION_HANGING_SIGN_GUI,AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).solid().instrument(Instrument.BASS).noCollision().strength(2.0F,10.0F).burnable()));
+    public static final Block REVELATION_SAPLING = register("revelation_sapling",
+            new SaplingBlock(new RevelationSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+
     public static final Block PERMEAROMA_LOG = register("permearoma_log", new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.LICHEN_GREEN).strength(2.0F).instrument(Instrument.BASS).sounds(BlockSoundGroup.WOOD)));
     public static final Block PERMEAROMA_WOOD = register("permearoma_wood",new PillarBlock(AbstractBlock.Settings.copy(PERMEAROMA_LOG)));
     public static final Block STRIPPED_PERMEAROMA_LOG = register("stripped_permearoma_log", new PillarBlock(AbstractBlock.Settings.copy(PERMEAROMA_LOG)));
@@ -187,6 +223,7 @@ public class ModBlocks {
     public static final Block VOID_WOODEN_WALL_HANGING_SIGN = Registry.register(Registries.BLOCK,new Identifier(FantasyForest.MOD_ID,"void_wooden_wall_hanging_sign"),
             new TerraformWallHangingSignBlock(VOID_WODEN_HANGING_SIGN_TEXTURE,VOID_WODEN_HANGING_SIGN_GUI,AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).solid().instrument(Instrument.BASS).noCollision().strength(5.0F,1200.0F).burnable()));
 
+    public static final Block REVELATION_STICK = registerBIDBlock("revelation_stick",new StickBlock(AbstractBlock.Settings.copy(ModBlocks.REVELATION_PLANKS).nonOpaque()));
     public static final Block PERMEAROMA_STICK = registerBIDBlock("permearoma_stick",new StickBlock(AbstractBlock.Settings.copy(ModBlocks.PERMEAROMA_PLANKS).nonOpaque()));
     public static final Block END_STICK = registerBIDBlock("end_stick",new StickBlock(AbstractBlock.Settings.copy(ModBlocks.END_PLANKS).nonOpaque()));
     public static final Block MUTATED_END_STICK = registerBIDBlock("mutated_end_stick",new StickBlock(AbstractBlock.Settings.copy(ModBlocks.MUTATED_END_PLANKS).nonOpaque()));
@@ -229,6 +266,7 @@ public class ModBlocks {
 
     public static Block getStickBlock(String woodType) {
         return switch (woodType){
+            case "revelation" -> ModBlocks.REVELATION_STICK;
             case "permearoma" -> ModBlocks.PERMEAROMA_STICK;
             case "end"->ModBlocks.END_STICK;
             case "mutated_end"->ModBlocks.MUTATED_END_STICK;

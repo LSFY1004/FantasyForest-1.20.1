@@ -8,6 +8,7 @@ import net.minecraft.world.gen.trunk.TrunkPlacerType;
 
 public record ModTrunkPlacerType<P extends TrunkPlacer>(Codec<P> codec) {
 
+    public static final TrunkPlacerType<RevelationTrunkPlacer> REVELATION_TRUNK_PLACER = register("revelation_trunk_placer", RevelationTrunkPlacer.CODEC);
     public static final TrunkPlacerType<PermearomaTrunkPlacer> PERMEAROMA_TRUNK_PLACER = register("permearoma_trunk_placer", PermearomaTrunkPlacer.CODEC);
     public static final TrunkPlacerType<EndTreeTrunkPlacer> END_TREE_TRUNK_PLACER = register("end_tree_trunk_placer", EndTreeTrunkPlacer.CODEC);
     public static final TrunkPlacerType<LargeEndTreeTrunkPlacer> LARGE_END_TREE_TRUNK_PLACER = register("large_end_tree_trunk_placer", LargeEndTreeTrunkPlacer.CODEC);

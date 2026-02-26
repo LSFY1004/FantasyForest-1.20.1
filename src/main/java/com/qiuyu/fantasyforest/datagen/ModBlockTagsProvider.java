@@ -1,15 +1,11 @@
 package com.qiuyu.fantasyforest.datagen;
 
-import com.qiuyu.fantasyforest.FantasyForest;
 import com.qiuyu.fantasyforest.block.ModBlocks;
 import com.qiuyu.fantasyforest.tag.ModBlockTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.registry.tag.TagKey;
-import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -26,28 +22,48 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)//斧头
                 .add(ModBlocks.ARBOREAL_CRAFTING_TABLE)
+
+                .add(ModBlocks.REVELATION_LOG)
+                .add(ModBlocks.REVELATION_WOOD)
+                .add(ModBlocks.STRIPPED_REVELATION_LOG)
+                .add(ModBlocks.STRIPPED_REVELATION_WOOD)
+                .add(ModBlocks.REVELATION_PLANKS)
+
                 .add(ModBlocks.PERMEAROMA_LOG)
-                .add(ModBlocks.PERMEAROMA_PLANKS)
                 .add(ModBlocks.PERMEAROMA_WOOD)
+                .add(ModBlocks.STRIPPED_PERMEAROMA_LOG)
+                .add(ModBlocks.STRIPPED_PERMEAROMA_WOOD)
+                .add(ModBlocks.PERMEAROMA_PLANKS)
+
                 .add(ModBlocks.END_LOG)
                 .add(ModBlocks.END_WOOD)
+                .add(ModBlocks.STRIPPED_END_LOG)
+                .add(ModBlocks.STRIPPED_END_WOOD)
                 .add(ModBlocks.END_PLANKS)
+
                 .add(ModBlocks.MUTATED_END_LOG)
                 .add(ModBlocks.MUTATED_END_WOOD)
+                .add(ModBlocks.STRIPPED_MUTATED_END_LOG)
+                .add(ModBlocks.STRIPPED_MUTATED_END_WOOD)
                 .add(ModBlocks.MUTATED_END_PLANKS)
+
                 .add(ModBlocks.VOID_LOG)
                 .add(ModBlocks.VOID_WOOD)
+                .add(ModBlocks.STRIPPED_VOID_LOG)
+                .add(ModBlocks.STRIPPED_VOID_WOOD)
                 .add(ModBlocks.VOID_PLANKS)
                 .add(ModBlocks.VOID_ROOTS);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE);//铲子
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)//锄头
+                .add(ModBlocks.REVELATION_LEAVES)
                 .add(ModBlocks.PERMEAROMA_LEAVES)
                 .add(ModBlocks.END_LEAVES)
                 .add(ModBlocks.VOID_LEAVES);
 
         getOrCreateTagBuilder(BlockTags.LEAVES)
+                .add(ModBlocks.REVELATION_LEAVES)
                 .add(ModBlocks.PERMEAROMA_LEAVES)
                 .add(ModBlocks.END_LEAVES)
                 .add(ModBlocks.VOID_LEAVES);
@@ -65,40 +81,136 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.VOID_WOOD);
 
         getOrCreateTagBuilder(BlockTags.PLANKS)
+                .add(ModBlocks.REVELATION_PLANKS)
                 .add(ModBlocks.PERMEAROMA_PLANKS)
                 .add(ModBlocks.END_PLANKS)
                 .add(ModBlocks.MUTATED_END_PLANKS)
                 .add(ModBlocks.VOID_PLANKS);
 
         getOrCreateTagBuilder(BlockTags.SAPLINGS)
+                .add(ModBlocks.REVELATION_SAPLING)
                 .add(ModBlocks.PERMEAROMA_SAPLING)
                 .add(ModBlocks.END_TREE_SAPLING)
                 .add(ModBlocks.VOID_TREE_SAPLING);
 
-        getOrCreateTagBuilder(ModBlockTags.END_LOGS)
+        getOrCreateTagBuilder(ModBlockTags.END_WOODEN_BLOCKS)
                 .add(ModBlocks.END_LOG)
-                .add(ModBlocks.END_WOOD);
+                .add(ModBlocks.END_WOOD)
+                .add(ModBlocks.STRIPPED_END_LOG)
+                .add(ModBlocks.STRIPPED_END_WOOD)
+                .add(ModBlocks.END_PLANKS)
+                .add(ModBlocks.END_WOODEN_BUTTON)
+                .add(ModBlocks.END_WOODEN_DOOR)
+                .add(ModBlocks.END_WOODEN_PRESSURE_PLATE)
+                .add(ModBlocks.END_WOODEN_SLAB)
+                .add(ModBlocks.END_WOODEN_STAIRS)
+                .add(ModBlocks.END_WOODEN_TRAPDOOR)
+                .add(ModBlocks.END_WOODEN_WALL_SIGN)
+                .add(ModBlocks.END_WOODEN_WALL_HANGING_SIGN)
+                .add(ModBlocks.END_WOODEN_FENCE)
+                .add(ModBlocks.END_WOODEN_FENCE_GATE)
+                .add(ModBlocks.END_WOODEN_HANGING_SIGN)
+                .add(ModBlocks.END_WOODEN_SIGN)
+                .add(ModBlocks.END_STICK);
 
-        getOrCreateTagBuilder(ModBlockTags.MUTATED_END_LOGS)
+        getOrCreateTagBuilder(ModBlockTags.MUTATED_END_WOODEN_BLOCKS)
                 .add(ModBlocks.MUTATED_END_LOG)
-                .add(ModBlocks.MUTATED_END_WOOD);
+                .add(ModBlocks.MUTATED_END_WOOD)
+                .add(ModBlocks.STRIPPED_MUTATED_END_LOG)
+                .add(ModBlocks.STRIPPED_MUTATED_END_WOOD)
+                .add(ModBlocks.MUTATED_END_PLANKS)
+                .add(ModBlocks.MUTATED_END_WOODEN_BUTTON)
+                .add(ModBlocks.MUTATED_END_WOODEN_DOOR)
+                .add(ModBlocks.MUTATED_END_WOODEN_PRESSURE_PLATE)
+                .add(ModBlocks.MUTATED_END_WOODEN_SLAB)
+                .add(ModBlocks.MUTATED_END_WOODEN_STAIRS)
+                .add(ModBlocks.MUTATED_END_WOODEN_TRAPDOOR)
+                .add(ModBlocks.MUTATED_END_WOODEN_WALL_SIGN)
+                .add(ModBlocks.MUTATED_END_WOODEN_WALL_HANGING_SIGN)
+                .add(ModBlocks.MUTATED_END_WOODEN_FENCE)
+                .add(ModBlocks.MUTATED_END_WOODEN_FENCE_GATE)
+                .add(ModBlocks.MUTATED_END_WOODEN_HANGING_SIGN)
+                .add(ModBlocks.MUTATED_END_WOODEN_SIGN)
+                .add(ModBlocks.MUTATED_END_STICK);
 
-        getOrCreateTagBuilder(ModBlockTags.VOID_LOGS)
+        getOrCreateTagBuilder(ModBlockTags.VOID_WOODEN_BLOCKS)
                 .add(ModBlocks.VOID_LOG)
-                .add(ModBlocks.VOID_WOOD);
+                .add(ModBlocks.VOID_WOOD)
+                .add(ModBlocks.STRIPPED_VOID_LOG)
+                .add(ModBlocks.STRIPPED_VOID_WOOD)
+                .add(ModBlocks.VOID_PLANKS)
+                .add(ModBlocks.VOID_WOODEN_BUTTON)
+                .add(ModBlocks.VOID_WOODEN_DOOR)
+                .add(ModBlocks.VOID_WOODEN_PRESSURE_PLATE)
+                .add(ModBlocks.VOID_WOODEN_SLAB)
+                .add(ModBlocks.VOID_WOODEN_STAIRS)
+                .add(ModBlocks.VOID_WOODEN_TRAPDOOR)
+                .add(ModBlocks.VOID_WOODEN_WALL_SIGN)
+                .add(ModBlocks.VOID_WOODEN_WALL_HANGING_SIGN)
+                .add(ModBlocks.VOID_WOODEN_FENCE)
+                .add(ModBlocks.VOID_WOODEN_FENCE_GATE)
+                .add(ModBlocks.VOID_WOODEN_HANGING_SIGN)
+                .add(ModBlocks.VOID_WOODEN_SIGN)
+                .add(ModBlocks.VOID_STICK);
+
+        getOrCreateTagBuilder(ModBlockTags.PERMEAROMA_BLOCKS)
+                .add(ModBlocks.PERMEAROMA_LOG)
+                .add(ModBlocks.PERMEAROMA_WOOD)
+                .add(ModBlocks.STRIPPED_PERMEAROMA_LOG)
+                .add(ModBlocks.STRIPPED_PERMEAROMA_WOOD)
+                .add(ModBlocks.PERMEAROMA_PLANKS)
+                .add(ModBlocks.PERMEAROMA_BUTTON)
+                .add(ModBlocks.PERMEAROMA_DOOR)
+                .add(ModBlocks.PERMEAROMA_PRESSURE_PLATE)
+                .add(ModBlocks.PERMEAROMA_SLAB)
+                .add(ModBlocks.PERMEAROMA_STAIRS)
+                .add(ModBlocks.PERMEAROMA_TRAPDOOR)
+                .add(ModBlocks.PERMEAROMA_WALL_SIGN)
+                .add(ModBlocks.PERMEAROMA_WALL_HANGING_SIGN)
+                .add(ModBlocks.PERMEAROMA_FENCE)
+                .add(ModBlocks.PERMEAROMA_FENCE_GATE)
+                .add(ModBlocks.PERMEAROMA_HANGING_SIGN)
+                .add(ModBlocks.PERMEAROMA_SIGN)
+                .add(ModBlocks.PERMEAROMA_STICK);
+
+        getOrCreateTagBuilder(ModBlockTags.REVELATION_BLOCKS)
+                .add(ModBlocks.REVELATION_LOG)
+                .add(ModBlocks.REVELATION_WOOD)
+                .add(ModBlocks.STRIPPED_REVELATION_LOG)
+                .add(ModBlocks.STRIPPED_REVELATION_WOOD)
+                .add(ModBlocks.REVELATION_PLANKS)
+                .add(ModBlocks.REVELATION_BUTTON)
+                .add(ModBlocks.REVELATION_DOOR)
+                .add(ModBlocks.REVELATION_PRESSURE_PLATE)
+                .add(ModBlocks.REVELATION_SLAB)
+                .add(ModBlocks.REVELATION_STAIRS)
+                .add(ModBlocks.REVELATION_TRAPDOOR)
+                .add(ModBlocks.REVELATION_WALL_SIGN)
+                .add(ModBlocks.REVELATION_WALL_HANGING_SIGN)
+                .add(ModBlocks.REVELATION_FENCE)
+                .add(ModBlocks.REVELATION_FENCE_GATE)
+                .add(ModBlocks.REVELATION_HANGING_SIGN)
+                .add(ModBlocks.REVELATION_SIGN)
+                .add(ModBlocks.REVELATION_STICK);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+                .add(ModBlocks.REVELATION_FENCE)
                 .add(ModBlocks.PERMEAROMA_FENCE)
                 .add(ModBlocks.END_WOODEN_FENCE)
                 .add(ModBlocks.MUTATED_END_WOODEN_FENCE)
                 .add(ModBlocks.VOID_WOODEN_FENCE);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.REVELATION_FENCE_GATE)
                 .add(ModBlocks.PERMEAROMA_FENCE_GATE)
                 .add(ModBlocks.END_WOODEN_FENCE_GATE)
                 .add(ModBlocks.MUTATED_END_WOODEN_FENCE_GATE)
                 .add(ModBlocks.VOID_WOODEN_FENCE_GATE);
 
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.REVELATION_LOG)
+                .add(ModBlocks.REVELATION_WOOD)
+                .add(ModBlocks.STRIPPED_REVELATION_LOG)
+                .add(ModBlocks.STRIPPED_REVELATION_WOOD)
                 .add(ModBlocks.PERMEAROMA_LOG)
                 .add(ModBlocks.PERMEAROMA_WOOD)
                 .add(ModBlocks.STRIPPED_PERMEAROMA_LOG)
@@ -121,9 +233,6 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.VOID_VINE_BODY)
                 .add(ModBlocks.VOID_VINE_HEAD);
 
-//        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK,new Identifier(FantasyForest.MOD_ID,id)))
-//                .add();
-
         getOrCreateTagBuilder(ModBlockTags.STICKS)
                 .add(ModBlocks.OAK_STICK)
                 .add(ModBlocks.SPRUCE_STICK)
@@ -136,6 +245,7 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DARK_OAK_STICK)
                 .add(ModBlocks.MANGROVE_STICK)
                 .add(ModBlocks.WARPED_STICK)
+                .add(ModBlocks.REVELATION_STICK)
                 .add(ModBlocks.PERMEAROMA_STICK)
                 .add(ModBlocks.END_STICK)
                 .add(ModBlocks.MUTATED_END_STICK)

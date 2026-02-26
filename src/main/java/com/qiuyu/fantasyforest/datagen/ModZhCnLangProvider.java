@@ -17,7 +17,7 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
     public void generateTranslations(TranslationBuilder translationBuilder) {
         translationBuilder.add(ModItemGroups.Fantasy_Forest,"幻想森林");
         translationBuilder.add("tooltip.arboreal","§a本源共鸣§r");
-        translationBuilder.add("tooltip.arboreal.shift","§a本源共鸣§7§o—破坏同类木头时受到速度和耐久增幅。");
+        translationBuilder.add("tooltip.arboreal.shift","§a本源共鸣§7§o—Shift+右键瞬间收集同类木制方块。");
         translationBuilder.add("tooltip.fantasyforest.more","§7按下§rShift§7获取更多信息。§r");
         translationBuilder.add("tooltip.fantasyforest.permearoma","§3芳香§r");
         translationBuilder.add("tooltip.fantasyforest.permearoma.shift","§3芳香§7§o—降低受击生物们感知到你的范围。");
@@ -49,6 +49,32 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModBlocks.END_LICHEN,"末影地衣");
         translationBuilder.add(ModBlocks.DEAD_END_LICHEN,"失活的末影地衣");
+
+        translationBuilder.add(ModBlocks.REVELATION_LEAVES,"启示之树叶");
+        translationBuilder.add(ModBlocks.REVELATION_LOG,"启示之木原木");
+        translationBuilder.add(ModBlocks.REVELATION_WOOD,"启示之木");
+        translationBuilder.add(ModBlocks.STRIPPED_REVELATION_LOG,"去皮启示之木原木");
+        translationBuilder.add(ModBlocks.STRIPPED_REVELATION_WOOD,"去皮启示之木");
+        translationBuilder.add(ModBlocks.REVELATION_PLANKS,"启示之木板");
+        translationBuilder.add(ModBlocks.REVELATION_STAIRS,"启示之木楼梯");
+        translationBuilder.add(ModBlocks.REVELATION_SLAB,"启示之木台阶");
+        translationBuilder.add(ModBlocks.REVELATION_BUTTON,"启示之木按钮");
+        translationBuilder.add(ModBlocks.REVELATION_DOOR,"启示之木门");
+        translationBuilder.add(ModBlocks.REVELATION_FENCE,"启示之木栅栏");
+        translationBuilder.add(ModBlocks.REVELATION_TRAPDOOR,"启示之木活板门");
+        translationBuilder.add(ModBlocks.REVELATION_FENCE_GATE,"启示之木栅栏门");
+        translationBuilder.add(ModBlocks.REVELATION_PRESSURE_PLATE,"启示之木压力板");
+        translationBuilder.add(MODItems.REVELATION_SIGN,"启示之木告示牌");
+        translationBuilder.add(MODItems.REVELATION_HANGING_SIGN,"启示之木悬挂告示牌");
+        translationBuilder.add(MODItems.REVELATION_BOAT,"启示之木船");
+        translationBuilder.add(MODItems.REVELATION_CHEST_BOAT,"启示之木运输船");
+        translationBuilder.add(ModBlocks.REVELATION_SAPLING,"启示之树苗");
+        translationBuilder.add(ModBlocks.REVELATION_STICK,"启示之木棍");
+        translationBuilder.add(MODItems.REVELATION_SWORD,"启示之木剑");
+        translationBuilder.add(MODItems.REVELATION_PICKAXE,"启示之木镐");
+        translationBuilder.add(MODItems.REVELATION_AXE,"启示之木斧");
+        translationBuilder.add(MODItems.REVELATION_HOE,"启示之木锄");
+        translationBuilder.add(MODItems.REVELATION_SHOVEL,"启示之木锹");
 
         translationBuilder.add(MODItems.PERMEAROMA_LEAF_PIECES,"沁芳树叶片");
         translationBuilder.add(ModBlocks.PERMEAROMA_LEAVES,"沁芳树叶");
