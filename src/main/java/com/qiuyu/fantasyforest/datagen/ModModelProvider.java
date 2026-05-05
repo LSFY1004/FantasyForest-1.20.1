@@ -16,7 +16,7 @@ public class ModModelProvider extends FabricModelProvider {
     public static final String[] WOOD_TYPES =
             {"oak", "spruce", "birch", "jungle", "acacia", "dark_oak", "mangrove", "cherry", "bamboo", "crimson", "warped"};
     public static final String[] MOD_WOOD_TYPES =
-            {"revelation","permearoma","end","mutated_end","void"};
+            {"revelation","permearoma","aphrodisia","end","mutated_end","void"};
 
     public ModModelProvider(FabricDataOutput output) {
         super(output);
@@ -50,6 +50,12 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_PERMEAROMA_LOG).log(ModBlocks.STRIPPED_PERMEAROMA_LOG).wood(ModBlocks.STRIPPED_PERMEAROMA_WOOD);
         blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_PERMEAROMA_LOG,ModBlocks.PERMEAROMA_HANGING_SIGN,ModBlocks.PERMEAROMA_WALL_HANGING_SIGN);
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.APHRODISIA_LEAVES);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.APHRODISIA_SAPLING,BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerLog(ModBlocks.APHRODISIA_LOG).log(ModBlocks.APHRODISIA_LOG).wood(ModBlocks.APHRODISIA_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_APHRODISIA_LOG).log(ModBlocks.STRIPPED_APHRODISIA_LOG).wood(ModBlocks.STRIPPED_APHRODISIA_WOOD);
+        blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_APHRODISIA_LOG,ModBlocks.APHRODISIA_HANGING_SIGN,ModBlocks.APHRODISIA_WALL_HANGING_SIGN);
+
         ModelGeneratorHelper.registerGrassLikeBlock(ModBlocks.END_LICHEN,blockStateModelGenerator);
         ModelGeneratorHelper.registerGrassLikeBlock(ModBlocks.DEAD_END_LICHEN,blockStateModelGenerator);
 
@@ -78,6 +84,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_MUTATED_END_LOG,ModBlocks.MUTATED_END_WOODEN_HANGING_SIGN,ModBlocks.MUTATED_END_WOODEN_WALL_HANGING_SIGN);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ARBOREAL_CRAFTING_TABLE);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.REVELATION_CORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.REVELATION_CORE_SIDE);
     }
 
     @Override
@@ -95,11 +104,6 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(MODItems.REVELATION_BOAT,Models.GENERATED);
         itemModelGenerator.register(MODItems.REVELATION_CHEST_BOAT,Models.GENERATED);
-        itemModelGenerator.register(MODItems.REVELATION_AXE,Models.HANDHELD);
-        itemModelGenerator.register(MODItems.REVELATION_PICKAXE,Models.HANDHELD);
-        itemModelGenerator.register(MODItems.REVELATION_HOE,Models.HANDHELD);
-        itemModelGenerator.register(MODItems.REVELATION_SHOVEL,Models.HANDHELD);
-        itemModelGenerator.register(MODItems.REVELATION_SWORD,Models.HANDHELD);
 
         itemModelGenerator.register(MODItems.PERMEAROMA_LEAF_PIECES,Models.GENERATED);
         itemModelGenerator.register(MODItems.PERMEAROMA_BOAT,Models.GENERATED);
@@ -109,6 +113,14 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(MODItems.PERMEAROMA_HOE,Models.HANDHELD);
         itemModelGenerator.register(MODItems.PERMEAROMA_SHOVEL,Models.HANDHELD);
         itemModelGenerator.register(MODItems.PERMEAROMA_SWORD,Models.HANDHELD);
+
+        itemModelGenerator.register(MODItems.APHRODISIA_BOAT,Models.GENERATED);
+        itemModelGenerator.register(MODItems.APHRODISIA_CHEST_BOAT,Models.GENERATED);
+        itemModelGenerator.register(MODItems.APHRODISIA_AXE,Models.HANDHELD);
+        itemModelGenerator.register(MODItems.APHRODISIA_PICKAXE,Models.HANDHELD);
+        itemModelGenerator.register(MODItems.APHRODISIA_HOE,Models.HANDHELD);
+        itemModelGenerator.register(MODItems.APHRODISIA_SHOVEL,Models.HANDHELD);
+        itemModelGenerator.register(MODItems.APHRODISIA_SWORD,Models.HANDHELD);
 
         itemModelGenerator.register(MODItems.END_RESIN, Models.GENERATED);
         itemModelGenerator.register(MODItems.END_WOODEN_BOAT,Models.GENERATED);

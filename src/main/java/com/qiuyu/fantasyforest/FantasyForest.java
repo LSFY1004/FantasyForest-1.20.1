@@ -50,6 +50,21 @@ public class FantasyForest implements ModInitializer {
 		ModBoats.registerBoats();
         ProgressiveTaskScheduler.register();
 
+        StrippableBlockRegistry.register(ModBlocks.REVELATION_LOG,ModBlocks.STRIPPED_REVELATION_LOG);
+        StrippableBlockRegistry.register(ModBlocks.REVELATION_WOOD,ModBlocks.STRIPPED_REVELATION_WOOD);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.REVELATION_LOG,5,5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.REVELATION_WOOD,5,5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_REVELATION_LOG,5,5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_REVELATION_WOOD,5,5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.REVELATION_LEAVES,30,60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.REVELATION_PLANKS,5,20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.REVELATION_TRAPDOOR,5,20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.REVELATION_STAIRS,5,20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.REVELATION_FENCE_GATE,5,20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.REVELATION_PRESSURE_PLATE,5,20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.REVELATION_SLAB,5,20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.REVELATION_BUTTON,5,20);
+
         StrippableBlockRegistry.register(ModBlocks.PERMEAROMA_LOG,ModBlocks.STRIPPED_PERMEAROMA_LOG);
         StrippableBlockRegistry.register(ModBlocks.PERMEAROMA_WOOD,ModBlocks.STRIPPED_PERMEAROMA_WOOD);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PERMEAROMA_LOG,5,5);
@@ -64,6 +79,21 @@ public class FantasyForest implements ModInitializer {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PERMEAROMA_PRESSURE_PLATE,5,20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PERMEAROMA_SLAB,5,20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PERMEAROMA_BUTTON,5,20);
+
+        StrippableBlockRegistry.register(ModBlocks.APHRODISIA_LOG,ModBlocks.STRIPPED_APHRODISIA_LOG);
+        StrippableBlockRegistry.register(ModBlocks.APHRODISIA_WOOD,ModBlocks.STRIPPED_APHRODISIA_WOOD);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.APHRODISIA_LOG,5,5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.APHRODISIA_WOOD,5,5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_APHRODISIA_LOG,5,5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_APHRODISIA_WOOD,5,5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.APHRODISIA_LEAVES,30,60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.APHRODISIA_PLANKS,5,20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.APHRODISIA_TRAPDOOR,5,20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.APHRODISIA_STAIRS,5,20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.APHRODISIA_FENCE_GATE,5,20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.APHRODISIA_PRESSURE_PLATE,5,20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.APHRODISIA_SLAB,5,20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.APHRODISIA_BUTTON,5,20);
 
         StrippableBlockRegistry.register(ModBlocks.END_LOG,ModBlocks.STRIPPED_END_LOG);
 		StrippableBlockRegistry.register(ModBlocks.END_WOOD,ModBlocks.STRIPPED_END_WOOD);

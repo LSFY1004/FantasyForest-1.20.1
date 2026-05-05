@@ -24,7 +24,7 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add("tooltip.fantasyforest.end_wood","§5空间阈限§r");
         translationBuilder.add("tooltip.fantasyforest.end_wood.shift","§5空间阈限§7§o—短暂时间内会将离开一定范围的受击者强制传送回来。");
         translationBuilder.add("tooltip.fantasyforest.mutated_end_wood","§2空间扭曲§r");
-        translationBuilder.add("tooltip.fantasyforest.mutated_end_wood.shift","§2空间扭曲§7§o—受击者会被传送到下方数格，随后传送回原地并背对你。");
+        translationBuilder.add("tooltip.fantasyforest.mutated_end_wood.shift","§2空间扭曲§7§o—受击者会被传送到下方数格。");
         translationBuilder.add("tooltip.fantasyforest.void_wood","§8虚空§r");
         translationBuilder.add("tooltip.fantasyforest.void_wood.shift","§8虚空§7§o—短暂间隔后，受击者将持续受到虚空伤害。");
 
@@ -34,6 +34,7 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(MODItems.SEED_OF_REVELATION,"启示之种");
 
         translationBuilder.add(ModBlocks.ARBOREAL_CRAFTING_TABLE,"元素木工台");
+        translationBuilder.add(ModBlocks.ENDER_TRANSMISSION_SUPPRESSOR,"末影传送抑制器");
 
         translationBuilder.add(ModBlocks.OAK_STICK,"橡木木棍");
         translationBuilder.add(ModBlocks.DARK_OAK_STICK,"深色橡木木棍");
@@ -70,11 +71,8 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(MODItems.REVELATION_CHEST_BOAT,"启示之木运输船");
         translationBuilder.add(ModBlocks.REVELATION_SAPLING,"启示之树苗");
         translationBuilder.add(ModBlocks.REVELATION_STICK,"启示之木棍");
-        translationBuilder.add(MODItems.REVELATION_SWORD,"启示之木剑");
-        translationBuilder.add(MODItems.REVELATION_PICKAXE,"启示之木镐");
-        translationBuilder.add(MODItems.REVELATION_AXE,"启示之木斧");
-        translationBuilder.add(MODItems.REVELATION_HOE,"启示之木锄");
-        translationBuilder.add(MODItems.REVELATION_SHOVEL,"启示之木锹");
+        translationBuilder.add(ModBlocks.REVELATION_CORE,"启示之核心");
+        translationBuilder.add(ModBlocks.REVELATION_CORE_SIDE,"启示之核心侧面");
 
         translationBuilder.add(MODItems.PERMEAROMA_LEAF_PIECES,"沁芳树叶片");
         translationBuilder.add(ModBlocks.PERMEAROMA_LEAVES,"沁芳树叶");
@@ -102,6 +100,32 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(MODItems.PERMEAROMA_AXE,"沁芳木斧");
         translationBuilder.add(MODItems.PERMEAROMA_HOE,"沁芳木锄");
         translationBuilder.add(MODItems.PERMEAROMA_SHOVEL,"沁芳木锹");
+
+        translationBuilder.add(ModBlocks.APHRODISIA_LEAVES,"情花树叶");
+        translationBuilder.add(ModBlocks.APHRODISIA_LOG,"情花木原木");
+        translationBuilder.add(ModBlocks.APHRODISIA_WOOD,"情花木");
+        translationBuilder.add(ModBlocks.STRIPPED_APHRODISIA_LOG,"去皮情花木原木");
+        translationBuilder.add(ModBlocks.STRIPPED_APHRODISIA_WOOD,"去皮情花木");
+        translationBuilder.add(ModBlocks.APHRODISIA_PLANKS,"情花木板");
+        translationBuilder.add(ModBlocks.APHRODISIA_STAIRS,"情花木楼梯");
+        translationBuilder.add(ModBlocks.APHRODISIA_SLAB,"情花木台阶");
+        translationBuilder.add(ModBlocks.APHRODISIA_BUTTON,"情花木按钮");
+        translationBuilder.add(ModBlocks.APHRODISIA_DOOR,"情花木门");
+        translationBuilder.add(ModBlocks.APHRODISIA_FENCE,"情花木栅栏");
+        translationBuilder.add(ModBlocks.APHRODISIA_TRAPDOOR,"情花木活板门");
+        translationBuilder.add(ModBlocks.APHRODISIA_FENCE_GATE,"情花木栅栏门");
+        translationBuilder.add(ModBlocks.APHRODISIA_PRESSURE_PLATE,"情花木压力板");
+        translationBuilder.add(MODItems.APHRODISIA_SIGN,"情花木告示牌");
+        translationBuilder.add(MODItems.APHRODISIA_HANGING_SIGN,"情花木悬挂告示牌");
+        translationBuilder.add(MODItems.APHRODISIA_BOAT,"情花木船");
+        translationBuilder.add(MODItems.APHRODISIA_CHEST_BOAT,"情花木运输船");
+        translationBuilder.add(ModBlocks.APHRODISIA_SAPLING,"情花树苗");
+        translationBuilder.add(ModBlocks.APHRODISIA_STICK,"情花木棍");
+        translationBuilder.add(MODItems.APHRODISIA_SWORD,"情花木剑");
+        translationBuilder.add(MODItems.APHRODISIA_PICKAXE,"情花木镐");
+        translationBuilder.add(MODItems.APHRODISIA_AXE,"情花木斧");
+        translationBuilder.add(MODItems.APHRODISIA_HOE,"情花木锄");
+        translationBuilder.add(MODItems.APHRODISIA_SHOVEL,"情花木锹");
 
         translationBuilder.add(MODItems.END_RESIN,"末影树脂");
         translationBuilder.add(ModBlocks.END_RESIN_BLOCK,"末影树脂块");
@@ -191,6 +215,7 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(MODItems.VOID_WOODEN_HOE,"虚空木锄");
         translationBuilder.add(MODItems.VOID_WOODEN_SHOVEL,"虚空木锹");
 
+        translationBuilder.add(ModEffects.SPATIAL_CONSTRAINT,"空间阈限");
         translationBuilder.add(ModEffects.VOID_EFFECT,"虚空");
         translationBuilder.add("death.attack.void","%1$s 被虚空吞噬了");
         translationBuilder.add("death.attack.void.player","%1$s 在逃离%2$s时被虚空瓦解了");

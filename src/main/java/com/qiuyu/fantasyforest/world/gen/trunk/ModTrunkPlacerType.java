@@ -14,6 +14,7 @@ public record ModTrunkPlacerType<P extends TrunkPlacer>(Codec<P> codec) {
     public static final TrunkPlacerType<LargeEndTreeTrunkPlacer> LARGE_END_TREE_TRUNK_PLACER = register("large_end_tree_trunk_placer", LargeEndTreeTrunkPlacer.CODEC);
     public static final TrunkPlacerType<VoidTreeTrunkPlacer> VOID_TREE_TRUNK_PLACER = register("void_tree_trunk_placer", VoidTreeTrunkPlacer.CODEC);
     public static final TrunkPlacerType<LargeVoidTreeTrunkPlacer> LARGE_VOID_TREE_TRUNK_PLACER = register("large_void_tree_trunk_placer", LargeVoidTreeTrunkPlacer.CODEC);
+    public static final TrunkPlacerType<AphrodisiaTrunkPlacer> APHRODISIA_TRUNK_PLACER = register("aphrodisia_trunk_placer", AphrodisiaTrunkPlacer.CODEC);
 
     private static <P extends TrunkPlacer> TrunkPlacerType<P> register(String id, Codec<P> codec) {
         return Registry.register(Registries.TRUNK_PLACER_TYPE, id, new TrunkPlacerType<>(codec));

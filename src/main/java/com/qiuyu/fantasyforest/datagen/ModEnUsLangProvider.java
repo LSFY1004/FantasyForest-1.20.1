@@ -34,6 +34,7 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(MODItems.SEED_OF_REVELATION,"Seed of Revelation");
 
         translationBuilder.add(ModBlocks.ARBOREAL_CRAFTING_TABLE,"Arboreal Crafting Table");
+        translationBuilder.add(ModBlocks.ENDER_TRANSMISSION_SUPPRESSOR,"Ender Transmission Suppressor");
 
         translationBuilder.add(ModBlocks.OAK_STICK,"Oak Stick");
         translationBuilder.add(ModBlocks.DARK_OAK_STICK,"Dark Oak Stick");
@@ -69,12 +70,8 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(MODItems.REVELATION_CHEST_BOAT,"Revelation Boat With Chest");
         translationBuilder.add(ModBlocks.REVELATION_SAPLING,"Revelation Sapling");
         translationBuilder.add(ModBlocks.REVELATION_STICK,"Revelation Stick");
-        translationBuilder.add(MODItems.REVELATION_SWORD,"Revelation Sword");
-        translationBuilder.add(MODItems.REVELATION_PICKAXE,"Revelation Pickaxe");
-        translationBuilder.add(MODItems.REVELATION_AXE,"Revelation Axe");
-        translationBuilder.add(MODItems.REVELATION_HOE,"Revelation Hoe");
-        translationBuilder.add(MODItems.REVELATION_SHOVEL,"Revelation Shovel");
-
+        translationBuilder.add(ModBlocks.REVELATION_CORE,"Revelation Core");
+        translationBuilder.add(ModBlocks.REVELATION_CORE_SIDE,"Revelation Core Side");
 
         translationBuilder.add(MODItems.PERMEAROMA_LEAF_PIECES,"Permearoma Leaf Pieces");
         translationBuilder.add(ModBlocks.PERMEAROMA_LEAVES,"Permearoma Leaves");
@@ -102,6 +99,32 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(MODItems.PERMEAROMA_AXE,"Permearoma Axe");
         translationBuilder.add(MODItems.PERMEAROMA_HOE,"Permearoma Hoe");
         translationBuilder.add(MODItems.PERMEAROMA_SHOVEL,"Permearoma Shovel");
+
+        translationBuilder.add(ModBlocks.APHRODISIA_LEAVES,"Aphrodisia Leaves");
+        translationBuilder.add(ModBlocks.APHRODISIA_LOG,"Aphrodisia Log");
+        translationBuilder.add(ModBlocks.APHRODISIA_WOOD,"Aphrodisia Wood");
+        translationBuilder.add(ModBlocks.STRIPPED_APHRODISIA_LOG,"Stripped Aphrodisia Log");
+        translationBuilder.add(ModBlocks.STRIPPED_APHRODISIA_WOOD,"Stripped Aphrodisia Wood");
+        translationBuilder.add(ModBlocks.APHRODISIA_PLANKS,"Aphrodisia Planks");
+        translationBuilder.add(ModBlocks.APHRODISIA_STAIRS,"Aphrodisia Stairs");
+        translationBuilder.add(ModBlocks.APHRODISIA_SLAB,"Aphrodisia Slab");
+        translationBuilder.add(ModBlocks.APHRODISIA_BUTTON,"Aphrodisia Button");
+        translationBuilder.add(ModBlocks.APHRODISIA_DOOR,"Aphrodisia Door");
+        translationBuilder.add(ModBlocks.APHRODISIA_FENCE,"Aphrodisia Fence");
+        translationBuilder.add(ModBlocks.APHRODISIA_TRAPDOOR,"Aphrodisia Trapdoor");
+        translationBuilder.add(ModBlocks.APHRODISIA_FENCE_GATE,"Aphrodisia Fence Gate");
+        translationBuilder.add(ModBlocks.APHRODISIA_PRESSURE_PLATE,"Aphrodisia Pressure Plate");
+        translationBuilder.add(MODItems.APHRODISIA_SIGN,"Aphrodisia Sign");
+        translationBuilder.add(MODItems.APHRODISIA_HANGING_SIGN,"Aphrodisia Hanging Sign");
+        translationBuilder.add(MODItems.APHRODISIA_BOAT,"Aphrodisia Boat");
+        translationBuilder.add(MODItems.APHRODISIA_CHEST_BOAT,"Aphrodisia Boat With Chest");
+        translationBuilder.add(ModBlocks.APHRODISIA_SAPLING,"Aphrodisia Sapling");
+        translationBuilder.add(ModBlocks.APHRODISIA_STICK,"Aphrodisia Stick");
+        translationBuilder.add(MODItems.APHRODISIA_SWORD,"Aphrodisia Sword");
+        translationBuilder.add(MODItems.APHRODISIA_PICKAXE,"Aphrodisia Pickaxe");
+        translationBuilder.add(MODItems.APHRODISIA_AXE,"Aphrodisia Axe");
+        translationBuilder.add(MODItems.APHRODISIA_HOE,"Aphrodisia Hoe");
+        translationBuilder.add(MODItems.APHRODISIA_SHOVEL,"Aphrodisia Shovel");
 
         translationBuilder.add(MODItems.END_RESIN,"End Resin");
         translationBuilder.add(ModBlocks.END_RESIN_BLOCK,"End Resin Block");
@@ -191,6 +214,7 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(MODItems.VOID_WOODEN_HOE,"Void Wooden Hoe");
         translationBuilder.add(MODItems.VOID_WOODEN_SHOVEL,"Void Wooden Shovel");
 
+        translationBuilder.add(ModEffects.SPATIAL_CONSTRAINT,"Spatial Constraint");
         translationBuilder.add(ModEffects.VOID_EFFECT,"Void");
         translationBuilder.add("death.attack.void","%1$s was consumed by the void.");
         translationBuilder.add("death.attack.void.player","%1$s was disintegrated by the void while fleeing from %2$s.");

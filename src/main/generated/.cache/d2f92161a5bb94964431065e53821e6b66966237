@@ -1,4 +1,4 @@
-// 1.20.1	2026-02-26T03:23:04.6386662	Fantasy Forest/Tags for minecraft:item
+// 1.20.1	2026-05-05T16:25:00.5511632	Fantasy Forest/Tags for minecraft:item
 a7f8032c3c0a52a77f628118f489af891320de4d data\fantasy-forest\tags\items\sticks.json
 7d60b0f4a96b5c0e296a6a8cd2f66f826ce4b13c data\fantasy-forest\tags\items\permearoma_arboreal.json
 7e41589d370fe141fa469bf7ff88b58a0cf3fa10 data\fantasy-forest\tags\items\end_arboreal.json
@@ -6,7 +6,7 @@ a7f8032c3c0a52a77f628118f489af891320de4d data\fantasy-forest\tags\items\sticks.j
 0ccbebe78f2e12a988f2714dddbdd21a5b13eeae data\minecraft\tags\items\logs_that_burn.json
 75a89d96b82abba59d5af5b369bc6ff80cd9ba90 data\fantasy-forest\tags\items\void_arboreal.json
 0ccbebe78f2e12a988f2714dddbdd21a5b13eeae data\minecraft\tags\items\logs.json
-9dd41aae708b28930b91adffda0d2f37e6ed4ac9 data\minecraft\tags\items\wooden_fences.json
 672397a08990e494b65a7436b4f47614df96afbd data\minecraft\tags\items\planks.json
+9dd41aae708b28930b91adffda0d2f37e6ed4ac9 data\minecraft\tags\items\wooden_fences.json
 cbccd6486efece553d8dd9a46583b934bbf47502 data\minecraft\tags\items\saplings.json
 3c46b0b8f5a9e49c4958f3826638c9da57715183 data\minecraft\tags\items\fence_gates.json

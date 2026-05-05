@@ -22,6 +22,10 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block ARBOREAL_CRAFTING_TABLE = register("arboreal_crafting_table",new ArborealCraftingTable(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE)));
+    public static final Block ENDER_TRANSMISSION_SUPPRESSOR = register("ender_transmission_suppressor",new EnderTransmissionSuppressor(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).nonOpaque()));
+
+    public static final Block REVELATION_CORE = register("revelation_core",new Block(AbstractBlock.Settings.create().mapColor(MapColor.LICHEN_GREEN).strength(5.0F).instrument(Instrument.BASS).sounds(BlockSoundGroup.WOOD)));
+    public static final Block REVELATION_CORE_SIDE = register("revelation_core_side",new Block(AbstractBlock.Settings.copy(ModBlocks.REVELATION_CORE)));
 
     public static final Block REVELATION_LOG = register("revelation_log", new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.LICHEN_GREEN).strength(2.0F).instrument(Instrument.BASS).sounds(BlockSoundGroup.WOOD)));
     public static final Block REVELATION_WOOD = register("revelation_wood",new PillarBlock(AbstractBlock.Settings.copy(REVELATION_LOG)));
@@ -94,6 +98,42 @@ public class ModBlocks {
             new TerraformWallHangingSignBlock(PERMEAROMA_HANGING_SIGN_TEXTURE, PERMEAROMA_HANGING_SIGN_GUI,AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).solid().instrument(Instrument.BASS).noCollision().strength(2.0F,10.0F).burnable()));
     public static final Block PERMEAROMA_SAPLING = register("permearoma_sapling",
             new SaplingBlock(new PermearomaSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+
+    public static final Block APHRODISIA_LOG = register("aphrodisia_log", new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.LICHEN_GREEN).strength(2.0F).instrument(Instrument.BASS).sounds(BlockSoundGroup.WOOD)));
+    public static final Block APHRODISIA_WOOD = register("aphrodisia_wood",new PillarBlock(AbstractBlock.Settings.copy(APHRODISIA_LOG)));
+    public static final Block STRIPPED_APHRODISIA_LOG = register("stripped_aphrodisia_log", new PillarBlock(AbstractBlock.Settings.copy(APHRODISIA_LOG)));
+    public static final Block STRIPPED_APHRODISIA_WOOD = register("stripped_aphrodisia_wood",new PillarBlock(AbstractBlock.Settings.copy(APHRODISIA_LOG)));
+    public static final Block APHRODISIA_PLANKS = register("aphrodisia_planks", new Block(AbstractBlock.Settings.create().mapColor(MapColor.PALE_GREEN).strength(2.0F).instrument(Instrument.BASS).sounds(BlockSoundGroup.WOOD)));
+    public static final Block APHRODISIA_LEAVES = register("aphrodisia_leaves", new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+    public static final Block APHRODISIA_STAIRS = register("aphrodisia_stairs",
+            new StairsBlock(APHRODISIA_PLANKS.getDefaultState(),AbstractBlock.Settings.copy(APHRODISIA_PLANKS)));
+    public static final Block APHRODISIA_SLAB = register("aphrodisia_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(APHRODISIA_PLANKS)));
+    public static final Block APHRODISIA_BUTTON = register("aphrodisia_button",
+            new ButtonBlock(AbstractBlock.Settings.copy(APHRODISIA_PLANKS),BlockSetType.OAK,40,true));
+    public static final Block APHRODISIA_PRESSURE_PLATE = register("aphrodisia_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,AbstractBlock.Settings.copy(APHRODISIA_PLANKS),BlockSetType.OAK));
+    public static final Block APHRODISIA_FENCE = register("aphrodisia_fence",
+            new FenceBlock(AbstractBlock.Settings.copy(APHRODISIA_PLANKS)));
+    public static final Block APHRODISIA_FENCE_GATE = register("aphrodisia_fence_gate",
+            new FenceGateBlock(AbstractBlock.Settings.copy(APHRODISIA_PLANKS),WoodType.OAK));
+    public static final Block APHRODISIA_DOOR = register("aphrodisia_door",
+            new DoorBlock(AbstractBlock.Settings.copy(APHRODISIA_PLANKS).nonOpaque(),BlockSetType.OAK));
+    public static final Block APHRODISIA_TRAPDOOR = register("aphrodisia_trapdoor",
+            new TrapdoorBlock(AbstractBlock.Settings.copy(APHRODISIA_PLANKS).nonOpaque(),BlockSetType.OAK));
+    public static final Identifier APHRODISIA_SIGN_TEXTURE = new Identifier(FantasyForest.MOD_ID,"entity/signs/aphrodisia");
+    public static final Identifier APHRODISIA_HANGING_SIGN_TEXTURE = new Identifier(FantasyForest.MOD_ID,"entity/signs/hanging/aphrodisia");
+    public static final Identifier APHRODISIA_HANGING_SIGN_GUI = new Identifier(FantasyForest.MOD_ID,"textures/gui/hanging-signs/aphrodisia");
+    public static final Block APHRODISIA_SIGN = Registry.register(Registries.BLOCK,new Identifier(FantasyForest.MOD_ID,"aphrodisia_sign"),
+            new TerraformSignBlock(APHRODISIA_SIGN_TEXTURE,AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).solid().instrument(Instrument.BASS).noCollision().strength(2.0F,10.0F).burnable()));
+    public static final Block APHRODISIA_WALL_SIGN = Registry.register(Registries.BLOCK,new Identifier(FantasyForest.MOD_ID,"aphrodisia_wall_sign"),
+            new TerraformWallSignBlock(APHRODISIA_SIGN_TEXTURE,AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).solid().instrument(Instrument.BASS).noCollision().strength(2.0F,10.0F).burnable()));
+    public static final Block APHRODISIA_HANGING_SIGN = Registry.register(Registries.BLOCK,new Identifier(FantasyForest.MOD_ID,"aphrodisia_hanging_sign"),
+            new TerraformHangingSignBlock(APHRODISIA_HANGING_SIGN_TEXTURE, APHRODISIA_HANGING_SIGN_GUI,AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).solid().instrument(Instrument.BASS).noCollision().strength(2.0F,10.0F).burnable()));
+    public static final Block APHRODISIA_WALL_HANGING_SIGN = Registry.register(Registries.BLOCK,new Identifier(FantasyForest.MOD_ID,"aphrodisia_wall_hanging_sign"),
+            new TerraformWallHangingSignBlock(APHRODISIA_HANGING_SIGN_TEXTURE, APHRODISIA_HANGING_SIGN_GUI,AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).solid().instrument(Instrument.BASS).noCollision().strength(2.0F,10.0F).burnable()));
+    public static final Block APHRODISIA_SAPLING = register("aphrodisia_sapling",
+            new SaplingBlock(new AphrodisiaSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
 
     public static final Block END_LICHEN = register("end_lichen",new EndLichenBlock(AbstractBlock.Settings.copy(Blocks.END_STONE)));
     public static final Block DEAD_END_LICHEN = register("dead_end_lichen",new DeadEndLichenBlock(AbstractBlock.Settings.copy(Blocks.END_STONE)));
@@ -225,6 +265,7 @@ public class ModBlocks {
 
     public static final Block REVELATION_STICK = registerBIDBlock("revelation_stick",new StickBlock(AbstractBlock.Settings.copy(ModBlocks.REVELATION_PLANKS).nonOpaque()));
     public static final Block PERMEAROMA_STICK = registerBIDBlock("permearoma_stick",new StickBlock(AbstractBlock.Settings.copy(ModBlocks.PERMEAROMA_PLANKS).nonOpaque()));
+    public static final Block APHRODISIA_STICK = registerBIDBlock("aphrodisia_stick",new StickBlock(AbstractBlock.Settings.copy(ModBlocks.APHRODISIA_PLANKS).nonOpaque()));
     public static final Block END_STICK = registerBIDBlock("end_stick",new StickBlock(AbstractBlock.Settings.copy(ModBlocks.END_PLANKS).nonOpaque()));
     public static final Block MUTATED_END_STICK = registerBIDBlock("mutated_end_stick",new StickBlock(AbstractBlock.Settings.copy(ModBlocks.MUTATED_END_PLANKS).nonOpaque()));
     public static final Block VOID_STICK = registerBIDBlock("void_stick",new StickBlock(AbstractBlock.Settings.copy(ModBlocks.VOID_PLANKS).nonOpaque()));
@@ -268,6 +309,7 @@ public class ModBlocks {
         return switch (woodType){
             case "revelation" -> ModBlocks.REVELATION_STICK;
             case "permearoma" -> ModBlocks.PERMEAROMA_STICK;
+            case "aphrodisia" -> ModBlocks.APHRODISIA_STICK;
             case "end"->ModBlocks.END_STICK;
             case "mutated_end"->ModBlocks.MUTATED_END_STICK;
             case "void"->ModBlocks.VOID_STICK;

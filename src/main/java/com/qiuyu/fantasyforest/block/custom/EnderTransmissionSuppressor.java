@@ -7,6 +7,8 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
@@ -52,6 +54,8 @@ public class EnderTransmissionSuppressor extends Block {
         if (!world.isClient()) {
             // 切换激活状态
             boolean newLitState = !state.get(LIT);
+            world.playSound(null, pos, SoundEvents.BLOCK_END_PORTAL_FRAME_FILL,
+                    SoundCategory.BLOCKS, 0.8f, newLitState?1.1f:0.9f);
             world.setBlockState(pos, state.with(LIT, newLitState), Block.NOTIFY_ALL);
 
             // 发布状态变化事件

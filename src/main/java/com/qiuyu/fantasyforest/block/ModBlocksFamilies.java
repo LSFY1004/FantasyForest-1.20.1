@@ -39,6 +39,20 @@ public class ModBlocksFamilies {
             .unlockCriterionName("has_planks")
             .build();
 
+    public static final BlockFamily APHRODISIA = register(ModBlocks.APHRODISIA_PLANKS)
+            .button(ModBlocks.APHRODISIA_BUTTON)
+            .fence(ModBlocks.APHRODISIA_FENCE)
+            .fenceGate(ModBlocks.APHRODISIA_FENCE_GATE)
+            .pressurePlate(ModBlocks.APHRODISIA_PRESSURE_PLATE)
+            .slab(ModBlocks.APHRODISIA_SLAB)
+            .stairs(ModBlocks.APHRODISIA_STAIRS)
+            .door(ModBlocks.APHRODISIA_DOOR)
+            .trapdoor(ModBlocks.APHRODISIA_TRAPDOOR)
+            .sign(ModBlocks.APHRODISIA_SIGN,ModBlocks.APHRODISIA_WALL_SIGN)
+            .group("wooden")
+            .unlockCriterionName("has_planks")
+            .build();
+
     public static final BlockFamily END_WOODEN = register(ModBlocks.END_PLANKS)
             .button(ModBlocks.END_WOODEN_BUTTON)
             .fence(ModBlocks.END_WOODEN_FENCE)

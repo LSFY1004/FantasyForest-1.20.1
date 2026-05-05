@@ -24,6 +24,8 @@ import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
 
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?,?>> PERMEAROMA_KEY = registryKey("permearoma");
+    public static final RegistryKey<ConfiguredFeature<?,?>> APHRODISIA_KEY = registryKey("aphrodisia");
+    public static final RegistryKey<ConfiguredFeature<?,?>> LARGE_APHRODISIA_KEY = registryKey("large_aphrodisia");
     public static final RegistryKey<ConfiguredFeature<?,?>> END_TREE_KEY = registryKey("end_tree");
     public static final RegistryKey<ConfiguredFeature<?,?>> LARGE_END_TREE_KEY = registryKey("large_end_tree");
     public static final RegistryKey<ConfiguredFeature<?,?>> MUTATED_END_TREE_KEY = registryKey("mutated_end_tree");
@@ -43,6 +45,7 @@ public class ModConfiguredFeatures {
                 .dirtProvider(BlockStateProvider.of(Blocks.DIRT))
                 .ignoreVines()
                 .build());
+
         register(context,PERMEAROMA_KEY,Feature.TREE,new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.PERMEAROMA_LOG),
                 new PermearomaTrunkPlacer(11,3,0),
@@ -53,6 +56,28 @@ public class ModConfiguredFeatures {
                 .dirtProvider(BlockStateProvider.of(Blocks.DIRT))
                 .ignoreVines()
                 .build());
+
+        register(context,APHRODISIA_KEY,Feature.TREE,new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.APHRODISIA_LOG),
+                new AphrodisiaTrunkPlacer(4,1,0),
+                BlockStateProvider.of(ModBlocks.APHRODISIA_LEAVES),
+                new CherryFoliagePlacer(ConstantIntProvider.create(2),ConstantIntProvider.create(0),ConstantIntProvider.create(4),0.5F,0.5F,0.5F,0.5F),
+                new TwoLayersFeatureSize(1,0,2)
+        )
+                .dirtProvider(BlockStateProvider.of(Blocks.DIRT))
+                .ignoreVines()
+                .build());
+        register(context,LARGE_APHRODISIA_KEY,Feature.TREE,new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.APHRODISIA_LOG),
+                new PermearomaTrunkPlacer(11,3,0),
+                BlockStateProvider.of(ModBlocks.APHRODISIA_LEAVES),
+                new CherryFoliagePlacer(ConstantIntProvider.create(2),ConstantIntProvider.create(0),ConstantIntProvider.create(5),0.5F,0.5F,0.5F,0.5F),
+                new TwoLayersFeatureSize(1,0,2)
+        )
+                .dirtProvider(BlockStateProvider.of(Blocks.DIRT))
+                .ignoreVines()
+                .build());
+
         register(context,END_TREE_KEY,Feature.TREE,new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.END_LOG),
                 new ForkingTrunkPlacer(6,5,3),

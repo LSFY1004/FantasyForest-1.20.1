@@ -26,6 +26,11 @@ public class FantasyForestClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PERMEAROMA_SAPLING, RenderLayer.getCutout());
         TerraformBoatClientHelper.registerModelLayers(ModBoats.PERMEAROMA_BOAT,false);
 
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.APHRODISIA_DOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.APHRODISIA_TRAPDOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.APHRODISIA_SAPLING, RenderLayer.getCutout());
+        TerraformBoatClientHelper.registerModelLayers(ModBoats.APHRODISIA_BOAT,false);
+
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.END_WOODEN_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.END_WOODEN_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.END_TREE_SAPLING, RenderLayer.getCutout());

@@ -1,5 +1,6 @@
 package com.qiuyu.fantasyforest.block.custom;
 
+import com.qiuyu.fantasyforest.block.ModBlocks;
 import com.qiuyu.fantasyforest.block.SuppressorManager;
 import com.qiuyu.fantasyforest.item.ModToolMaterials;
 import net.minecraft.block.Block;
@@ -210,8 +211,13 @@ public class EndLogBlock extends PillarBlock {
 
         // 处理闪烁恢复
         if (state.get(FLASHING)) {
+            if(world.getBlockState(transPos.get(pos)).getBlock() instanceof EndLogBlock){
+                ItemScatterer.spawn(world, transPos.get(pos), DefaultedList.copyOf(ItemStack.EMPTY, new ItemStack(this)));
+            }
+            else world.breakBlock(transPos.get(pos),true);
             world.setBlockState(transPos.get(pos),getDefaultState().with(AXIS,state.get(AXIS)));
             transPos.remove(pos);
+            transEffect(world, pos);
             world.setBlockState(pos, Blocks.AIR.getDefaultState(), Block.NOTIFY_ALL);
             return;
         }

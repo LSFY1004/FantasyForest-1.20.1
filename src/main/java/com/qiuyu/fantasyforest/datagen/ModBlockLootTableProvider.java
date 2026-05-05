@@ -28,6 +28,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.ARBOREAL_CRAFTING_TABLE);
+        addDrop(ModBlocks.ENDER_TRANSMISSION_SUPPRESSOR);
 
         addDrop(ModBlocks.REVELATION_LOG);
         addDrop(ModBlocks.REVELATION_WOOD);
@@ -64,6 +65,24 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PERMEAROMA_DOOR,doorDrops(ModBlocks.PERMEAROMA_DOOR));
         addDrop(ModBlocks.PERMEAROMA_SIGN);
         addDrop(ModBlocks.PERMEAROMA_HANGING_SIGN);
+
+        addDrop(ModBlocks.APHRODISIA_LOG);
+        addDrop(ModBlocks.APHRODISIA_WOOD);
+        addDrop(ModBlocks.STRIPPED_APHRODISIA_LOG);
+        addDrop(ModBlocks.STRIPPED_APHRODISIA_WOOD);
+        addDrop(ModBlocks.APHRODISIA_PLANKS);
+        addDrop(ModBlocks.APHRODISIA_LEAVES, leavesDrops(ModBlocks.APHRODISIA_LEAVES,ModBlocks.APHRODISIA_SAPLING, 0.01F, 0.02F, 0.04F, 0.08F));
+        addDrop(ModBlocks.APHRODISIA_SAPLING);
+        addDrop(ModBlocks.APHRODISIA_BUTTON);
+        addDrop(ModBlocks.APHRODISIA_STAIRS);
+        addDrop(ModBlocks.APHRODISIA_FENCE);
+        addDrop(ModBlocks.APHRODISIA_TRAPDOOR);
+        addDrop(ModBlocks.APHRODISIA_FENCE_GATE);
+        addDrop(ModBlocks.APHRODISIA_PRESSURE_PLATE);
+        addDrop(ModBlocks.APHRODISIA_SLAB,slabDrops(ModBlocks.APHRODISIA_SLAB));
+        addDrop(ModBlocks.APHRODISIA_DOOR,doorDrops(ModBlocks.APHRODISIA_DOOR));
+        addDrop(ModBlocks.APHRODISIA_SIGN);
+        addDrop(ModBlocks.APHRODISIA_HANGING_SIGN);
 
         addDrop(ModBlocks.END_LICHEN,drops(ModBlocks.END_LICHEN, Blocks.END_STONE));
         addDrop(ModBlocks.DEAD_END_LICHEN);

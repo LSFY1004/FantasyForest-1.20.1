@@ -13,9 +13,12 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.SwordItem;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -105,6 +108,35 @@ public class ModSwordItem extends SwordItem {
                     false, // 不显示粒子
                     true   // 显示图标
             ));
+            case MUTATED_END_WOODEN -> {
+                if (target.getWorld() instanceof ServerWorld serverWorld){
+                    serverWorld.spawnParticles(
+                            ParticleTypes.PORTAL,
+                            target.getX(), target.getY() + target.getHeight() / 2, target.getZ(),
+                            30,               // 粒子数量
+                            0.5, 0.5, 0.5,    // 偏移范围（XYZ）
+                            0.1               // 速度
+                    );
+                    // 可选：SoundEvents.ENTITY_VILLAGER_YES, ENTITY_PLAYER_BURP, BLOCK_NOTE_BLOCK_BANJO
+                    serverWorld.playSound(
+                            null,               // 玩家（null表示对所有附近玩家播放）
+                            target.getBlockPos(),
+                            SoundEvents.ENTITY_PLAYER_BURP,
+                            SoundCategory.PLAYERS,
+                            1.0f,               // 音量
+                            1.0f                // 音高
+                    );
+                    serverWorld.playSound(
+                            null,               // 玩家（null表示对所有附近玩家播放）
+                            target.getBlockPos(),
+                            SoundEvents.ENTITY_ENDERMAN_TELEPORT,
+                            SoundCategory.PLAYERS,
+                            1.0f,               // 音量
+                            1.0f                // 音高
+                    );
+                }
+                target.teleport(target.getX(), target.getY() - 5, target.getZ());
+            }
         }
     }
 

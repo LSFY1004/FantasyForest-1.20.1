@@ -28,17 +28,6 @@ public class MODItems {
             ModBoats.REVELATION_BOAT,ModBoats.REVELATION_BOAT_KEY,false);
     public static final Item REVELATION_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(
             ModBoats.REVELATION_CHEST_BOAT,ModBoats.REVELATION_BOAT_KEY,true);
-    public static final Item REVELATION_SWORD = registerItems("revelation_sword",new ModSwordItem(ModToolMaterials.REVELATION,
-            3,-2.0f,new Item.Settings()));
-    public static final Item REVELATION_SHOVEL = registerItems("revelation_shovel",new ModShovelItem(ModToolMaterials.REVELATION,
-            1.5F, -3.0F, new Item.Settings()));
-    public static final Item REVELATION_PICKAXE = registerItems("revelation_pickaxe",new ModPickaxeItem(ModToolMaterials.REVELATION,
-            1, -2.8F, new Item.Settings()));
-    public static final Item REVELATION_AXE = registerItems("revelation_axe",new ModAxeItem(ModToolMaterials.REVELATION,
-            6.0F, -3.2F, new Item.Settings()));
-    public static final Item REVELATION_HOE = registerItems("revelation_hoe",new ModHoeItem(ModToolMaterials.REVELATION,
-            0, -3.0F, new Item.Settings()));
-
 
     public static final Item PERMEAROMA_LEAF_PIECES = registerItem("permearoma_leaf_pieces", new Item(new Item.Settings()));
     public static final Item PERMEAROMA_SIGN = registerItem("permearoma_sign",
@@ -60,6 +49,24 @@ public class MODItems {
     public static final Item PERMEAROMA_HOE = registerItems("permearoma_hoe",new ModHoeItem(ModToolMaterials.PERMEAROMA,
             0, -3.0F, new Item.Settings()));
 
+    public static final Item APHRODISIA_SIGN = registerItem("aphrodisia_sign",
+            new SignItem(new Item.Settings().maxCount(16),ModBlocks.APHRODISIA_SIGN, ModBlocks.APHRODISIA_WALL_SIGN));
+    public static final Item APHRODISIA_HANGING_SIGN = registerItem("aphrodisia_hanging_sign",
+            new HangingSignItem(ModBlocks.APHRODISIA_HANGING_SIGN, ModBlocks.APHRODISIA_WALL_HANGING_SIGN,new Item.Settings().maxCount(16)));
+    public static final Item APHRODISIA_BOAT = TerraformBoatItemHelper.registerBoatItem(
+            ModBoats.APHRODISIA_BOAT,ModBoats.APHRODISIA_BOAT_KEY,false);
+    public static final Item APHRODISIA_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(
+            ModBoats.APHRODISIA_CHEST_BOAT,ModBoats.APHRODISIA_BOAT_KEY,true);
+    public static final Item APHRODISIA_SWORD = registerItems("aphrodisia_sword",new ModSwordItem(ModToolMaterials.APHRODISIA,
+            3,-2.0f,new Item.Settings()));
+    public static final Item APHRODISIA_SHOVEL = registerItems("aphrodisia_shovel",new ModShovelItem(ModToolMaterials.APHRODISIA,
+            1.5F, -3.0F, new Item.Settings()));
+    public static final Item APHRODISIA_PICKAXE = registerItems("aphrodisia_pickaxe",new ModPickaxeItem(ModToolMaterials.APHRODISIA,
+            1, -2.8F, new Item.Settings()));
+    public static final Item APHRODISIA_AXE = registerItems("aphrodisia_axe",new ModAxeItem(ModToolMaterials.APHRODISIA,
+            6.0F, -3.2F, new Item.Settings()));
+    public static final Item APHRODISIA_HOE = registerItems("aphrodisia_hoe",new ModHoeItem(ModToolMaterials.APHRODISIA,
+            0, -3.0F, new Item.Settings()));
 
     public static final Item END_RESIN = registerItem("end_resin", new Item(new Item.Settings()));
     public static final Item END_WOODEN_SIGN = registerItem("end_wooden_sign",
@@ -79,7 +86,7 @@ public class MODItems {
     public static final Item END_WOODEN_AXE = registerItems("end_wooden_axe",new ModAxeItem(ModToolMaterials.END_WOODEN,
             6.0F, -3.2F, new Item.Settings()));
     public static final Item END_WOODEN_HOE = registerItems("end_wooden_hoe",new ModHoeItem(ModToolMaterials.END_WOODEN,
-            0, -3.0F, new Item.Settings()));
+            -4, 0, new Item.Settings()));
 
 
 
@@ -101,7 +108,7 @@ public class MODItems {
     public static final Item MUTATED_END_WOODEN_AXE = registerItems("mutated_end_wooden_axe",new ModAxeItem(ModToolMaterials.MUTATED_END_WOODEN,
             6.0F, -3.2F, new Item.Settings()));
     public static final Item MUTATED_END_WOODEN_HOE = registerItems("mutated_end_wooden_hoe",new ModHoeItem(ModToolMaterials.MUTATED_END_WOODEN,
-            0, -3.0F, new Item.Settings()));
+            -4, 0, new Item.Settings()));
 
 
 
@@ -124,7 +131,7 @@ public class MODItems {
     public static final Item VOID_WOODEN_AXE = registerItems("void_wooden_axe",new ModAxeItem(ModToolMaterials.VOID_WOODEN,
             6.0F, -3.2F, new Item.Settings()));
     public static final Item VOID_WOODEN_HOE = registerItems("void_wooden_hoe",new ModHoeItem(ModToolMaterials.VOID_WOODEN,
-            0, -3.0F, new Item.Settings()));
+            -4, 0, new Item.Settings()));
 
 
 
@@ -202,6 +209,21 @@ public class MODItems {
         entries.add(PERMEAROMA_BUTTON);
         entries.add(PERMEAROMA_STICK);
 
+        entries.add(APHRODISIA_LOG);
+        entries.add(APHRODISIA_WOOD);
+        entries.add(STRIPPED_APHRODISIA_LOG);
+        entries.add(STRIPPED_APHRODISIA_WOOD);
+        entries.add(APHRODISIA_PLANKS);
+        entries.add(APHRODISIA_STAIRS);
+        entries.add(APHRODISIA_SLAB);
+        entries.add(APHRODISIA_FENCE);
+        entries.add(APHRODISIA_FENCE_GATE);
+        entries.add(APHRODISIA_DOOR);
+        entries.add(APHRODISIA_TRAPDOOR);
+        entries.add(APHRODISIA_PRESSURE_PLATE);
+        entries.add(APHRODISIA_BUTTON);
+        entries.add(APHRODISIA_STICK);
+
         entries.add(END_RESIN_BLOCK);
         entries.add(END_LOG);
         entries.add(END_WOOD);
@@ -252,13 +274,13 @@ public class MODItems {
     }
 
     private static void addItemToItemGroupC(FabricItemGroupEntries entries){
-        entries.add(REVELATION_SWORD);
         entries.add(PERMEAROMA_SWORD);
+        entries.add(APHRODISIA_SWORD);
         entries.add(END_WOODEN_SWORD);
         entries.add(MUTATED_END_WOODEN_SWORD);
         entries.add(VOID_WOODEN_SWORD);
-        entries.add(REVELATION_AXE);
         entries.add(PERMEAROMA_AXE);
+        entries.add(APHRODISIA_AXE);
         entries.add(END_WOODEN_AXE);
         entries.add(MUTATED_END_WOODEN_AXE);
         entries.add(VOID_WOODEN_AXE);
@@ -270,6 +292,7 @@ public class MODItems {
 
         entries.add(REVELATION_LOG);
         entries.add(PERMEAROMA_LOG);
+        entries.add(APHRODISIA_LOG);
         entries.add(END_LOG);
         entries.add(MUTATED_END_LOG);
         entries.add(VOID_LOG);
@@ -277,6 +300,7 @@ public class MODItems {
 
         entries.add(REVELATION_LEAVES);
         entries.add(PERMEAROMA_LEAVES);
+        entries.add(APHRODISIA_LEAVES);
         entries.add(END_LEAVES);
         entries.add(VOID_LEAVES);
 
@@ -284,6 +308,9 @@ public class MODItems {
         entries.add(PERMEAROMA_SAPLING);
         entries.add(END_TREE_SAPLING);
         entries.add(VOID_TREE_SAPLING);
+
+        entries.add(REVELATION_CORE);
+        entries.add(REVELATION_CORE_SIDE);
 
         entries.add(VOID_VINE_BODY);
         entries.add(VOID_VINE_HEAD);
@@ -298,10 +325,13 @@ public class MODItems {
 
     private static void addItemToItemGroupG(FabricItemGroupEntries entries){
         entries.add(ARBOREAL_CRAFTING_TABLE);
+        entries.add(ENDER_TRANSMISSION_SUPPRESSOR);
         entries.add(REVELATION_SIGN);
         entries.add(REVELATION_HANGING_SIGN);
         entries.add(PERMEAROMA_SIGN);
         entries.add(PERMEAROMA_HANGING_SIGN);
+        entries.add(APHRODISIA_SIGN);
+        entries.add(APHRODISIA_HANGING_SIGN);
         entries.add(END_WOODEN_SIGN);
         entries.add(END_WOODEN_HANGING_SIGN);
         entries.add(MUTATED_END_WOODEN_SIGN);
@@ -311,14 +341,14 @@ public class MODItems {
     }
 
     private static void addItemToItemGroupT(FabricItemGroupEntries entries){
-        entries.add(REVELATION_HOE);
-        entries.add(REVELATION_PICKAXE);
-        entries.add(REVELATION_AXE);
-        entries.add(REVELATION_SHOVEL);
         entries.add(PERMEAROMA_HOE);
         entries.add(PERMEAROMA_PICKAXE);
         entries.add(PERMEAROMA_AXE);
         entries.add(PERMEAROMA_SHOVEL);
+        entries.add(APHRODISIA_HOE);
+        entries.add(APHRODISIA_PICKAXE);
+        entries.add(APHRODISIA_AXE);
+        entries.add(APHRODISIA_SHOVEL);
         entries.add(END_WOODEN_HOE);
         entries.add(END_WOODEN_PICKAXE);
         entries.add(END_WOODEN_AXE);

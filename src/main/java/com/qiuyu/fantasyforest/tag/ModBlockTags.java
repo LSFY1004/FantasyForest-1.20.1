@@ -11,6 +11,7 @@ public class ModBlockTags {
     public static final TagKey<Block> VOID_WOODEN_BLOCKS = of("void_wooden_blocks");
     public static final TagKey<Block> MUTATED_END_WOODEN_BLOCKS = of("mutated_end_wooden_blocks");
     public static final TagKey<Block> PERMEAROMA_BLOCKS = of("permearoma_blocks");
+    public static final TagKey<Block> APHRODISIA_BLOCKS = of("aphrodisia_blocks");
     public static final TagKey<Block> REVELATION_BLOCKS = of("revelation_blocks");
     public static final TagKey<Block> STICKS = of("sticks");
 

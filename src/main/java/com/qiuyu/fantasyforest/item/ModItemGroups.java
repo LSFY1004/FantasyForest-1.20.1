@@ -24,12 +24,13 @@ public class ModItemGroups {
                 Fantasy_Forest,
                 ItemGroup.create(null, -1)
                         .displayName(Text.translatable("itemGroup.fantasy_forest"))
-                        .icon(() -> new ItemStack(MODItems.END_RESIN))
+                        .icon(() -> new ItemStack(ModBlocks.REVELATION_SAPLING))
                         .entries((displayContext, entries) -> {
 
                             entries.add(MODItems.SEED_OF_REVELATION);
 
                             entries.add(ModBlocks.ARBOREAL_CRAFTING_TABLE);
+                            entries.add(ModBlocks.ENDER_TRANSMISSION_SUPPRESSOR);
 
                             entries.add(ModBlocks.OAK_STICK);
                             entries.add(ModBlocks.SPRUCE_STICK);
@@ -44,6 +45,27 @@ public class ModItemGroups {
 
                             entries.add(ModBlocks.END_LICHEN);
                             entries.add(ModBlocks.DEAD_END_LICHEN);
+
+                            entries.add(ModBlocks.REVELATION_LEAVES);
+                            entries.add(ModBlocks.REVELATION_SAPLING);
+                            entries.add(ModBlocks.REVELATION_LOG);
+                            entries.add(ModBlocks.REVELATION_WOOD);
+                            entries.add(ModBlocks.STRIPPED_REVELATION_LOG);
+                            entries.add(ModBlocks.STRIPPED_REVELATION_WOOD);
+                            entries.add(ModBlocks.REVELATION_PLANKS);
+                            entries.add(ModBlocks.REVELATION_STAIRS);
+                            entries.add(ModBlocks.REVELATION_SLAB);
+                            entries.add(ModBlocks.REVELATION_FENCE);
+                            entries.add(ModBlocks.REVELATION_FENCE_GATE);
+                            entries.add(ModBlocks.REVELATION_DOOR);
+                            entries.add(ModBlocks.REVELATION_TRAPDOOR);
+                            entries.add(ModBlocks.REVELATION_PRESSURE_PLATE);
+                            entries.add(ModBlocks.REVELATION_BUTTON);
+                            entries.add(MODItems.REVELATION_SIGN);
+                            entries.add(MODItems.REVELATION_HANGING_SIGN);
+                            entries.add(MODItems.REVELATION_BOAT);
+                            entries.add(MODItems.REVELATION_CHEST_BOAT);
+                            entries.add(ModBlocks.REVELATION_STICK);
 
                             entries.add(MODItems.PERMEAROMA_LEAF_PIECES);
                             entries.add(ModBlocks.PERMEAROMA_LEAVES);
@@ -71,6 +93,32 @@ public class ModItemGroups {
                             entries.add(MODItems.PERMEAROMA_PICKAXE);
                             entries.add(MODItems.PERMEAROMA_AXE);
                             entries.add(MODItems.PERMEAROMA_HOE);
+
+                            entries.add(ModBlocks.APHRODISIA_LEAVES);
+                            entries.add(ModBlocks.APHRODISIA_SAPLING);
+                            entries.add(ModBlocks.APHRODISIA_LOG);
+                            entries.add(ModBlocks.APHRODISIA_WOOD);
+                            entries.add(ModBlocks.STRIPPED_APHRODISIA_LOG);
+                            entries.add(ModBlocks.STRIPPED_APHRODISIA_WOOD);
+                            entries.add(ModBlocks.APHRODISIA_PLANKS);
+                            entries.add(ModBlocks.APHRODISIA_STAIRS);
+                            entries.add(ModBlocks.APHRODISIA_SLAB);
+                            entries.add(ModBlocks.APHRODISIA_FENCE);
+                            entries.add(ModBlocks.APHRODISIA_FENCE_GATE);
+                            entries.add(ModBlocks.APHRODISIA_DOOR);
+                            entries.add(ModBlocks.APHRODISIA_TRAPDOOR);
+                            entries.add(ModBlocks.APHRODISIA_PRESSURE_PLATE);
+                            entries.add(ModBlocks.APHRODISIA_BUTTON);
+                            entries.add(MODItems.APHRODISIA_SIGN);
+                            entries.add(MODItems.APHRODISIA_HANGING_SIGN);
+                            entries.add(MODItems.APHRODISIA_BOAT);
+                            entries.add(MODItems.APHRODISIA_CHEST_BOAT);
+                            entries.add(ModBlocks.APHRODISIA_STICK);
+                            entries.add(MODItems.APHRODISIA_SWORD);
+                            entries.add(MODItems.APHRODISIA_SHOVEL);
+                            entries.add(MODItems.APHRODISIA_PICKAXE);
+                            entries.add(MODItems.APHRODISIA_AXE);
+                            entries.add(MODItems.APHRODISIA_HOE);
 
                             entries.add(MODItems.END_RESIN);
                             entries.add(ModBlocks.END_RESIN_BLOCK);

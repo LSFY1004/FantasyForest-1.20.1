@@ -19,6 +19,10 @@ public class ModBoats {
     public static final Identifier PERMEAROMA_CHEST_BOAT = new Identifier(FantasyForest.MOD_ID,"permearoma_chest_boat");
     public static final RegistryKey<TerraformBoatType> PERMEAROMA_BOAT_KEY = TerraformBoatTypeRegistry.createKey(PERMEAROMA_BOAT);
 
+    public static final Identifier APHRODISIA_BOAT = new Identifier(FantasyForest.MOD_ID,"aphrodisia_boat");
+    public static final Identifier APHRODISIA_CHEST_BOAT = new Identifier(FantasyForest.MOD_ID,"aphrodisia_chest_boat");
+    public static final RegistryKey<TerraformBoatType> APHRODISIA_BOAT_KEY = TerraformBoatTypeRegistry.createKey(APHRODISIA_BOAT);
+
     public static final Identifier END_WOODEN_BOAT = new Identifier(FantasyForest.MOD_ID,"end_wooden_boat");
     public static final Identifier END_WOODEN_CHEST_BOAT = new Identifier(FantasyForest.MOD_ID,"end_wooden_chest_boat");
     public static final RegistryKey<TerraformBoatType> END_WOODEN_BOAT_KEY = TerraformBoatTypeRegistry.createKey(END_WOODEN_BOAT);
