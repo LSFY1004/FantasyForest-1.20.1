@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "fantasy-forest:block/aphrodisia_slab"
+    },
+    "type=double": {
+      "model": "fantasy-forest:block/aphrodisia_planks"
+    },
+    "type=top": {
+      "model": "fantasy-forest:block/aphrodisia_slab_top"
+    }
+  }
+}

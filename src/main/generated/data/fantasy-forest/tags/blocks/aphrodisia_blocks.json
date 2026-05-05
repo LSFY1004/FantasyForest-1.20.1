@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "fantasy-forest:aphrodisia_log",
+    "fantasy-forest:aphrodisia_wood",
+    "fantasy-forest:stripped_aphrodisia_log",
+    "fantasy-forest:stripped_aphrodisia_wood",
+    "fantasy-forest:aphrodisia_planks",
+    "fantasy-forest:aphrodisia_button",
+    "fantasy-forest:aphrodisia_door",
+    "fantasy-forest:aphrodisia_pressure_plate",
+    "fantasy-forest:aphrodisia_slab",
+    "fantasy-forest:aphrodisia_stairs",
+    "fantasy-forest:aphrodisia_trapdoor",
+    "fantasy-forest:aphrodisia_wall_sign",
+    "fantasy-forest:aphrodisia_wall_hanging_sign",
+    "fantasy-forest:aphrodisia_fence",
+    "fantasy-forest:aphrodisia_fence_gate",
+    "fantasy-forest:aphrodisia_hanging_sign",
+    "fantasy-forest:aphrodisia_sign",
+    "fantasy-forest:aphrodisia_stick"
+  ]
+}

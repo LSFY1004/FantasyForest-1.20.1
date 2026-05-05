@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "fantasy-forest:block/stripped_aphrodisia_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "fantasy-forest:block/stripped_aphrodisia_log"
+    },
+    "axis=z": {
+      "model": "fantasy-forest:block/stripped_aphrodisia_log_horizontal",
+      "x": 90
+    }
+  }
+}

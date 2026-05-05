@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "fantasy-forest:block/aphrodisia_log",
+    "side": "fantasy-forest:block/aphrodisia_log"
+  }
+}

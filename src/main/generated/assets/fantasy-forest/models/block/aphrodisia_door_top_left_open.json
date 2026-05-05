@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left_open",
+  "textures": {
+    "bottom": "fantasy-forest:block/aphrodisia_door_bottom",
+    "top": "fantasy-forest:block/aphrodisia_door_top"
+  }
+}

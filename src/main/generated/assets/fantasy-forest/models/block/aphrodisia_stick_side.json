@@ -1,0 +1,6 @@
+{
+  "parent": "fantasy-forest:block/templates/stick_side",
+  "textures": {
+    "texture": "fantasy-forest:block/aphrodisia_planks"
+  }
+}
