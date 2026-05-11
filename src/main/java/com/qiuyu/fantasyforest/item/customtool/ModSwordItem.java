@@ -44,6 +44,9 @@ public class ModSwordItem extends SwordItem {
             case PERMEAROMA -> {
                 return "tooltip.fantasyforest.permearoma" + s;
             }
+            case APHRODISIA -> {
+                return "tooltip.fantasyforest.aphrodisia" + s;
+            }
             case END_WOODEN -> {
                 return "tooltip.fantasyforest.end_wood" + s;
             }
@@ -100,13 +103,14 @@ public class ModSwordItem extends SwordItem {
 
     public static void hitEffect(ModToolMaterials material, LivingEntity target){
         switch (material){
+            case APHRODISIA -> target.addStatusEffect(new StatusEffectInstance(ModEffects.CUPID_KISS,80));
             case VOID_WOODEN -> VoidEffectHandler.applyVoidEffect(target);
             case END_WOODEN -> target.addStatusEffect(new StatusEffectInstance(
                     ModEffects.SPATIAL_CONSTRAINT,
                     80,
                     0,
-                    false, // 不显示粒子
-                    true   // 显示图标
+                    false,
+                    true
             ));
             case MUTATED_END_WOODEN -> {
                 if (target.getWorld() instanceof ServerWorld serverWorld){

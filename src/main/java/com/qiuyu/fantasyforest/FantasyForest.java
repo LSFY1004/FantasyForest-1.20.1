@@ -9,6 +9,7 @@ import com.qiuyu.fantasyforest.entity.vehicle.ModBoats;
 import com.qiuyu.fantasyforest.item.MODItems;
 import com.qiuyu.fantasyforest.item.ModItemGroups;
 import com.qiuyu.fantasyforest.item.spetial.ProgressiveTaskScheduler;
+import com.qiuyu.fantasyforest.particle.ModParticles;
 import com.qiuyu.fantasyforest.recipe.ModRecipes;
 import com.qiuyu.fantasyforest.screen.ModScreenHandlers;
 import com.qiuyu.fantasyforest.world.gen.foliage.ModFoliagePlacerType;
@@ -49,6 +50,7 @@ public class FantasyForest implements ModInitializer {
 		ModEntities.registerEntities();
 		ModBoats.registerBoats();
         ProgressiveTaskScheduler.register();
+        ModParticles.registerParticles();
 
         StrippableBlockRegistry.register(ModBlocks.REVELATION_LOG,ModBlocks.STRIPPED_REVELATION_LOG);
         StrippableBlockRegistry.register(ModBlocks.REVELATION_WOOD,ModBlocks.STRIPPED_REVELATION_WOOD);

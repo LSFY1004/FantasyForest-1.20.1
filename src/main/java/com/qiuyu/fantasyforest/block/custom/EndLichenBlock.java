@@ -80,7 +80,7 @@ public class EndLichenBlock extends SpreadableBlock {
     @Override
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         if (!canSurvive(state,world,pos)) {
-            world.setBlockState(pos, Blocks.END_STONE.getDefaultState());
+            world.setBlockState(pos, ModBlocks.DEAD_END_LICHEN.getDefaultState());
             return;
         }
 

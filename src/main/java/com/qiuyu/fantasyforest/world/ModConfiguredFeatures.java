@@ -4,6 +4,7 @@ import com.google.common.collect.ImmutableList;
 import com.qiuyu.fantasyforest.FantasyForest;
 import com.qiuyu.fantasyforest.block.ModBlocks;
 import com.qiuyu.fantasyforest.world.gen.foliage.EllipsoidFoliagePlacer;
+import com.qiuyu.fantasyforest.world.gen.treedecorator.AphrodisiaFlowerDecorator;
 import com.qiuyu.fantasyforest.world.gen.treedecorator.VoidVineDecorator;
 import com.qiuyu.fantasyforest.world.gen.trunk.*;
 import net.minecraft.block.Blocks;
@@ -66,6 +67,7 @@ public class ModConfiguredFeatures {
         )
                 .dirtProvider(BlockStateProvider.of(Blocks.DIRT))
                 .ignoreVines()
+                .decorators(ImmutableList.of(new AphrodisiaFlowerDecorator(0.05F)))
                 .build());
         register(context,LARGE_APHRODISIA_KEY,Feature.TREE,new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.APHRODISIA_LOG),
@@ -76,6 +78,7 @@ public class ModConfiguredFeatures {
         )
                 .dirtProvider(BlockStateProvider.of(Blocks.DIRT))
                 .ignoreVines()
+                .decorators(ImmutableList.of(new AphrodisiaFlowerDecorator(0.05F)))
                 .build());
 
         register(context,END_TREE_KEY,Feature.TREE,new TreeFeatureConfig.Builder(

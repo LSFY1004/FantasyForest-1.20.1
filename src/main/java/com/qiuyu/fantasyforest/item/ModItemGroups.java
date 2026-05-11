@@ -94,6 +94,7 @@ public class ModItemGroups {
                             entries.add(MODItems.PERMEAROMA_AXE);
                             entries.add(MODItems.PERMEAROMA_HOE);
 
+                            entries.add(ModBlocks.APHRODISIA_FLOWER);
                             entries.add(ModBlocks.APHRODISIA_LEAVES);
                             entries.add(ModBlocks.APHRODISIA_SAPLING);
                             entries.add(ModBlocks.APHRODISIA_LOG);

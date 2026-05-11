@@ -1,4 +1,4 @@
-// 1.20.1	2026-05-05T16:25:00.5575297	Fantasy Forest/Block Loot Tables
+// 1.20.1	2026-05-12T00:10:18.6114742	Fantasy Forest/Block Loot Tables
 b8577f602aadcfb5ad0195df7862c08c5ad80d7b data\fantasy-forest\loot_tables\blocks\void_resin_block.json
 29abe25b54fb77ec0346aa3e2d1e352c2072b535 data\fantasy-forest\loot_tables\blocks\void_tree_sapling.json
 c1b159c97284e89bd99d9046430ad6191de0c6cb data\fantasy-forest\loot_tables\blocks\permearoma_fence.json
@@ -30,6 +30,7 @@ e7b907b753af4f2f891750e067bc0070188d970b data\fantasy-forest\loot_tables\blocks\
 b57df471169baed93a83b38f0053de64d5e0fbf8 data\fantasy-forest\loot_tables\blocks\aphrodisia_sapling.json
 32435dfed383092da9a27bba1d04ee3c6d0324cc data\fantasy-forest\loot_tables\blocks\permearoma_log.json
 d6e76e77e192d44ba3f649361bc05dbaccde5e45 data\fantasy-forest\loot_tables\blocks\aphrodisia_sign.json
+021f93dbbeada6a252b9588fa79ff7e0e38ef6e8 data\fantasy-forest\loot_tables\blocks\aphrodisia_flower.json
 3fc11c35e923cecad1cdf5747a0e339b5697bbc7 data\fantasy-forest\loot_tables\blocks\revelation_sapling.json
 d601f8dcba0604117fd339da62b065a838f19a89 data\fantasy-forest\loot_tables\blocks\stripped_mutated_end_wood.json
 260f57bb44221c0d2f57c7e3654fc851fe9bd11a data\fantasy-forest\loot_tables\blocks\void_planks.json

@@ -25,7 +25,6 @@ public class DeadEndLichenBlock extends EndLichenBlock{
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         ItemStack itemStack = player.getStackInHand(hand);
-        Random random = world.random;
 
         if (itemStack.isOf(Items.BONE_MEAL)){
             if (world instanceof ServerWorld serverWorld) {
@@ -40,7 +39,7 @@ public class DeadEndLichenBlock extends EndLichenBlock{
                 );
             }
             world.playSound(null, pos, SoundEvents.ITEM_BONE_MEAL_USE, SoundCategory.BLOCKS, 1.0F, 1.0F);
-            if(random.nextInt(2)==0)return convertToLive(world, pos, player, hand);
+            return convertToLive(world, pos, player, hand);
         }
         return ActionResult.PASS;
     }

@@ -66,6 +66,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PERMEAROMA_SIGN);
         addDrop(ModBlocks.PERMEAROMA_HANGING_SIGN);
 
+        addDrop(ModBlocks.APHRODISIA_FLOWER);
         addDrop(ModBlocks.APHRODISIA_LOG);
         addDrop(ModBlocks.APHRODISIA_WOOD);
         addDrop(ModBlocks.STRIPPED_APHRODISIA_LOG);

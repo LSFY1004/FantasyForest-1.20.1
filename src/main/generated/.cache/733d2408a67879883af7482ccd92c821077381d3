@@ -1,4 +1,4 @@
-// 1.20.1	2026-05-05T16:25:00.5531952	Fantasy Forest/Recipes
+// 1.20.1	2026-05-12T00:10:18.606798	Fantasy Forest/Recipes
 0eb542e2879eedfd2d59088c69ebc0c5fbaef8f7 data\fantasy-forest\recipes\end_wooden_door.json
 a784f88331b6594db2eb65d757a472728d6c55d4 data\fantasy-forest\recipes\mutated_end_wooden_axe.json
 a08fe04571498a0b61de07a87492b2789fcf8744 data\fantasy-forest\advancements\recipes\building_blocks\mutated_end_wooden_door.json
@@ -146,8 +146,8 @@ b56ce8fc5a884f4457817a63f3097ff222e19594 data\fantasy-forest\advancements\recipe
 72166aabed9f114ea802926ea4a523b268c895c0 data\fantasy-forest\recipes\void_resin.json
 b1dfffae43f5dad640caa760593aab61994f37d1 data\fantasy-forest\advancements\recipes\decorations\permearoma_hanging_sign.json
 9be650c70326ae719f545da0632efe010981c40a data\fantasy-forest\recipes\end_wooden_trapdoor.json
-ebde55d14d336f271c92b4a355046cf74d7ca430 data\fantasy-forest\recipes\mutated_end_wooden_boat.json
 9751ecd4f47f445263bad8696b2732e3f574448f data\fantasy-forest\advancements\recipes\transportation\mutated_end_wooden_boat.json
+ebde55d14d336f271c92b4a355046cf74d7ca430 data\fantasy-forest\recipes\mutated_end_wooden_boat.json
 55a4892f7d2e575ae7778680f56efa58d1bfd8eb data\fantasy-forest\recipes\end_wooden_pickaxe.json
 c696703fc7ad5684b3b2a4c4c169f948686e6174 data\fantasy-forest\recipes\permearoma_chest_boat.json
 28377338f8741927cc4c8eff015fc45560143e9d data\fantasy-forest\recipes\mutated_end_wooden_pickaxe.json

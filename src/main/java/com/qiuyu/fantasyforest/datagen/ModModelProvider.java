@@ -114,6 +114,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(MODItems.PERMEAROMA_SHOVEL,Models.HANDHELD);
         itemModelGenerator.register(MODItems.PERMEAROMA_SWORD,Models.HANDHELD);
 
+        itemModelGenerator.register(ModBlocks.APHRODISIA_FLOWER.asItem(), Models.GENERATED);
         itemModelGenerator.register(MODItems.APHRODISIA_BOAT,Models.GENERATED);
         itemModelGenerator.register(MODItems.APHRODISIA_CHEST_BOAT,Models.GENERATED);
         itemModelGenerator.register(MODItems.APHRODISIA_AXE,Models.HANDHELD);

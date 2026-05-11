@@ -55,6 +55,6 @@ public class VoidVineDecorator extends TreeDecorator {
             currentPos = currentPos.down();
             extensionCount--;
         }
-        generator.replace(currentPos, ModBlocks.VOID_VINE_HEAD.getDefaultState());
+        generator.replace(generator.isAir(currentPos)?currentPos:currentPos.up(), ModBlocks.VOID_VINE_HEAD.getDefaultState());
     }
 }

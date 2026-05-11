@@ -21,6 +21,8 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add("tooltip.fantasyforest.more","§7按下§rShift§7获取更多信息。§r");
         translationBuilder.add("tooltip.fantasyforest.permearoma","§3芳香§r");
         translationBuilder.add("tooltip.fantasyforest.permearoma.shift","§3芳香§7§o—降低受击生物们感知到你的范围。");
+        translationBuilder.add("tooltip.fantasyforest.aphrodisia","§d爱神之吻§r");
+        translationBuilder.add("tooltip.fantasyforest.aphrodisia.shift","§d爱神之吻§7§o - 玩家减速+视野干扰；怪物失明失敌；动物立即繁殖。");
         translationBuilder.add("tooltip.fantasyforest.end_wood","§5空间阈限§r");
         translationBuilder.add("tooltip.fantasyforest.end_wood.shift","§5空间阈限§7§o—短暂时间内会将离开一定范围的受击者强制传送回来。");
         translationBuilder.add("tooltip.fantasyforest.mutated_end_wood","§2空间扭曲§r");
@@ -101,6 +103,7 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(MODItems.PERMEAROMA_HOE,"沁芳木锄");
         translationBuilder.add(MODItems.PERMEAROMA_SHOVEL,"沁芳木锹");
 
+        translationBuilder.add(ModBlocks.APHRODISIA_FLOWER,"情花");
         translationBuilder.add(ModBlocks.APHRODISIA_LEAVES,"情花树叶");
         translationBuilder.add(ModBlocks.APHRODISIA_LOG,"情花木原木");
         translationBuilder.add(ModBlocks.APHRODISIA_WOOD,"情花木");
@@ -217,6 +220,7 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModEffects.SPATIAL_CONSTRAINT,"空间阈限");
         translationBuilder.add(ModEffects.VOID_EFFECT,"虚空");
+        translationBuilder.add(ModEffects.CUPID_KISS,"爱神之吻");
         translationBuilder.add("death.attack.void","%1$s 被虚空吞噬了");
         translationBuilder.add("death.attack.void.player","%1$s 在逃离%2$s时被虚空瓦解了");
     }

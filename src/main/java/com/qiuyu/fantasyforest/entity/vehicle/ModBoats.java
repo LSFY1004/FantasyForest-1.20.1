@@ -50,6 +50,13 @@ public class ModBoats {
                 .build();
         Registry.register(TerraformBoatTypeRegistry.INSTANCE, PERMEAROMA_BOAT_KEY, PERMEAROMA_BOAT_TYPE);
 
+        TerraformBoatType APHRODISIA_BOAT_TYPE = new TerraformBoatType.Builder()
+                .item(MODItems.APHRODISIA_BOAT)
+                .chestItem(MODItems.APHRODISIA_CHEST_BOAT)
+                .planks(ModBlocks.APHRODISIA_PLANKS.asItem())
+                .build();
+        Registry.register(TerraformBoatTypeRegistry.INSTANCE, APHRODISIA_BOAT_KEY, APHRODISIA_BOAT_TYPE);
+
         TerraformBoatType END_WOODEN_BOAT_TYPE = new TerraformBoatType.Builder()
                 .item(MODItems.END_WOODEN_BOAT)
                 .chestItem(MODItems.END_WOODEN_CHEST_BOAT)

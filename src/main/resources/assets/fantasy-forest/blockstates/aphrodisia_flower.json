@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "state=0": {
+      "model": "fantasy-forest:block/aphrodisia_flower_seedling"
+    },
+    "state=1": {
+      "model": "fantasy-forest:block/aphrodisia_flower_top"
+    },
+    "state=2": {
+      "model": "fantasy-forest:block/aphrodisia_flower_bottom"
+    },
+    "state=3": {
+      "model": "fantasy-forest:block/aphrodisia_flower_middle"
+    },
+    "state=4": {
+      "model": "fantasy-forest:block/aphrodisia_flower_seedling"
+    },
+    "state=5": {
+      "model": "fantasy-forest:block/aphrodisia_flower_bottom"
+    },
+    "state=6": {
+      "model": "fantasy-forest:block/aphrodisia_flower_middle"
+    }
+  }
+}

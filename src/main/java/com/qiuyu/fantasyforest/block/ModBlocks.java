@@ -99,6 +99,7 @@ public class ModBlocks {
     public static final Block PERMEAROMA_SAPLING = register("permearoma_sapling",
             new SaplingBlock(new PermearomaSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
 
+    public static final Block APHRODISIA_FLOWER = register("aphrodisia_flower", new TreeFlowerBlock(AbstractBlock.Settings.copy(Blocks.PINK_PETALS).ticksRandomly().noCollision().breakInstantly()));
     public static final Block APHRODISIA_LOG = register("aphrodisia_log", new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.LICHEN_GREEN).strength(2.0F).instrument(Instrument.BASS).sounds(BlockSoundGroup.WOOD)));
     public static final Block APHRODISIA_WOOD = register("aphrodisia_wood",new PillarBlock(AbstractBlock.Settings.copy(APHRODISIA_LOG)));
     public static final Block STRIPPED_APHRODISIA_LOG = register("stripped_aphrodisia_log", new PillarBlock(AbstractBlock.Settings.copy(APHRODISIA_LOG)));

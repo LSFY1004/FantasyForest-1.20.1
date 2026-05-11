@@ -9,6 +9,7 @@ import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
 public class ModTreeDecoratorType {
     // 定义自定义装饰器类型
     public static TreeDecoratorType<VoidVineDecorator> VOID_VINE;
+    public static TreeDecoratorType<AphrodisiaFlowerDecorator> APHRODISIA_FLOWER;
 
     public static void registerTreeDecorators() {
         // 创建并注册自定义装饰器类型
@@ -18,6 +19,11 @@ public class ModTreeDecoratorType {
                 new TreeDecoratorType<>(VoidVineDecorator.CODEC)
         );
 
-        FantasyForest.LOGGER.info("Registering Void Vine Tree Decorator");
+        APHRODISIA_FLOWER = Registry.register(
+                Registries.TREE_DECORATOR_TYPE,
+                new Identifier(FantasyForest.MOD_ID,"aphrodisia_flower_decorator"),
+                new TreeDecoratorType<>(AphrodisiaFlowerDecorator.CODEC)
+        );
+
     }
 }

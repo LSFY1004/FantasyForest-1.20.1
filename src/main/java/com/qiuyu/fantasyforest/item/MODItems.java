@@ -312,6 +312,7 @@ public class MODItems {
         entries.add(REVELATION_CORE);
         entries.add(REVELATION_CORE_SIDE);
 
+        entries.add(APHRODISIA_FLOWER);
         entries.add(VOID_VINE_BODY);
         entries.add(VOID_VINE_HEAD);
         entries.add(FRUITING_VOID_VINE_HEAD);

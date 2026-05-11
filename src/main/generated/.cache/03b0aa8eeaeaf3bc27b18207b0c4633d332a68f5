@@ -1,22 +1,22 @@
-// 1.20.1	2026-05-05T16:25:00.5575297	Fantasy Forest/Tags for minecraft:block
+// 1.20.1	2026-05-12T00:10:18.6114742	Fantasy Forest/Tags for minecraft:block
 08e383c7574c7ea2230ab2f4a01868eba072a616 data\minecraft\tags\blocks\mineable\pickaxe.json
 e0ce5ee5217658359ced641b54b860f8cd12285a data\fantasy-forest\tags\blocks\end_wooden_blocks.json
 624066cbc8181459c49bf6635aa0f0c963b78b37 data\minecraft\tags\blocks\needs_diamond_tool.json
-afe2131d2463bbba379b020873628995cbd7f438 data\fantasy-forest\tags\blocks\revelation_blocks.json
 535a8427fe45a3db802d5420e922ac00c2326e88 data\minecraft\tags\blocks\logs_that_burn.json
+afe2131d2463bbba379b020873628995cbd7f438 data\fantasy-forest\tags\blocks\revelation_blocks.json
 2c9c3e03274982d0818510dcf1fb1067a85ce36e data\minecraft\tags\blocks\saplings.json
 b48fb8cfffc7bb799a4650c9bddfbcc4a6d7d65a data\minecraft\tags\blocks\climbable.json
-1f9de41362e1affe2e60b700f2c7edb7a0845ead data\minecraft\tags\blocks\mineable\axe.json
 65f4275ce6f5f86e6339ae6b0936ff8b965eb472 data\minecraft\tags\blocks\mineable\hoe.json
+1f9de41362e1affe2e60b700f2c7edb7a0845ead data\minecraft\tags\blocks\mineable\axe.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_stone_tool.json
 dec404c989c8307fd41d24fbd010433827542af0 data\fantasy-forest\tags\blocks\mutated_end_wooden_blocks.json
-65f4275ce6f5f86e6339ae6b0936ff8b965eb472 data\minecraft\tags\blocks\leaves.json
 7161ee6e536768af49e5c7fe157d81346f4bbcf0 data\minecraft\tags\blocks\planks.json
+65f4275ce6f5f86e6339ae6b0936ff8b965eb472 data\minecraft\tags\blocks\leaves.json
 cefe07f977c2533e4eba7202b215dce0d0c252cf data\minecraft\tags\blocks\fence_gates.json
 507f381fd2186f80ed5d2b2e7a5b16128b394a1c data\fantasy-forest\tags\blocks\permearoma_blocks.json
 3020181252055151b6fbdecdf326f4fb48d92991 data\fantasy-forest\tags\blocks\sticks.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_iron_tool.json
 bdef94f21267d6654e842284142d93d0d86f0828 data\fantasy-forest\tags\blocks\aphrodisia_blocks.json
-27f91c1d5801518f1a3e6ed03c34024a7a8d768d data\fantasy-forest\tags\blocks\void_wooden_blocks.json
 7ddb6bfb4cacfc19d2360f2f6ce4fa7e3310b58b data\minecraft\tags\blocks\wooden_fences.json
+27f91c1d5801518f1a3e6ed03c34024a7a8d768d data\fantasy-forest\tags\blocks\void_wooden_blocks.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\shovel.json

@@ -21,6 +21,8 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add("tooltip.fantasyforest.more","§7Press §rShift§7 for more info.§r");
         translationBuilder.add("tooltip.fantasyforest.permearoma","§3Fragrance§r");
         translationBuilder.add("tooltip.fantasyforest.permearoma.shift","§3Fragrance§7§o - Lulled by the drifting fragrance, they let their will to pursue drift from them.");
+        translationBuilder.add("tooltip.fantasyforest.aphrodisia","§dCupid's Kiss§r");
+        translationBuilder.add("tooltip.fantasyforest.aphrodisia.shift","§dCupid's Kiss§7§o - Slows & obscures players; disorients mobs; instantly breeds animals.");
         translationBuilder.add("tooltip.fantasyforest.end_wood","§5Spatial Constraints§r");
         translationBuilder.add("tooltip.fantasyforest.end_wood.shift","§5Spatial Constraints§7§o - Such is the power of the End that it weaves a prison of space from which the struck has no hope of departing.");
         translationBuilder.add("tooltip.fantasyforest.mutated_end_wood","§2Spatial Warp§r");
@@ -100,6 +102,7 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(MODItems.PERMEAROMA_HOE,"Permearoma Hoe");
         translationBuilder.add(MODItems.PERMEAROMA_SHOVEL,"Permearoma Shovel");
 
+        translationBuilder.add(ModBlocks.APHRODISIA_FLOWER,"Aphrodisia Flower");
         translationBuilder.add(ModBlocks.APHRODISIA_LEAVES,"Aphrodisia Leaves");
         translationBuilder.add(ModBlocks.APHRODISIA_LOG,"Aphrodisia Log");
         translationBuilder.add(ModBlocks.APHRODISIA_WOOD,"Aphrodisia Wood");
@@ -216,6 +219,7 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModEffects.SPATIAL_CONSTRAINT,"Spatial Constraint");
         translationBuilder.add(ModEffects.VOID_EFFECT,"Void");
+        translationBuilder.add(ModEffects.CUPID_KISS,"Cupid's Kiss");
         translationBuilder.add("death.attack.void","%1$s was consumed by the void.");
         translationBuilder.add("death.attack.void.player","%1$s was disintegrated by the void while fleeing from %2$s.");
     }
