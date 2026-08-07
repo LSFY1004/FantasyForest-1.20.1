@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "button",
+  "ingredients": [
+    {
+      "item": "fantasy-forest:aphrodisia_planks"
+    }
+  ],
+  "result": {
+    "item": "fantasy-forest:aphrodisia_button"
+  }
+}

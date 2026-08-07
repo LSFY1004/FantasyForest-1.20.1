@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_aphrodisia_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fantasy-forest:aphrodisia_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:aphrodisia_button_from_aphrodisia_planks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_aphrodisia_planks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:aphrodisia_button_from_aphrodisia_planks"
+    ]
+  },
+  "sends_telemetry_event": false
+}

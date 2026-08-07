@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "fantasy-forest:mutated_end_log",
+    "fantasy-forest:mutated_end_wood",
+    "fantasy-forest:stripped_mutated_end_log",
+    "fantasy-forest:stripped_mutated_end_wood"
+  ]
+}

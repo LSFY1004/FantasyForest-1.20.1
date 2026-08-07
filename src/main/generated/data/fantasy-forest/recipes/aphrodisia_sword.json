@@ -1,0 +1,22 @@
+{
+  "type": "fantasy-forest:arboreal_crafting_table",
+  "key": {
+    "#": {
+      "item": "fantasy-forest:aphrodisia_planks"
+    },
+    "1": {
+      "tag": "fantasy-forest:sticks"
+    }
+  },
+  "pattern": [
+    "#",
+    "#",
+    "1"
+  ],
+  "result": {
+    "item": "fantasy-forest:aphrodisia_sword"
+  },
+  "sapling": {
+    "tag": "fantasy-forest:aphrodisia_arboreal"
+  }
+}

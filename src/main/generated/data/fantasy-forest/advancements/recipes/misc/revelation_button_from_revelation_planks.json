@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_revelation_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fantasy-forest:revelation_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:revelation_button_from_revelation_planks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_revelation_planks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:revelation_button_from_revelation_planks"
+    ]
+  },
+  "sends_telemetry_event": false
+}

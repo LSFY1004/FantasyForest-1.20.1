@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "fantasy-forest:revelation_log",
+    "fantasy-forest:revelation_wood",
+    "fantasy-forest:stripped_revelation_log",
+    "fantasy-forest:stripped_revelation_wood"
+  ]
+}

@@ -16,7 +16,7 @@ import net.minecraft.util.Identifier;
 
 import static com.qiuyu.fantasyforest.block.ModBlocks.*;
 
-public class MODItems {
+public class ModItems {
 
     public static final Item SEED_OF_REVELATION = registerItem("seed_of_revelation", new SeedOfRevelationItem(new Item.Settings()));
 
@@ -377,14 +377,14 @@ public class MODItems {
     }
 
     public static void registerItems(){
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(MODItems::addItemToItemGroupC);
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(MODItems::addItemToItemGroup);
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(MODItems::addItemToItemGroupB);
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(MODItems::addItemToItemGroupN);
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(MODItems::addItemToItemGroupF);
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(MODItems::addItemToItemGroupG);
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(MODItems::addItemToItemGroupT);
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(MODItems::addItemToItemGroupR);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemToItemGroupC);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ModItems::addItemToItemGroupB);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModItems::addItemToItemGroupN);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemToItemGroupF);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(ModItems::addItemToItemGroupG);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemToItemGroupT);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(ModItems::addItemToItemGroupR);
     }
 
 }

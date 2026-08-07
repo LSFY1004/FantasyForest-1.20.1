@@ -27,7 +27,7 @@ public class ModItemGroups {
                         .icon(() -> new ItemStack(ModBlocks.REVELATION_SAPLING))
                         .entries((displayContext, entries) -> {
 
-                            entries.add(MODItems.SEED_OF_REVELATION);
+                            entries.add(ModItems.SEED_OF_REVELATION);
 
                             entries.add(ModBlocks.ARBOREAL_CRAFTING_TABLE);
                             entries.add(ModBlocks.ENDER_TRANSMISSION_SUPPRESSOR);
@@ -61,13 +61,13 @@ public class ModItemGroups {
                             entries.add(ModBlocks.REVELATION_TRAPDOOR);
                             entries.add(ModBlocks.REVELATION_PRESSURE_PLATE);
                             entries.add(ModBlocks.REVELATION_BUTTON);
-                            entries.add(MODItems.REVELATION_SIGN);
-                            entries.add(MODItems.REVELATION_HANGING_SIGN);
-                            entries.add(MODItems.REVELATION_BOAT);
-                            entries.add(MODItems.REVELATION_CHEST_BOAT);
+                            entries.add(ModItems.REVELATION_SIGN);
+                            entries.add(ModItems.REVELATION_HANGING_SIGN);
+                            entries.add(ModItems.REVELATION_BOAT);
+                            entries.add(ModItems.REVELATION_CHEST_BOAT);
                             entries.add(ModBlocks.REVELATION_STICK);
 
-                            entries.add(MODItems.PERMEAROMA_LEAF_PIECES);
+                            entries.add(ModItems.PERMEAROMA_LEAF_PIECES);
                             entries.add(ModBlocks.PERMEAROMA_LEAVES);
                             entries.add(ModBlocks.PERMEAROMA_SAPLING);
                             entries.add(ModBlocks.PERMEAROMA_LOG);
@@ -83,16 +83,16 @@ public class ModItemGroups {
                             entries.add(ModBlocks.PERMEAROMA_TRAPDOOR);
                             entries.add(ModBlocks.PERMEAROMA_PRESSURE_PLATE);
                             entries.add(ModBlocks.PERMEAROMA_BUTTON);
-                            entries.add(MODItems.PERMEAROMA_SIGN);
-                            entries.add(MODItems.PERMEAROMA_HANGING_SIGN);
-                            entries.add(MODItems.PERMEAROMA_BOAT);
-                            entries.add(MODItems.PERMEAROMA_CHEST_BOAT);
+                            entries.add(ModItems.PERMEAROMA_SIGN);
+                            entries.add(ModItems.PERMEAROMA_HANGING_SIGN);
+                            entries.add(ModItems.PERMEAROMA_BOAT);
+                            entries.add(ModItems.PERMEAROMA_CHEST_BOAT);
                             entries.add(ModBlocks.PERMEAROMA_STICK);
-                            entries.add(MODItems.PERMEAROMA_SWORD);
-                            entries.add(MODItems.PERMEAROMA_SHOVEL);
-                            entries.add(MODItems.PERMEAROMA_PICKAXE);
-                            entries.add(MODItems.PERMEAROMA_AXE);
-                            entries.add(MODItems.PERMEAROMA_HOE);
+                            entries.add(ModItems.PERMEAROMA_SWORD);
+                            entries.add(ModItems.PERMEAROMA_SHOVEL);
+                            entries.add(ModItems.PERMEAROMA_PICKAXE);
+                            entries.add(ModItems.PERMEAROMA_AXE);
+                            entries.add(ModItems.PERMEAROMA_HOE);
 
                             entries.add(ModBlocks.APHRODISIA_FLOWER);
                             entries.add(ModBlocks.APHRODISIA_LEAVES);
@@ -110,18 +110,18 @@ public class ModItemGroups {
                             entries.add(ModBlocks.APHRODISIA_TRAPDOOR);
                             entries.add(ModBlocks.APHRODISIA_PRESSURE_PLATE);
                             entries.add(ModBlocks.APHRODISIA_BUTTON);
-                            entries.add(MODItems.APHRODISIA_SIGN);
-                            entries.add(MODItems.APHRODISIA_HANGING_SIGN);
-                            entries.add(MODItems.APHRODISIA_BOAT);
-                            entries.add(MODItems.APHRODISIA_CHEST_BOAT);
+                            entries.add(ModItems.APHRODISIA_SIGN);
+                            entries.add(ModItems.APHRODISIA_HANGING_SIGN);
+                            entries.add(ModItems.APHRODISIA_BOAT);
+                            entries.add(ModItems.APHRODISIA_CHEST_BOAT);
                             entries.add(ModBlocks.APHRODISIA_STICK);
-                            entries.add(MODItems.APHRODISIA_SWORD);
-                            entries.add(MODItems.APHRODISIA_SHOVEL);
-                            entries.add(MODItems.APHRODISIA_PICKAXE);
-                            entries.add(MODItems.APHRODISIA_AXE);
-                            entries.add(MODItems.APHRODISIA_HOE);
+                            entries.add(ModItems.APHRODISIA_SWORD);
+                            entries.add(ModItems.APHRODISIA_SHOVEL);
+                            entries.add(ModItems.APHRODISIA_PICKAXE);
+                            entries.add(ModItems.APHRODISIA_AXE);
+                            entries.add(ModItems.APHRODISIA_HOE);
 
-                            entries.add(MODItems.END_RESIN);
+                            entries.add(ModItems.END_RESIN);
                             entries.add(ModBlocks.END_RESIN_BLOCK);
                             entries.add(ModBlocks.END_LEAVES);
                             entries.add(ModBlocks.END_TREE_SAPLING);
@@ -138,18 +138,18 @@ public class ModItemGroups {
                             entries.add(ModBlocks.END_WOODEN_TRAPDOOR);
                             entries.add(ModBlocks.END_WOODEN_PRESSURE_PLATE);
                             entries.add(ModBlocks.END_WOODEN_BUTTON);
-                            entries.add(MODItems.END_WOODEN_SIGN);
-                            entries.add(MODItems.END_WOODEN_HANGING_SIGN);
-                            entries.add(MODItems.END_WOODEN_BOAT);
-                            entries.add(MODItems.END_WOODEN_CHEST_BOAT);
+                            entries.add(ModItems.END_WOODEN_SIGN);
+                            entries.add(ModItems.END_WOODEN_HANGING_SIGN);
+                            entries.add(ModItems.END_WOODEN_BOAT);
+                            entries.add(ModItems.END_WOODEN_CHEST_BOAT);
                             entries.add(ModBlocks.END_STICK);
-                            entries.add(MODItems.END_WOODEN_SWORD);
-                            entries.add(MODItems.END_WOODEN_SHOVEL);
-                            entries.add(MODItems.END_WOODEN_PICKAXE);
-                            entries.add(MODItems.END_WOODEN_AXE);
-                            entries.add(MODItems.END_WOODEN_HOE);
+                            entries.add(ModItems.END_WOODEN_SWORD);
+                            entries.add(ModItems.END_WOODEN_SHOVEL);
+                            entries.add(ModItems.END_WOODEN_PICKAXE);
+                            entries.add(ModItems.END_WOODEN_AXE);
+                            entries.add(ModItems.END_WOODEN_HOE);
 
-                            entries.add(MODItems.MUTATED_END_RESIN);
+                            entries.add(ModItems.MUTATED_END_RESIN);
                             entries.add(ModBlocks.MUTATED_END_RESIN_BLOCK);
                             entries.add(ModBlocks.MUTATED_END_LOG);
                             entries.add(ModBlocks.MUTATED_END_WOOD);
@@ -164,23 +164,23 @@ public class ModItemGroups {
                             entries.add(ModBlocks.MUTATED_END_WOODEN_TRAPDOOR);
                             entries.add(ModBlocks.MUTATED_END_WOODEN_PRESSURE_PLATE);
                             entries.add(ModBlocks.MUTATED_END_WOODEN_BUTTON);
-                            entries.add(MODItems.MUTATED_END_WOODEN_SIGN);
-                            entries.add(MODItems.MUTATED_END_WOODEN_HANGING_SIGN);
-                            entries.add(MODItems.MUTATED_END_WOODEN_BOAT);
-                            entries.add(MODItems.MUTATED_END_WOODEN_CHEST_BOAT);
+                            entries.add(ModItems.MUTATED_END_WOODEN_SIGN);
+                            entries.add(ModItems.MUTATED_END_WOODEN_HANGING_SIGN);
+                            entries.add(ModItems.MUTATED_END_WOODEN_BOAT);
+                            entries.add(ModItems.MUTATED_END_WOODEN_CHEST_BOAT);
                             entries.add(ModBlocks.MUTATED_END_STICK);
-                            entries.add(MODItems.MUTATED_END_WOODEN_SWORD);
-                            entries.add(MODItems.MUTATED_END_WOODEN_SHOVEL);
-                            entries.add(MODItems.MUTATED_END_WOODEN_PICKAXE);
-                            entries.add(MODItems.MUTATED_END_WOODEN_AXE);
-                            entries.add(MODItems.MUTATED_END_WOODEN_HOE);
+                            entries.add(ModItems.MUTATED_END_WOODEN_SWORD);
+                            entries.add(ModItems.MUTATED_END_WOODEN_SHOVEL);
+                            entries.add(ModItems.MUTATED_END_WOODEN_PICKAXE);
+                            entries.add(ModItems.MUTATED_END_WOODEN_AXE);
+                            entries.add(ModItems.MUTATED_END_WOODEN_HOE);
 
-                            entries.add(MODItems.VOID_RESIN);
+                            entries.add(ModItems.VOID_RESIN);
                             entries.add(ModBlocks.VOID_RESIN_BLOCK);
                             entries.add(ModBlocks.VOID_LEAVES);
                             entries.add(ModBlocks.VOID_ROOTS);
                             entries.add(ModBlocks.VOID_TREE_SAPLING);
-                            entries.add(MODItems.VOID_FRUIT);
+                            entries.add(ModItems.VOID_FRUIT);
                             entries.add(ModBlocks.VOID_VINE_BODY);
                             entries.add(ModBlocks.VOID_VINE_HEAD);
                             entries.add(ModBlocks.FRUITING_VOID_VINE_HEAD);
@@ -200,14 +200,14 @@ public class ModItemGroups {
                             entries.add(ModBlocks.VOID_WOODEN_BUTTON);
                             entries.add(ModBlocks.VOID_WOODEN_SIGN);
                             entries.add(ModBlocks.VOID_WOODEN_HANGING_SIGN);
-                            entries.add(MODItems.VOID_WOODEN_BOAT);
-                            entries.add(MODItems.VOID_WOODEN_CHEST_BOAT);
+                            entries.add(ModItems.VOID_WOODEN_BOAT);
+                            entries.add(ModItems.VOID_WOODEN_CHEST_BOAT);
                             entries.add(ModBlocks.VOID_STICK);
-                            entries.add(MODItems.VOID_WOODEN_SWORD);
-                            entries.add(MODItems.VOID_WOODEN_SHOVEL);
-                            entries.add(MODItems.VOID_WOODEN_PICKAXE);
-                            entries.add(MODItems.VOID_WOODEN_AXE);
-                            entries.add(MODItems.VOID_WOODEN_HOE);
+                            entries.add(ModItems.VOID_WOODEN_SWORD);
+                            entries.add(ModItems.VOID_WOODEN_SHOVEL);
+                            entries.add(ModItems.VOID_WOODEN_PICKAXE);
+                            entries.add(ModItems.VOID_WOODEN_AXE);
+                            entries.add(ModItems.VOID_WOODEN_HOE);
                         })
                         .build()
         );

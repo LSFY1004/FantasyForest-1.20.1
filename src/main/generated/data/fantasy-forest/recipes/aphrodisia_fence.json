@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "fantasy-forest:aphrodisia_planks"
+    },
+    "1": {
+      "tag": "fantasy-forest:sticks"
+    }
+  },
+  "pattern": [
+    "#1#",
+    "#1#"
+  ],
+  "result": {
+    "count": 3,
+    "item": "fantasy-forest:aphrodisia_fence"
+  },
+  "show_notification": true
+}

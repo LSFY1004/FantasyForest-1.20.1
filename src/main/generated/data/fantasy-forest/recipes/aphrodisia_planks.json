@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    [
+      {
+        "item": "fantasy-forest:aphrodisia_log"
+      },
+      {
+        "item": "fantasy-forest:aphrodisia_wood"
+      },
+      {
+        "item": "fantasy-forest:stripped_aphrodisia_log"
+      },
+      {
+        "item": "fantasy-forest:stripped_aphrodisia_wood"
+      }
+    ]
+  ],
+  "result": {
+    "count": 4,
+    "item": "fantasy-forest:aphrodisia_planks"
+  }
+}

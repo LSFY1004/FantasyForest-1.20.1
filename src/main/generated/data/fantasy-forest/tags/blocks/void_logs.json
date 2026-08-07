@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "fantasy-forest:void_log",
+    "fantasy-forest:void_wood",
+    "fantasy-forest:stripped_void_log",
+    "fantasy-forest:stripped_void_wood"
+  ]
+}
